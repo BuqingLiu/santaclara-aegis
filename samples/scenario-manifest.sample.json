@@ -1,0 +1,33 @@
+{
+  "product": "SantaClara Aegis",
+  "schema_version": "1.0",
+  "generated": "2026-07-31",
+  "site": "Santa Clara Tech Park / El Camino Real x Lawrence Expressway",
+  "simulator": { "platform": "CARLA", "version": "0.9.16", "mode": "deterministic-sync", "hz": 20 },
+  "scenarios": [
+    { "key": "pedestrian_crossing",   "title": "Sudden Pedestrian Crossing",        "category": "vru",       "weather": "ClearNoon", "trigger_dist_m": 24.0, "reg_ref": "CA DMV AV Program - VRU Interaction" },
+    { "key": "cut_in",                "title": "Aggressive Vehicle Cut-In",         "category": "highway",   "weather": "ClearNoon", "trigger_dist_m": 16.0, "reg_ref": "NHTSA Pre-Crash: Lane Change / Cut-In" },
+    { "key": "red_light_violation",   "title": "Cross-Traffic Red Light Runner",    "category": "intersection", "weather": "ClearNoon", "trigger_dist_m": 45.0, "reg_ref": "CA CVC 21453" },
+    { "key": "unprotected_left",      "title": "Oncoming Unprotected Left Turn",     "category": "intersection", "weather": "ClearNoon", "trigger_dist_m": 42.0, "reg_ref": "NHTSA Pre-Crash: LTAP/OD" },
+    { "key": "emergency_vehicle",     "title": "Emergency Vehicle Yield",           "category": "incident",   "weather": "ClearNoon", "trigger_dist_m": 20.0, "reg_ref": "CA CVC 21806" },
+    { "key": "cyclist_merge",         "title": "Cyclist Merging Into Lane",         "category": "vru",       "weather": "ClearNoon", "trigger_dist_m": 18.0, "reg_ref": "CA CVC 21760" },
+    { "key": "wrong_way_driver",      "title": "Head-On Wrong-Way Driver",          "category": "incident",   "weather": "ClearNoon", "trigger_dist_m": 55.0, "reg_ref": "NHTSA Pre-Crash: Opposite Direction" },
+    { "key": "occluded_pedestrian",   "title": "Occluded Pedestrian Dash-Out",      "category": "vru",       "weather": "ClearNoon", "trigger_dist_m": 15.0, "reg_ref": "Euro NCAP CPNC-style" },
+    { "key": "construction_zone",     "title": "Construction Zone Forced Merge",    "category": "incident",   "weather": "ClearNoon", "trigger_dist_m": 38.0, "reg_ref": "CA MUTCD Temporary Traffic Control" },
+    { "key": "adverse_weather",       "title": "Hard Rain + Lead Vehicle Brake",    "category": "weather",    "weather": "HardRainSunset", "trigger_dist_m": 17.0, "reg_ref": "CA DMV AV Program - Adverse Weather" },
+    { "key": "night_pedestrian",      "title": "Night-Time Pedestrian Crossing",    "category": "vru",       "weather": "Night", "trigger_dist_m": 22.0, "reg_ref": "FMVSS 127-aligned Low-Light PAEB" },
+    { "key": "jaywalking_group",     "title": "Multi-Pedestrian Jaywalking Group", "category": "vru",       "weather": "CloudyNoon", "trigger_dist_m": 26.0, "reg_ref": "CA DMV AV Program - VRU Interaction" },
+    { "key": "sudden_brake",          "title": "Lead Vehicle Panic Brake",          "category": "highway",   "weather": "ClearNoon", "trigger_dist_m": 15.0, "reg_ref": "NHTSA Pre-Crash: Rear-End (Lead Decelerating)" },
+    { "key": "stationary_hazard",     "title": "Stalled Vehicle In Lane",           "category": "incident",   "weather": "ClearNoon", "trigger_dist_m": 32.0, "reg_ref": "NHTSA Pre-Crash: Rear-End (Lead Stopped)" },
+    { "key": "intersection_gridlock", "title": "Signal Failure + Cross Traffic",    "category": "intersection", "weather": "CloudyNoon", "trigger_dist_m": 40.0, "reg_ref": "CA CVC 21800(d)" },
+    { "key": "motorcycle_lane_splitting", "title": "Motorcycle Lane-Splitting",     "category": "highway",   "weather": "ClearNoon", "trigger_dist_m": 14.0, "reg_ref": "CA V.C. 21658.1" },
+    { "key": "bus_stop_pedestrian",   "title": "Bus-Stop Pedestrian Dart-Out",      "category": "vru",       "weather": "ClearNoon", "trigger_dist_m": 22.0, "reg_ref": "CA DMV AV Program - Transit VRUs" },
+    { "key": "highway_onramp_merge",  "title": "Freeway On-Ramp Merge Conflict",    "category": "highway",   "weather": "ClearNoon", "trigger_dist_m": 30.0, "reg_ref": "NHTSA Pre-Crash: Lane Change / Merge" },
+    { "key": "dui_erratic_weave",     "title": "Impaired Driver Erratic Weave",     "category": "incident",   "weather": "ClearNoon", "trigger_dist_m": 18.0, "reg_ref": "NHTSA Impairment Precursor" },
+    { "key": "running_stop_sign",     "title": "Running Stop Sign / Cross Traffic", "category": "intersection", "weather": "ClearNoon", "trigger_dist_m": 22.0, "reg_ref": "CA CVC 22450" },
+    { "key": "truck_breakdown",       "title": "Disabled Truck Blocking Lane",      "category": "incident",   "weather": "ClearNoon", "trigger_dist_m": 32.0, "reg_ref": "Caltrans Move-Over / FMS" },
+    { "key": "cyclist_overtake_close","title": "Unsafe Close-Pass of Cyclist",      "category": "vru",       "weather": "ClearNoon", "trigger_dist_m": 24.0, "reg_ref": "CA V.C. 21760" },
+    { "key": "road_debris",           "title": "Roadway Debris / Object Avoidance", "category": "incident",   "weather": "ClearNoon", "trigger_dist_m": 30.0, "reg_ref": "Caltrans FMS - Object on Roadway" }
+  ],
+  "total": 23
+}

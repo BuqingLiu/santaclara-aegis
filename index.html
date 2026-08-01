@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SantaClara Aegis · 自动驾驶安全仿真与场景数据订阅平台（在线订阅 · 全球收款）</title>
+<meta name="description" content="SantaClara Aegis — 基于 CARLA 的自动驾驶安全仿真与场景数据订阅平台。23 类安全关键场景、可复现带标签数据、DMV 风格审计报告。支持在线订阅、自动收款（信用卡 / 微信 / 支付宝）。"/>
+<meta name="theme-color" content="#0B1F3A"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="SantaClara Aegis · 自动驾驶安全仿真与场景数据订阅"/>
+<meta property="og:description" content="23 类安全关键场景、可复现带标签数据、DMV 风格合规报告。在线订阅，自动收款（信用卡/微信/支付宝）。"/>
+<meta property="og:image" content="assets/pedestrian-crossing.png"/>
+<meta property="og:url" content="https://buqingliu.github.io/santaclara-aegis/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<style>
+  :root{
+    --navy:#0B1F3A; --navy2:#13294B; --ink:#16223a; --muted:#5b6b85;
+    --line:#e4eaf3; --bg:#ffffff; --bg2:#f5f8fc; --bg3:#eef3fa;
+    --cyan:#22d3ee; --blue:#2c7be5; --gold:#c9a86a;
+    --grad:linear-gradient(135deg,#34e0e8 0%,#2c7be5 100%);
+    --shadow:0 10px 30px rgba(13,31,58,.08); --shadow-lg:0 20px 50px rgba(13,31,58,.14);
+    --radius:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:10px}
+  h1,h2,h3{color:var(--navy);line-height:1.2}
+  section{padding:84px 0}
+  .section-alt{background:var(--bg2)}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(12px);
+    background:rgba(255,255,255,.86);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy);font-size:18px}
+  .brand img{width:30px;height:30px}
+  .nav-links{display:flex;gap:28px;font-size:14.5px;color:var(--muted);font-weight:600}
+  .nav-links a:hover{color:var(--blue)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:700;font-size:14.5px;cursor:pointer;border:1px solid transparent;transition:.18s;text-align:center;justify-content:center}
+  .btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 22px rgba(44,123,229,.35)}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(44,123,229,.45)}
+  .btn-ghost{background:#fff;color:var(--navy);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+  .btn-gold{background:linear-gradient(135deg,#e7c98a,#c9a86a);color:#3a2c10;box-shadow:0 8px 22px rgba(201,168,106,.4)}
+  .btn-gold:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(201,168,106,.5)}
+  .btn-sm{padding:8px 16px;font-size:13.5px}
+  .btn-block{width:100%}
+
+  /* HERO */
+  .hero{position:relative;background:radial-gradient(1200px 500px at 70% -10%,rgba(44,123,229,.35),transparent 60%),
+    radial-gradient(800px 400px at 10% 10%,rgba(34,211,238,.22),transparent 55%),linear-gradient(180deg,#0a1a33,#0B1F3A 60%,#0c223f);
+    color:#eaf1fb;overflow:hidden}
+  .hero .wrap{padding:96px 24px 86px}
+  .hero h1{color:#fff;font-size:46px;font-weight:850;letter-spacing:-.5px;max-width:780px}
+  .hero p.sub{margin-top:20px;font-size:18px;color:#b9c8e0;max-width:660px}
+  .hero-cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+  .hero .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.3)}
+  .hero .btn-ghost:hover{border-color:var(--cyan);color:#fff}
+  .trust{margin-top:40px;display:flex;gap:26px;flex-wrap:wrap;color:#8fa3c4;font-size:13.5px;font-weight:600}
+  .trust span{display:inline-flex;align-items:center;gap:7px}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:54px}
+  .stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px 18px}
+  .stat b{display:block;font-size:30px;color:#fff;font-weight:850}
+  .stat small{color:#9fb1cf;font-size:13px}
+
+  /* VALUE */
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow);transition:.2s}
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+  .ic{width:44px;height:44px;border-radius:12px;background:var(--bg3);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .ic svg{width:24px;height:24px;stroke:var(--blue)}
+  .card h3{font-size:17px;margin-bottom:8px}
+  .card p{font-size:14.5px;color:var(--muted)}
+
+  /* SECTION HEAD */
+  .shead{text-align:center;max-width:680px;margin:0 auto 46px}
+  .shead h2{font-size:34px;font-weight:830;letter-spacing:-.4px}
+  .shead p{margin-top:14px;color:var(--muted);font-size:16px}
+
+  /* SCENARIOS */
+  .filters{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+  .chip{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:13.5px;font-weight:600;color:var(--muted);cursor:pointer;transition:.15s}
+  .chip:hover{border-color:var(--blue);color:var(--blue)}
+  .chip.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .scn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .scn{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px;transition:.18s;position:relative;overflow:hidden}
+  .scn:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#cfe0f5}
+  .scn .tag{display:inline-block;font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:10px}
+  .t-vru{background:#e7f6f2;color:#0f8a72}.t-intersection{background:#eef0fb;color:#4453c9}
+  .t-highway{background:#fdf0e6;color:#c4762a}.t-weather{background:#e8f1fd;color:#2c7be5}
+  .t-incident{background:#fdeaea;color:#c0392b}
+  .scn h4{font-size:15.5px;color:var(--navy);font-weight:750}
+  .scn .en{font-size:12.5px;color:var(--muted);margin:2px 0 8px}
+  .scn .reg{font-size:12px;color:#8294b0;border-top:1px dashed var(--line);padding-top:9px;margin-top:6px}
+  .scn .num{position:absolute;top:14px;right:16px;font-size:13px;color:#c4d0e2;font-weight:800}
+
+  /* GALLERY */
+  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gal{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#0c1b33}
+  .gal img{width:100%;height:200px;object-fit:cover;display:block;transition:.3s}
+  .gal:hover img{transform:scale(1.05)}
+  .gal .cap{position:absolute;left:0;right:0;bottom:0;padding:12px 14px;background:linear-gradient(180deg,transparent,rgba(8,18,38,.86));color:#fff;font-size:13.5px;font-weight:600}
+
+  /* ARCHITECTURE */
+  .arch{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+  .arch img{width:100%;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:var(--shadow)}
+  .steps{display:flex;flex-direction:column;gap:18px}
+  .step{display:flex;gap:14px}
+  .step .n{flex:0 0 34px;height:34px;border-radius:10px;background:var(--grad);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+  .step h4{font-size:15.5px;color:var(--navy)}
+  .step p{font-size:14px;color:var(--muted)}
+
+  /* DATA PREVIEW */
+  .code{background:#0c1b33;color:#cfe0f5;border-radius:14px;padding:22px;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:13px;line-height:1.7;overflow:auto}
+  .code .k{color:#7fd1ff}.code .s{color:#9be7c4}.code .c{color:#6b7d9c}
+  .dp-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+  .dp-grid ul{list-style:none;font-size:14.5px;color:var(--muted)}
+  .dp-grid li{padding:7px 0;border-bottom:1px solid var(--line);display:flex;gap:10px}
+  .dp-grid li b{color:var(--navy)}
+
+  /* COMPLIANCE */
+  .comp-table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:14.5px}
+  .comp-table th,.comp-table td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line)}
+  .comp-table th{background:var(--navy);color:#fff;font-weight:700;font-size:13.5px}
+  .comp-table tr:last-child td{border-bottom:none}
+  .comp-table td:first-child{font-weight:700;color:var(--navy)}
+
+  /* PRICING */
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+  .plan{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 26px;display:flex;flex-direction:column;box-shadow:var(--shadow);position:relative}
+  .plan.feature{border:2px solid var(--blue);box-shadow:var(--shadow-lg);transform:translateY(-6px)}
+  .plan .ribbon{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-size:12px;font-weight:800;padding:5px 14px;border-radius:999px;box-shadow:0 6px 16px rgba(44,123,229,.4)}
+  .plan h3{font-size:20px}
+  .plan .desc{color:var(--muted);font-size:14px;margin:6px 0 18px;min-height:40px}
+  .plan .price{font-size:38px;font-weight:850;color:var(--navy);line-height:1}
+  .plan .price .cur{font-size:20px;vertical-align:top;margin-right:2px}
+  .plan .price .per{font-size:14px;color:var(--muted);font-weight:600}
+  .plan .eq{font-size:13.5px;color:#8a9bb5;margin-top:8px;font-weight:600}
+  .plan .payhint{font-size:12px;color:#9aa9c2;margin-top:4px}
+  .plan ul{list-style:none;margin:20px 0 22px;flex:1}
+  .plan li{padding:8px 0;font-size:14px;color:#38465e;display:flex;gap:10px}
+  .plan li svg{width:18px;height:18px;stroke:#1f9d6b;flex:0 0 18px;margin-top:3px}
+  .paymethods{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}
+  .paymethods span{font-size:11.5px;padding:3px 9px;border-radius:999px;background:var(--bg3);color:#46566f;font-weight:600}
+
+  /* LEAD FORM */
+  .lead{background:linear-gradient(135deg,#0a1a33,#102a4d);color:#fff;border-radius:24px;padding:56px 34px;box-shadow:var(--shadow-lg);text-align:center}
+  .lead h2{color:#fff;font-size:30px}
+  .lead p{color:#b9c8e0;margin:14px auto 26px;max-width:580px}
+  .lead form{display:flex;gap:10px;max-width:640px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+  .lead input{flex:1;min-width:200px;padding:14px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:14.5px}
+  .lead input::placeholder{color:#9fb1cf}
+  .lead .chan{margin-top:20px;display:flex;gap:22px;justify-content:center;flex-wrap:wrap;color:#9fb1cf;font-size:13.5px}
+  .lead .chan b{color:#eaf1fb}
+  #leadOk{display:none;margin-top:18px;color:#7ef0c8;font-weight:700}
+
+  /* FAQ */
+  .faq{max-width:820px;margin:0 auto}
+  .qa{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;background:#fff;overflow:hidden}
+  .qa summary{padding:18px 22px;font-weight:700;color:var(--navy);cursor:pointer;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .qa summary::-webkit-details-marker{display:none}
+  .qa summary .pm{color:var(--blue);font-size:22px;font-weight:400}
+  .qa[open] summary .pm{transform:rotate(45deg)}
+  .qa div{padding:0 22px 20px;color:var(--muted);font-size:14.5px}
+
+  /* CTA */
+  .cta{background:linear-gradient(135deg,#0a1a33,#102a4d);color:#fff;text-align:center;border-radius:24px;padding:60px 30px;box-shadow:var(--shadow-lg)}
+  .cta h2{color:#fff;font-size:32px}
+  .cta p{color:#b9c8e0;margin:14px auto 28px;max-width:560px}
+  .cta .hero-cta{justify-content:center}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:13.5px}
+  .foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+  .foot-in a{color:var(--blue);font-weight:600;margin-left:14px}
+
+  @media(max-width:900px){
+    .grid-4,.stats,.scn-grid,.price-grid,.gal-grid{grid-template-columns:1fr 1fr}
+    .arch,.dp-grid{grid-template-columns:1fr}
+    .hero h1{font-size:34px}
+  }
+  @media(max-width:600px){
+    .grid-4,.stats,.scn-grid,.price-grid,.gal-grid{grid-template-columns:1fr}
+    .nav-links{display:none}
+    section{padding:60px 0}
+  }
+
+  /* ===== 48H LAUNCH BAR ===== */
+  .topbar{background:linear-gradient(90deg,#b8232f,#e2573f);color:#fff;font-size:14px;font-weight:600;
+    padding:9px 0;text-align:center;letter-spacing:.2px}
+  .topbar b{font-weight:800}
+  .topbar .cd{display:inline-block;background:rgba(0,0,0,.22);border-radius:6px;padding:2px 9px;margin:0 4px;
+    font-variant-numeric:tabular-nums;font-weight:800}
+  .topbar a{text-decoration:underline;margin-left:8px}
+
+  /* ===== ONE-TIME PACKS ===== */
+  .pack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
+  @media(max-width:980px){.pack-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.pack-grid{grid-template-columns:1fr}}
+  .pack{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;
+    display:flex;flex-direction:column;position:relative;box-shadow:var(--shadow);transition:.18s}
+  .pack:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+  .pack.hot{border:2px solid #e2573f;box-shadow:0 16px 40px rgba(226,87,63,.18)}
+  .pack .tag{position:absolute;top:-11px;left:20px;background:#e2573f;color:#fff;font-size:11.5px;
+    font-weight:800;padding:4px 11px;border-radius:999px;letter-spacing:.05em}
+  .pack h3{font-size:18px;margin-bottom:4px}
+  .pack .sk{font-size:12.5px;color:var(--muted);margin-bottom:14px}
+  .pack .pnow{font-size:34px;font-weight:850;color:var(--navy);line-height:1}
+  .pack .pnow small{font-size:15px;font-weight:700;color:var(--muted)}
+  .pack .pold{font-size:13.5px;color:#98a4b8;text-decoration:line-through;margin-top:5px}
+  .pack .pusd{font-size:13px;color:var(--muted);margin-top:2px}
+  .pack ul{list-style:none;margin:16px 0 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .pack ul li{font-size:13.6px;color:#3d4d68;padding-left:20px;position:relative;line-height:1.5}
+  .pack ul li::before{content:"✓";position:absolute;left:0;color:#0f8a72;font-weight:800}
+  .pack .need{font-size:12px;color:#98a4b8;margin-bottom:12px}
+
+  /* ===== GUARANTEE ===== */
+  .guar{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+  @media(max-width:800px){.guar{grid-template-columns:1fr}}
+  .guar div{background:#f0f9f5;border:1px solid #cfe9dd;border-radius:12px;padding:16px 18px}
+  .guar h4{color:#0f6b57;font-size:15px;margin-bottom:5px}
+  .guar p{font-size:13.4px;color:#3d5b52;margin:0}
+
+  /* ===== PAY MODAL ===== */
+  .mask{position:fixed;inset:0;background:rgba(11,31,58,.62);backdrop-filter:blur(3px);z-index:200;
+    display:none;align-items:center;justify-content:center;padding:20px}
+  .mask.on{display:flex}
+  .modal{background:#fff;border-radius:18px;max-width:560px;width:100%;padding:30px;position:relative;
+    max-height:92vh;overflow:auto;box-shadow:var(--shadow-lg)}
+  .modal h3{font-size:21px;margin-bottom:6px}
+  .modal .msub{color:var(--muted);font-size:14px;margin-bottom:18px}
+  .modal .amt-box{background:var(--bg3);border-radius:12px;padding:14px 18px;margin-bottom:18px;
+    display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:6px}
+  .modal .amt-box b{font-size:30px;color:var(--navy)}
+  .qrs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:520px){.qrs{grid-template-columns:1fr}}
+  .qr{border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+  .qr img{width:100%;max-width:190px;height:auto;border-radius:8px;display:block;margin:0 auto 8px}
+  .qr .ph{width:100%;max-width:190px;aspect-ratio:1;margin:0 auto 8px;border:2px dashed #cbd5e3;border-radius:8px;
+    display:flex;align-items:center;justify-content:center;color:#98a4b8;font-size:12.5px;text-align:center;padding:10px;line-height:1.5}
+  .qr .nm{font-weight:700;font-size:14px}
+  .steps{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:14px 16px;margin-top:16px;font-size:13.6px;color:#78500a}
+  .steps ol{margin:6px 0 0 18px;display:flex;flex-direction:column;gap:5px}
+  .mclose{position:absolute;top:14px;right:16px;background:none;border:none;font-size:26px;color:#98a4b8;cursor:pointer;line-height:1}
+  .alt-pay{margin-top:16px;font-size:13.4px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  .alt-pay a{color:var(--blue);font-weight:700}
+</style>
+</head>
+<body>
+
+<!-- 48H LAUNCH BAR -->
+<div class="topbar">
+  🚀 <b>首发限时</b>：一次性场景数据包最高直降 ¥2,000，剩余
+  <span class="cd" id="cdDay">--</span>天
+  <span class="cd" id="cdHour">--</span>时
+  <span class="cd" id="cdMin">--</span>分
+  <span class="cd" id="cdSec">--</span>秒
+  <a href="#packs">立即查看 →</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-in">
+    <div class="brand"><img src="assets/logo.svg" alt="logo"/>SantaClara Aegis</div>
+    <div class="nav-links">
+      <a href="#scenarios">场景目录</a>
+      <a href="#gallery">场景实拍</a>
+      <a href="#data">数据样本</a>
+      <a href="#compliance">合规</a>
+      <a href="#packs" style="color:#e2573f">数据包 · 首发价</a>
+      <a href="#pricing">订阅</a>
+      <a href="docs/index.md">文档</a>
+    </div>
+    <a href="#packs" class="btn btn-primary btn-sm">立即购买</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--cyan)">AUTONOMOUS SAFETY · SIMULATION · DATA · 在线订阅全球收款</div>
+    <h1>把合规证据，变成可订阅的仿真数据资产</h1>
+    <p class="sub">SantaClara Aegis 是基于 CARLA 的自动驾驶安全仿真与场景数据订阅平台。23 类安全关键场景、可复现的逐帧标签数据、DMV 风格的审计报告——让 ADAS / AV 团队更快通过监管、训练算法、验证行为。支持在线订阅，信用卡 / 微信 / 支付宝自动收款。</p>
+    <div class="hero-cta">
+      <a href="#packs" class="btn btn-primary">买数据包 · 首发价 ¥399 起</a>
+      <a href="#pricing" class="btn btn-ghost">查看订阅方案</a>
+      <a href="docs/index.md" class="btn btn-ghost" style="background:rgba(255,255,255,.08);color:#eaf1fb;border-color:rgba(255,255,255,.28)">阅读技术文档</a>
+    </div>
+    <div class="trust">
+      <span><i class="dot"></i> 对齐 CA DMV / NHTSA 框架</span>
+      <span><i class="dot"></i> 20 Hz 确定性同步仿真</span>
+      <span><i class="dot"></i> 23 类安全关键场景</span>
+      <span><i class="dot"></i> 笔记本即可运行</span>
+      <span><i class="dot"></i> 在线订阅 · 自动收款</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>23</b><small>安全关键场景类</small></div>
+      <div class="stat"><b>20 Hz</b><small>逐帧标签数据</small></div>
+      <div class="stat"><b>6+</b><small>法规框架对齐</small></div>
+      <div class="stat"><b>10 天</b><small>交付即可运行</small></div>
+    </div>
+  </div>
+</header>
+
+<!-- FOUNDING MEMBER BANNER -->
+<div style="background:linear-gradient(90deg,#0b3d2e,#0f5132);border-top:1px solid #1d7a4f;border-bottom:1px solid #1d7a4f;color:#eafff3;font-size:14px">
+  <div class="wrap" style="padding:12px 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+    <div><b>首发 Founding-Member 席位 · 仅 20 个 · 8/31 关闭</b> —— 锁定首发价（Core-4 ¥1,999 / Full-23 ¥4,999），并享 <b>7 天无理由退款</b>。国内买家支付宝扫码即付，已上线。</div>
+    <a href="#packs" class="btn btn-primary" style="background:#16c784;border-color:#16c784;white-space:nowrap">立即锁定席位 →</a>
+  </div>
+</div>
+
+<!-- VALUE -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">为什么选择 Aegis</div>
+      <h2>不建仿真栈，直接拿到合规级证据</h2>
+      <p>从许可审查、算法训练到行为验证，一套订阅覆盖自动驾驶团队的硬需求。</p>
+    </div>
+    <div class="grid-4">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4v16h16"/><path d="M4 14l4-4 4 4 4-6 4 4"/></svg></div>
+        <h3>合规证据</h3>
+        <p>23 类场景自动执行、自动评分，产出 DMV 风格合规报告，直接用于许可审查与尽调。</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 3v18"/></svg></div>
+        <h3>标签化数据</h3>
+        <p>20 Hz 遥测、真值事件、摄像头帧与评分 KPI，开箱即用，适合算法训练与回归验证。</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>审计就绪</h3>
+        <p>一条命令生成 PDF/MD 报告与指标工作簿，可交付评审、投资人与合作伙伴。</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+        <h3>真实道路迁移</h3>
+        <p>场景基于相对道路拓扑构建，可从 CARLA 标准地图无缝迁移到客户真实走廊（如 El Camino Real × Lawrence）。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIOS -->
+<section class="section-alt" id="scenarios">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">SCENARIO CATALOG</div>
+      <h2>23 类安全关键场景</h2>
+      <p>每一类都映射到权威法规或碰撞前典型场景（CA DMV / NHTSA / Euro NCAP / FMVSS / Caltrans）。</p>
+    </div>
+    <div class="filters" id="filters">
+      <button class="chip active" data-f="all">全部</button>
+      <button class="chip" data-f="vru">弱势道路使用者</button>
+      <button class="chip" data-f="intersection">交叉口</button>
+      <button class="chip" data-f="highway">高速</button>
+      <button class="chip" data-f="weather">天气</button>
+      <button class="chip" data-f="incident">突发事件</button>
+    </div>
+    <div class="scn-grid" id="scnGrid"><!-- JS injected --></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">SCENARIO CAPTURE</div>
+      <h2>场景实拍 · CARLA 仿真画面</h2>
+      <p>以下为平台在 CARLA 中实际仿真输出的追车摄像头画面（节选）。</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal"><img src="assets/pedestrian-crossing.png" alt="pedestrian crossing"/><div class="cap">行人横穿 Pedestrian Crossing</div></div>
+      <div class="gal"><img src="assets/night-pedestrian.png" alt="night pedestrian"/><div class="cap">夜间行人 Night Pedestrian</div></div>
+      <div class="gal"><img src="assets/construction-zone.png" alt="construction zone"/><div class="cap">施工区并线 Construction Zone</div></div>
+      <div class="gal"><img src="assets/intersection-gridlock.png" alt="intersection gridlock"/><div class="cap">交叉口僵局 Gridlock</div></div>
+      <div class="gal"><img src="assets/wrong-way-driver.png" alt="wrong way driver"/><div class="cap">对向逆行 Wrong-Way</div></div>
+      <div class="gal"><img src="assets/emergency-vehicle.png" alt="emergency vehicle"/><div class="cap">紧急车辆让行 Emergency</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="section-alt" id="how">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">HOW IT WORKS</div>
+      <h2>从驾驶域到可辩护的证据</h2>
+      <p>确定性 CARLA 仿真 + 专有行为引擎，输出可复现、带标签、可审计的安全证据。</p>
+    </div>
+    <div class="arch">
+      <img src="assets/architecture.svg" alt="系统架构"/>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><div><h4>定义驾驶域（ODD）</h4><p>地图（标准或客户专属 OpenDRIVE）、天气与车辆画像，确定仿真上下文。</p></div></div>
+        <div class="step"><div class="n">2</div><div><h4>专有场景引擎（elite™）</h4><p>确定性运行时构建并驱动每个安全事件，运行安全行为模型（含排队保持、纵/横向安全逻辑）并评分。</p></div></div>
+        <div class="step"><div class="n">3</div><div><h4>CARLA 确定性仿真</h4><p>20 Hz 同步步进、种子化交通流，每次运行在场景逻辑层可完整复现。</p></div></div>
+        <div class="step"><div class="n">4</div><div><h4>采集与评分</h4><p>逐帧记录动力学、雷达与真值，生成数据集并汇总为 DMV 风格合规报告。</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATA -->
+<section id="data">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">DATA PACKAGE</div>
+      <h2>每个场景，一份自包含数据集</h2>
+      <p>逐帧标签 + 真值事件 + 证据帧 + 评分摘要，可直接用于训练与评审。</p>
+    </div>
+    <div class="dp-grid">
+      <div>
+        <ul>
+          <li><b>telemetry.csv</b> 20 Hz 动力学、控制指令、威胁间距、TTC</li>
+          <li><b>events.json</b> 真值触发时间线与碰撞日志</li>
+          <li><b>frames/*.png</b> 追车摄像头证据帧</li>
+          <li><b>summary.json</b> 评分 KPI（结论、最小 TTC、最小间距…）</li>
+          <li><b>compliance_report.pdf/.md</b> 汇总合规报告</li>
+        </ul>
+      </div>
+      <div class="code">
+<span class="c"># summary.json（节选）</span>
+{
+  <span class="k">"scenario"</span>: <span class="s">"pedestrian_crossing"</span>,
+  <span class="k">"verdict"</span>: <span class="s">"PASS"</span>,
+  <span class="k">"min_ttc_s"</span>: <span class="s">1.49</span>,
+  <span class="k">"min_gap_m"</span>: <span class="s">9.4</span>,
+  <span class="k">"max_decel_mps2"</span>: <span class="s">4.10</span>,
+  <span class="k">"aeb_activations"</span>: <span class="s">1</span>,
+  <span class="k">"collisions"</span>: <span class="s">0</span>
+}
+<span class="c"># telemetry.csv（节选）</span>
+frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
+80,4.00,48.6,pedestrian,23.8,1.77,23.8
+120,6.00,22.4,pedestrian,9.4,1.49,9.4
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="section-alt" id="compliance">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">COMPLIANCE</div>
+      <h2>对齐主流安全与监管框架</h2>
+      <p>仿真证据作为安全案例、许可交互与尽调的支撑材料（非替代道路验证）。</p>
+    </div>
+    <table class="comp-table">
+      <tr><th>框架</th><th>Aegis 的映射方式</th></tr>
+      <tr><td>CA DMV AV Program (13 CCR §227–228)</td><td>场景证据、逐场景评分 KPI、DMV 风格合规报告</td></tr>
+      <tr><td>NHTSA Pre-Crash Typology</td><td>加塞、追尾（前车减速/静止）、LTAP/OD、对向场景</td></tr>
+      <tr><td>CA Vehicle Code</td><td>CVC 21453 / 21806 / 21760 / 21800(d) / 22450 / 21658.1</td></tr>
+      <tr><td>CA MUTCD</td><td>施工区临时交通控制 / 强制并线</td></tr>
+      <tr><td>Euro NCAP CPNC</td><td>遮挡行人突现案例</td></tr>
+      <tr><td>FMVSS 127</td><td>低照度行人 AEB 案例</td></tr>
+      <tr><td>Caltrans FMS</td><td>让行 / 突发事件、路面障碍物案例</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ONE-TIME PACKS (48H LAUNCH) -->
+<section id="packs">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow" style="color:#e2573f">48 小时首发 · 一次性买断 · 无需订阅</div>
+      <h2>不想订阅？直接买数据包</h2>
+      <p>已经跑完的成品数据，不是脚本。拍下后 2 小时内发货，支持微信 / 支付宝 / PayPal。<b>7 天无理由退款</b>。</p>
+    </div>
+
+    <div class="pack-grid">
+      <div class="pack">
+        <h3>体验包 Trial-1</h3>
+        <div class="sk">先验货，不满意直接退</div>
+        <div class="pnow">¥399</div>
+        <div class="pold">原价 ¥599</div>
+        <div class="pusd">≈ $55 USD</div>
+        <ul>
+          <li>任选 1 个场景的完整数据</li>
+          <li>逐帧自车遥测 CSV</li>
+          <li>逐帧真值标注 JSONL</li>
+          <li>雷达回波原始数据</li>
+          <li>HTML 合规报告样例</li>
+          <li>后续升级全套可抵扣 ¥399</li>
+        </ul>
+        <button class="btn btn-ghost btn-block" data-buy="trial" data-amt="399" data-nm="体验包 Trial-1">立即购买</button>
+      </div>
+
+      <div class="pack hot">
+        <div class="tag">最多人选</div>
+        <h3>核心场景包 Core-4</h3>
+        <div class="sk">工程师自己就能拍板的档位</div>
+        <div class="pnow">¥1,999</div>
+        <div class="pold">原价 ¥2,999</div>
+        <div class="pusd">≈ $279 USD</div>
+        <ul>
+          <li><b>4 类核心安全场景</b>全量数据</li>
+          <li>行人突然横穿 · 车辆恶意加塞</li>
+          <li>侧向闯红灯 · 紧急车辆避让</li>
+          <li>每场景含遥测 / 真值 / 雷达 / 指标</li>
+          <li>4 份 HTML 合规报告</li>
+          <li>实测 4/4 通过，零碰撞</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-buy="core4" data-amt="1999" data-nm="核心场景包 Core-4">立即购买</button>
+      </div>
+
+      <div class="pack">
+        <h3>全库场景包 Full-23</h3>
+        <div class="sk">一次拿全，省掉一个多月工期</div>
+        <div class="pnow">¥4,999</div>
+        <div class="pold">原价 ¥6,999</div>
+        <div class="pusd">≈ $699 USD</div>
+        <ul>
+          <li><b>全部 23 类</b>安全关键场景数据</li>
+          <li>完整场景清单与参数说明</li>
+          <li>汇总合规报告 + 指标工作簿</li>
+          <li>12 个月新增场景免费更新</li>
+          <li>可用于论文实验与课题验收</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-buy="full23" data-amt="4999" data-nm="全库场景包 Full-23">立即购买</button>
+      </div>
+
+      <div class="pack">
+        <h3>定制场景开发</h3>
+        <div class="sk">按你的 ODD 做，可拆定金</div>
+        <div class="pnow">¥8,000<small> 起</small></div>
+        <div class="pold">原价 ¥12,000</div>
+        <div class="pusd">≈ $1,120 USD 起</div>
+        <ul>
+          <li>按客户 ODD 定制 3-5 个场景</li>
+          <li>交付可复现运行脚本</li>
+          <li>交付验收报告</li>
+          <li>支持 50% 定金 + 50% 验收付</li>
+          <li>可开发票 / 走对公</li>
+        </ul>
+        <button class="btn btn-gold btn-block" data-buy="custom" data-amt="8000" data-nm="定制场景开发（定金 50%）">谈定制需求</button>
+      </div>
+    </div>
+
+    <div class="guar">
+      <div><h4>🛡 7 天无理由退款</h4><p>数据与场景描述对不上，全额退，不需要解释理由。风险在我们这边，不在你那边。</p></div>
+      <div><h4>⚡ 2 小时内发货</h4><p>付款时备注邮箱，2 小时内把网盘链接和提取码发到你邮箱，链接永久有效。</p></div>
+      <div><h4>🔬 真实数据，不是脚本</h4><p>CARLA 0.9.16 实跑产出的成品数据，基于圣塔克拉拉真实路网（OSM→OpenDRIVE），非默认地图。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section-alt" id="pricing">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">PRICING · 在线订阅 · 自动收款</div>
+      <h2>透明订阅，按需扩展</h2>
+      <p>年付享 2 个月免费。人民币与美元同屏显示；支持信用卡（Stripe）/ 微信 / 支付宝，点击即付、自动开通。</p>
+    </div>
+    <div class="price-grid">
+      <div class="plan">
+        <h3>Pilot 试点版</h3>
+        <div class="desc">用于评估与单场景验证，快速看到价值。</div>
+        <div class="price" data-cny="¥999" data-usd="$139"><span class="cur">¥</span><span class="amt">999</span><span class="per"> / 月</span></div>
+        <div class="eq">≈ <span data-cny="$139 USD" data-usd="¥999">$139 USD</span> / 月</div>
+        <div class="payhint">年付 ¥9,990（省 2 个月）</div>
+        <div class="paymethods"><span>💳 信用卡</span><span>💚 微信</span><span>🔵 支付宝</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>5 类核心场景</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>样本数据集（带水印）</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>合规报告模板</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>社区支持</li>
+        </ul>
+        <button class="btn btn-ghost btn-block" data-tier="pilot">立即订阅 Pilot</button>
+      </div>
+
+      <div class="plan feature">
+        <div class="ribbon">最受欢迎</div>
+        <h3>Professional 专业版</h3>
+        <div class="desc">持续获取全量场景数据与 API 接入，适合算法团队。</div>
+        <div class="price" data-cny="¥4,999" data-usd="$699"><span class="cur">¥</span><span class="amt">4,999</span><span class="per"> / 月</span></div>
+        <div class="eq">≈ <span data-cny="$699 USD" data-usd="¥4,999">$699 USD</span> / 月</div>
+        <div class="payhint">年付 ¥49,990（省 2 个月）</div>
+        <div class="paymethods"><span>💳 信用卡</span><span>💚 微信</span><span>🔵 支付宝</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>全部 23 类场景</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>订阅 API 接入</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>逐帧标签数据集</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>每月新增场景</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>邮件支持 · SLA</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-tier="pro">立即订阅 Professional</button>
+      </div>
+
+      <div class="plan">
+        <h3>Enterprise 企业版</h3>
+        <div class="desc">定制场景、私有部署与专属 SLA，面向规模团队。</div>
+        <div class="price"><span class="cur">定制</span></div>
+        <div class="eq">含专属报价 · 年框可议</div>
+        <div class="payhint">支持对公转账 / 合同</div>
+        <div class="paymethods"><span>💳 信用卡</span><span>💚 微信</span><span>🔵 支付宝</span><span>🏦 对公</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>专业版全部能力</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>定制场景与走廊</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>私有云 / 本地部署</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>专属 SLA 与客户成功</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>集成与培训</li>
+        </ul>
+        <button class="btn btn-gold btn-block" data-tier="ent">联系销售 · 获取报价</button>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:22px;color:var(--muted);font-size:13.5px">
+      支付由 Stripe / 微信支付 / 支付宝 等持牌机构处理，SantaClara Aegis 不接触你的卡号与密码。未配置收款链接时，按钮将引导你留下需求，我们主动联系——<b>不漏掉任何客户</b>。
+    </p>
+  </div>
+</section>
+
+<!-- LEAD FORM -->
+<section id="lead">
+  <div class="wrap">
+    <div class="lead">
+      <h2>留个邮箱，我们主动联系你</h2>
+      <p>无论你想评估、采购，还是只是想看一份样本合规报告——留下联系方式，一个工作日内必有回应。</p>
+      <form id="leadForm" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+        <input type="email" name="email" placeholder="公司邮箱（必填）" required/>
+        <input type="text" name="need" placeholder="想验证的场景 / 需求（选填）"/>
+        <button type="submit" class="btn btn-primary">提交需求</button>
+      </form>
+      <div id="leadOk">✅ 已收到你的需求，我们会尽快联系你。</div>
+      <div class="chan">
+        <span>📧 <b>邮箱</b> contact@santaclara-aegis.example</span>
+        <span>💬 <b>微信</b> 替换成你的微信号</span>
+        <span>🌐 <b>仓库</b> github.com/BuqingLiu/santaclara-aegis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-alt" id="faq">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">FAQ</div>
+      <h2>常见问题</h2>
+    </div>
+    <div class="faq">
+      <details class="qa" open><summary>和自建仿真栈相比，优势在哪？<span class="pm">+</span></summary>
+        <div>自建一套 CARLA 仿真与合规评分栈通常要 $300K+ 与约 3 个月。Aegis 交付即可运行，并提供已对齐 CA DMV / NHTSA 的 23 类场景与评分逻辑，把工程与合规风险一并外包。</div></details>
+      <details class="qa"><summary>代码是开源的吗？<span class="pm">+</span></summary>
+        <div>本仓库是<strong>对外开放的参考层</strong>（场景定义、CARLA 客户端、传感装置、地图工具与样本数据，MIT 许可）。运行整套仿真的专有行为引擎 <code>elite/</code> 仅向订阅客户交付，以保护核心 IP。</div></details>
+      <details class="qa"><summary>付款后多久开通？<span class="pm">+</span></summary>
+        <div>信用卡 / 微信 / 支付宝支付为<strong>即时自动开通</strong>：支付成功后系统自动下发接入凭证与数据集下载地址。企业版与定制场景在签约后由客户成功团队开通。</div></details>
+      <details class="qa"><summary>能在我们自己的真实道路上跑吗？<span class="pm">+</span></summary>
+        <div>可以。场景基于相对道路拓扑构建，可从标准地图迁移到客户真实走廊。提供 OSM → OpenDRIVE 工具，企业版支持 RoadRunner / UE4 照片级还原与私有部署。</div></details>
+      <details class="qa"><summary>数据怎么交付？<span class="pm">+</span></summary>
+        <div>通过订阅 API 拉取数据集与合规报告，或由托管仿真服务定期产出并回调。详见 <a href="docs/api-reference.md" style="color:var(--blue)">API 文档</a>。</div></details>
+      <details class="qa"><summary>仿真能替代道路验证吗？<span class="pm">+</span></summary>
+        <div>不能也不应替代。Aegis 的仿真证据作为安全案例、许可交互与尽调的<strong>支撑材料</strong>；场景参数可按客户 ODD 配置。</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="wrap">
+    <div class="cta">
+      <h2>用合规级仿真数据，加速你的自动驾驶落地</h2>
+      <p>预约一次演示，我们将用你的驾驶域跑一套场景，并交付一份样本合规报告。</p>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn btn-primary">立即订阅</a>
+        <a href="mailto:contact@santaclara-aegis.example" class="btn btn-ghost" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.3)">预约演示</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div class="brand" style="font-size:16px"><img src="assets/logo.svg" alt="logo" style="width:24px;height:24px"/>SantaClara Aegis</div>
+    <div>© 2026 SantaClara Aegis · 自动驾驶安全仿真与场景数据订阅平台 · 专有引擎按商业订阅交付</div>
+    <div>
+      <a href="https://github.com/BuqingLiu/santaclara-aegis">GitHub</a>
+      <a href="docs/index.md">文档</a>
+      <a href="mailto:contact@santaclara-aegis.example">联系</a>
+    </div>
+  </div>
+</footer>
+
+<!-- PAY MODAL -->
+<div class="mask" id="payMask">
+  <div class="modal" id="payModal">
+    <button class="mclose" onclick="closePay()" aria-label="关闭">×</button>
+    <h3 id="payName">—</h3>
+    <div class="msub" id="paySub">付款后 2 小时内把数据发到你的邮箱</div>
+    <div class="amt-box"><span>应付</span><b id="payAmt">—</b></div>
+    <div class="qrs">
+      <div class="qr">
+        <img id="qrWx" src="assets/qr/wechat.png" alt="微信收款码" onerror="this.style.display='none';document.getElementById('phWx').style.display='flex'">
+        <div class="ph" id="phWx" style="display:none">放入你的微信收款码<br>assets/qr/wechat.png</div>
+        <div class="nm">微信支付</div>
+      </div>
+      <div class="qr">
+        <img id="qrAli" src="assets/qr/alipay.png" alt="支付宝收款码" onerror="this.style.display='none';document.getElementById('phAli').style.display='flex'">
+        <div class="ph" id="phAli" style="display:none">放入你的支付宝收款码<br>assets/qr/alipay.png</div>
+        <div class="nm">支付宝</div>
+      </div>
+    </div>
+    <div class="steps">
+      <b>购买步骤</b>
+      <ol>
+        <li>扫码付款，<b>付款备注填你的邮箱</b>（用于发数据）。</li>
+        <li>点下方「我已付款」留邮箱，我们 2 小时内发网盘链接。</li>
+        <li>7 天无理由退款：与描述对不上全额退。</li>
+      </ol>
+    </div>
+    <div class="alt-pay">
+      海外信用卡 / PayPal 付款（USD 实时到账）：<a id="payStripe" href="https://www.paypal.com/paypalme/BuqingLiu" target="_blank" rel="noopener" style="display:inline;color:#0070ba;font-weight:600">👉 PayPal · paypal.me/BuqingLiu（点此付款）</a><span id="payStripeNa" style="color:#1a7f37;font-weight:600"> ✅ 海外收款已上线 · 美元直付，实时到账</span>
+      <br>企业定制 / 对公发票：<a href="#lead">点此留联系方式 →</a>
+    </div>
+    <div style="margin-top:16px"><a href="#lead" class="btn btn-primary btn-block" onclick="closePay()">我已付款 · 留邮箱收数据</a></div>
+  </div>
+</div>
+
+<script>
+  /* ============================================================
+     支付配置 · 自动收款
+       • 微信/支付宝：把收款码截图命名为 assets/qr/wechat.png 与 assets/qr/alipay.png
+       • 海外付款：PayPal（paypal.me/BuqingLiu）已接好，点「立即订阅」直接跳转付款。
+           —— 注意：该账户为家人账户，存在 ToS/封号连带风险；
+              缓解 = 先 $10 测试单验证到账、单笔≤$300、日≤$800、独立设备+独立 IP。
+              Lemon Squeezy 因 Stripe 不支持中国大陆已 DROP，lemon 字段留空无害。
+       • 任一 tier 配了 paypal/stripe/lemon → 点「立即订阅」直接跳转付款；
+         全部留空 → 弹窗引导留资，不漏客户。
+     ============================================================ */
+  const PAY = {
+    pilot:  { name:"订阅 Pilot · 月度",          amt:"¥999 / 月 (≈ $139 USD)", paypal:"https://www.paypal.com/paypalme/BuqingLiu", stripe:"", lemon:"",  /* ← Lemon Pilot 月付链接（可选） */ wechat:"", alipay:"" },
+    pro:    { name:"订阅 Professional · 月度",   amt:"¥4,999 / 月 (≈ $694 USD)",paypal:"https://www.paypal.com/paypalme/BuqingLiu", stripe:"", lemon:"",  /* ← Lemon Pro 月付链接 */ wechat:"", alipay:"" },
+    ent:    { name:"企业定制 / 对公",            amt:"定制报价 (PayPal · USD)", paypal:"https://www.paypal.com/paypalme/BuqingLiu", stripe:"", lemon:"", wechat:"", alipay:"" },
+    trial:  { name:"体验包 Trial-1",             amt:"¥399（首发价 · ≈ $55）",   paypal:"https://www.paypal.com/paypalme/BuqingLiu/55",  stripe:"", lemon:"", wechat:"", alipay:"" },
+    core4:  { name:"核心场景包 Core-4",          amt:"¥1,999（首发价 · ≈ $278）", paypal:"https://www.paypal.com/paypalme/BuqingLiu/278", stripe:"", lemon:"", wechat:"", alipay:"" },
+    full23: { name:"全库场景包 Full-23",         amt:"¥4,999（首发价 · ≈ $694）", paypal:"https://www.paypal.com/paypalme/BuqingLiu/694", stripe:"", lemon:"", wechat:"", alipay:"" },
+    custom: { name:"定制场景开发（定金 50%）",   amt:"¥8,000 起（50% 预付 ≈ $556）",paypal:"https://www.paypal.com/paypalme/BuqingLiu/556",stripe:"", lemon:"", wechat:"", alipay:"" }
+  };
+  function openPay(id){
+    const p = PAY[id] || {};
+    const url = p.paypal || p.stripe || p.lemon || "";
+    if(url){ window.open(url, "_blank", "noopener"); return; }   // 配了在线支付（PayPal/Stripe/Lemon）则直接跳转付款
+    document.getElementById('payName').textContent = p.name || "购买";
+    document.getElementById('payAmt').textContent  = p.amt  || "";
+    const st = document.getElementById('payStripe'), sna = document.getElementById('payStripeNa');
+    if(url){ st.href = url; st.style.display='inline'; sna.style.display='none'; }
+    else { st.style.display='none'; sna.style.display='inline'; }
+    document.getElementById('payMask').classList.add('on');
+    document.body.style.overflow='hidden';
+  }
+  function closePay(){
+    document.getElementById('payMask').classList.remove('on');
+    document.body.style.overflow='';
+  }
+  document.getElementById('payMask').addEventListener('click',e=>{ if(e.target.id==='payMask') closePay(); });
+
+
+  // Scenario catalog
+  const SCN = [
+    [1,"pedestrian_crossing","Sudden Pedestrian Crossing","弱势道路使用者","VRU","CA DMV AV Program – VRU Interaction"],
+    [2,"cut_in","Aggressive Vehicle Cut-In","高速","Highway","NHTSA Pre-Crash: Lane Change / Cut-In"],
+    [3,"red_light_violation","Cross-Traffic Red Light Runner","交叉口","Intersection","CA CVC 21453"],
+    [4,"unprotected_left","Oncoming Unprotected Left Turn","交叉口","Intersection","NHTSA Pre-Crash: LTAP/OD"],
+    [5,"emergency_vehicle","Emergency Vehicle Yield","突发事件","Incident","CA CVC 21806"],
+    [6,"cyclist_merge","Cyclist Merging Into Lane","弱势道路使用者","VRU","CA CVC 21760"],
+    [7,"wrong_way_driver","Head-On Wrong-Way Driver","突发事件","Incident","NHTSA Pre-Crash: Opposite Direction"],
+    [8,"occluded_pedestrian","Occluded Pedestrian Dash-Out","弱势道路使用者","VRU","Euro NCAP CPNC-style"],
+    [9,"construction_zone","Construction Zone Forced Merge","突发事件","Incident","CA MUTCD Temporary Traffic Control"],
+    [10,"adverse_weather","Hard Rain + Lead Vehicle Brake","天气","Weather","CA DMV AV Program – Adverse Weather"],
+    [11,"night_pedestrian","Night-Time Pedestrian Crossing","弱势道路使用者","VRU","FMVSS 127-aligned Low-Light PAEB"],
+    [12,"jaywalking_group","Multi-Pedestrian Jaywalking Group","弱势道路使用者","VRU","CA DMV AV Program – VRU Interaction"],
+    [13,"sudden_brake","Lead Vehicle Panic Brake","高速","Highway","NHTSA Pre-Crash: Rear-End (Lead Decel.)"],
+    [14,"stationary_hazard","Stalled Vehicle In Lane","突发事件","Incident","NHTSA Pre-Crash: Rear-End (Lead Stopped)"],
+    [15,"intersection_gridlock","Signal Failure + Cross Traffic","交叉口","Intersection","CA CVC 21800(d)"],
+    [16,"motorcycle_lane_splitting","Motorcycle Lane-Splitting","高速","Highway","CA V.C. 21658.1"],
+    [17,"bus_stop_pedestrian","Bus-Stop Pedestrian Dart-Out","弱势道路使用者","VRU","CA DMV AV Program – Transit VRUs"],
+    [18,"highway_onramp_merge","Freeway On-Ramp Merge Conflict","高速","Highway","NHTSA Pre-Crash: Lane Change / Merge"],
+    [19,"dui_erratic_weave","Impaired Driver Erratic Weave","突发事件","Incident","NHTSA Impairment Precursor"],
+    [20,"running_stop_sign","Running Stop Sign / Cross Traffic","交叉口","Intersection","CA CVC 22450"],
+    [21,"truck_breakdown","Disabled Truck Blocking Lane","突发事件","Incident","Caltrans Move-Over / FMS"],
+    [22,"cyclist_overtake_close","Unsafe Close-Pass of Cyclist","弱势道路使用者","VRU","CA V.C. 21760"],
+    [23,"road_debris","Roadway Debris / Object Avoidance","突发事件","Incident","Caltrans FMS – Object on Roadway"]
+  ];
+  const CN={vru:"VRU",intersection:"交叉口",highway:"高速",weather:"天气",incident:"突发事件"};
+  const grid=document.getElementById('scnGrid');
+  function render(f){
+    grid.innerHTML=SCN.filter(s=>f==='all'||s[4].toLowerCase()===f).map(s=>`
+      <div class="scn">
+        <div class="num">${String(s[0]).padStart(2,'0')}</div>
+        <span class="tag t-${s[4].toLowerCase()}">${CN[s[4].toLowerCase()]}</span>
+        <h4>${s[2]}</h4>
+        <div class="en">${s[1]}</div>
+        <div class="reg">⚖ ${s[5]}</div>
+      </div>`).join('');
+  }
+  render('all');
+  document.getElementById('filters').addEventListener('click',e=>{
+    if(!e.target.classList.contains('chip'))return;
+    document.querySelectorAll('#filters .chip').forEach(c=>c.classList.remove('active'));
+    e.target.classList.add('active'); render(e.target.dataset.f);
+  });
+
+  // Currency display — BOTH currencies always visible
+  function applyCur(cur){
+    document.querySelectorAll('.plan .price').forEach(el=>{
+      const v=el.getAttribute('data-'+cur);
+      const sym=cur==='cny'?'¥':'$';
+      const num=v.replace(/[¥$]/g,'');
+      el.querySelector('.cur').textContent=sym;
+      el.querySelector('.amt').textContent=num;
+    });
+    document.querySelectorAll('.plan .eq span[data-cny]').forEach(el=>{
+      el.textContent=el.getAttribute('data-'+cur);
+    });
+  }
+  // wire plan buttons
+  document.querySelectorAll('[data-tier]').forEach(b=>{
+    b.addEventListener('click',()=>openPay(b.dataset.tier));
+  });
+
+  // lead form
+  const lf=document.getElementById('leadForm');
+  lf.addEventListener('submit',e=>{
+    const action=lf.getAttribute('action')||'';
+    if(action.indexOf('REPLACE_WITH_YOUR_FORM_ID')>=0){
+      e.preventDefault();
+      document.getElementById('leadOk').style.display='block';
+      document.getElementById('leadOk').textContent='✅ 已记录（演示模式）。请在 docs/payment-setup.md 配置 Formspree 后正式收集线索。';
+    }
+  });
+
+  // 数据包“立即购买”按钮 → 打开收款弹窗
+  document.querySelectorAll('[data-buy]').forEach(b=>{
+    b.addEventListener('click',()=>openPay(b.dataset.buy));
+  });
+
+  // 48 小时闪购倒计时（与 growth/tracker.json 的 deadline 保持一致）
+  (function(){
+    const end = new Date("2026-08-02T21:30:00+08:00").getTime();
+    const d=document.getElementById('cdDay'),h=document.getElementById('cdHour'),
+          m=document.getElementById('cdMin'),s=document.getElementById('cdSec');
+    if(!d) return;
+    function tick(){
+      let left=Math.max(0,end-Date.now());
+      const dd=Math.floor(left/864e5); left-=dd*864e5;
+      const hh=Math.floor(left/36e5); left-=hh*36e5;
+      const mm=Math.floor(left/6e4); left-=mm*6e4;
+      const ss=Math.floor(left/1e3);
+      d.textContent=dd; h.textContent=String(hh).padStart(2,'0');
+      m.textContent=String(mm).padStart(2,'0'); s.textContent=String(ss).padStart(2,'0');
+    }
+    tick(); setInterval(tick,1000);
+  })();
+</script>
+</body>
+</html>

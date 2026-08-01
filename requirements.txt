@@ -1,0 +1,9 @@
+# Match the carla wheel to YOUR server version:
+#   - CARLA 0.9.15 server -> pip install carla==0.9.15   (PyPI, Python 3.7-3.10)
+#   - CARLA 0.9.16 server -> pip install <CARLA_ROOT>/PythonAPI/carla/dist/carla-0.9.16-cp3XX-*.whl
+carla>=0.9.14
+numpy
+pandas
+matplotlib
+openpyxl
+tqdm

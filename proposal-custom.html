@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SantaClara Aegis — Custom Scenario Package</title>
+<style>
+  :root{
+    --navy:#0a1f3c; --navy2:#102a52; --ink:#16202e; --muted:#5b6b80;
+    --line:#e7ecf3; --bg:#f6f8fb; --card:#ffffff; --gold:#c9a227;
+    --accent:#2563eb; --good:#0f9d58; --goodbg:#e9f7ef;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,system-ui,sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:0 20px 64px}
+  .hero{
+    background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,#14365f 100%);
+    color:#fff;padding:54px 20px 46px;text-align:center;
+  }
+  .hero .brand{letter-spacing:.22em;font-size:12px;color:#9fc0ef;text-transform:uppercase}
+  .hero h1{font-size:34px;margin:14px 0 6px;font-weight:800;letter-spacing:-.5px}
+  .hero .sub{font-size:17px;color:#cfe0f5;max-width:620px;margin:0 auto;font-weight:400}
+  .price-pill{
+    display:inline-flex;align-items:baseline;gap:10px;margin-top:22px;
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+    padding:12px 22px;border-radius:999px;
+  }
+  .price-pill b{font-size:26px}
+  .price-pill span{color:#bcd4f0;font-size:14px}
+  .trust{
+    display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;align-items:center;
+    background:#fff;border-bottom:1px solid var(--line);padding:16px 20px;color:var(--muted);
+    font-size:13.5px;
+  }
+  .trust b{color:var(--navy);font-weight:700}
+  .trust .dot{color:var(--gold)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin-top:24px;box-shadow:0 1px 2px rgba(16,42,82,.04)}
+  .card h2{font-size:20px;margin:0 0 14px;color:var(--navy);letter-spacing:-.3px}
+  .card h2 .n{color:var(--gold);font-weight:800;margin-right:8px}
+  ul.clean{list-style:none;padding:0;margin:0}
+  ul.clean li{position:relative;padding:8px 0 8px 30px;border-bottom:1px dashed var(--line);font-size:15.5px}
+  ul.clean li:last-child{border-bottom:none}
+  ul.clean li:before{content:"✓";position:absolute;left:0;top:8px;color:var(--good);font-weight:800}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:6px}
+  .cell{background:var(--goodbg);border:1px solid #cdebd8;border-radius:12px;padding:14px 16px}
+  .cell .k{font-size:12.5px;color:#1c7a45;text-transform:uppercase;letter-spacing:.04em;font-weight:700}
+  .cell .v{font-size:17px;font-weight:700;color:#0c5130;margin-top:3px}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .step{background:#fafcff;border:1px solid var(--line);border-radius:12px;padding:14px}
+  .step .num{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-bottom:8px}
+  .step b{display:block;font-size:14.5px;color:var(--navy)}
+  .step small{color:var(--muted);font-size:12.5px}
+  .why{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .why .item{border-left:3px solid var(--gold);background:#fffdf6;padding:12px 16px;border-radius:0 10px 10px 0}
+  .why .item b{display:block;color:var(--navy);font-size:15px}
+  .why .item span{font-size:13.5px;color:var(--muted)}
+  .cta{background:linear-gradient(135deg,var(--navy),#14365f);color:#fff;border-radius:16px;padding:30px 28px;margin-top:24px;text-align:center}
+  .cta h2{color:#fff;margin:0 0 8px;font-size:22px}
+  .cta p{color:#cfe0f5;margin:0 0 18px;font-size:15px}
+  .btn{
+    display:inline-block;background:var(--gold);color:#1a1300;font-weight:800;font-size:16px;
+    padding:14px 30px;border-radius:10px;text-decoration:none;box-shadow:0 6px 18px rgba(201,162,39,.35);
+  }
+  .btn:hover{filter:brightness(1.05)}
+  .qr-row{display:flex;gap:18px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+  .qr{background:#fff;border-radius:12px;padding:12px;text-align:center;width:150px}
+  .qr img{width:120px;height:120px;border-radius:8px}
+  .qr small{display:block;color:var(--muted);margin-top:6px;font-size:12px}
+  .note{color:#bcd4f0;font-size:13px;margin-top:16px}
+  .rev{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:8px 16px;border-radius:999px;font-size:13.5px;color:#e7f0fb;margin-top:14px}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
+  footer a{color:var(--accent);text-decoration:none}
+  @media (max-width:680px){
+    .grid,.why{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .hero h1{font-size:27px}
+  }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="brand">SantaClara Aegis</div>
+    <h1>Custom Scenario Package</h1>
+    <div class="sub">Bespoke safety-critical scenarios built for your exact ODD — fully reproducible in CARLA, evidence-ready for certification.</div>
+    <div class="price-pill"><b>¥8,000</b><span>≈ $1,111 USD · one engagement</span></div>
+  </div>
+
+  <div class="trust">
+    <span>Shared with AV safety teams at</span>
+    <b>Foretellix</b><span class="dot">·</span><b>AUMOVIO</b><span class="dot">·</span><b>AVL</b><span class="dot">·</span><b>AVES Reality</b><span class="dot">·</span><b>dSPACE</b><span class="dot">·</span><b>rFpro</b><span class="dot">·</span><b>Vector</b>
+  </div>
+
+  <div class="wrap">
+
+    <div class="card">
+      <h2><span class="n">01</span>What you get</h2>
+      <ul class="clean">
+        <li><b>N bespoke scenarios</b> engineered to your Operational Design Domain — cut-in / occluded pedestrian / unprotected junction / degraded weather / sensor-fault / edge cases you name.</li>
+        <li><b>Full CARLA reproducibility</b> — scenario scripts, OpenDRIVE maps, and runner configs; re-run deterministically on your side.</li>
+        <li><b>Telemetry + ground-truth logs</b> — ego &amp; actor states, bounding boxes, and event markers, exported for your pipeline.</li>
+        <li><b>Compliance evidence pack</b> mapped to CA DMV / Euro NCAP / FMVSS / ISO 21448 (SOTIF) test intentions.</li>
+        <li><b>One 30-minute onboarding call</b> + 14-day Q&amp;A support to tune scenarios to your stack.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">02</span>Terms that make saying yes easy</h2>
+      <div class="grid">
+        <div class="cell"><div class="k">Start with</div><div class="v">50% deposit · ¥4,000</div></div>
+        <div class="cell"><div class="k">Balance on</div><div class="v">acceptance · ¥4,000</div></div>
+        <div class="cell"><div class="k">Delivery in</div><div class="v">5 business days</div></div>
+        <div class="cell"><div class="k">Referral</div><div class="v">15% commission</div></div>
+      </div>
+      <div class="rev">↩️ 7-day no-questions refund on the deposit — zero risk to start.</div>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">03</span>How it works</h2>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><b>Discovery call</b><small>30 min, scope your ODD &amp; edge cases</small></div>
+        <div class="step"><div class="num">2</div><b>Deposit</b><small>50% to start · ¥4,000</small></div>
+        <div class="step"><div class="num">3</div><b>Build &amp; deliver</b><small>5 days · scripts + logs + evidence</small></div>
+        <div class="step"><div class="num">4</div><b>Accept</b><small>balance on sign-off · ¥4,000</small></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">04</span>Why SantaClara Aegis</h2>
+      <div class="why">
+        <div class="item"><b>Reproducible by design</b><span>Every scenario ships as runnable CARLA code — not a PDF you can't act on.</span></div>
+        <div class="item"><b>Compliance-native</b><span>Test intentions pre-mapped to CA DMV / Euro NCAP / FMVSS / ISO 21448.</span></div>
+        <div class="item"><b>23-scenario library</b><span>A proven baseline you extend from, not a blank page.</span></div>
+        <div class="item"><b>Fast &amp; focused</b><span>5-day turnaround, direct engineer contact, no enterprise sales theatre.</span></div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h2>Start your Custom engagement</h2>
+      <p>Pay the 50% deposit to begin — or reply with your preferred method and we'll match it.</p>
+      <a class="btn" href="https://www.paypal.com/paypalme/BuqingLiu/556" target="_blank" rel="noopener">Pay deposit · $556 (≈¥4,000)</a>
+      <div class="qr-row">
+        <div class="qr"><img src="assets/qr/wechat.png" alt="WeChat Pay" /><small>WeChat Pay</small></div>
+        <div class="qr"><img src="assets/qr/alipay.png" alt="Alipay" /><small>Alipay</small></div>
+      </div>
+      <div class="note">Prefer another route? Just reply — we'll send a direct link. Full engagement ¥8,000 / $1,111.</div>
+    </div>
+
+    <footer>
+      SantaClara Aegis · Safety-critical scenario data &amp; simulation<br/>
+      Questions? Reply to this email or open a chat — real engineer, same day.
+    </footer>
+
+  </div>
+</body>
+</html>

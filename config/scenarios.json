@@ -1,0 +1,26 @@
+{
+  "pedestrian_crossing":   {"title": "Sudden Pedestrian Crossing",        "weather": "ClearNoon",      "trigger_dist": 24.0, "needs": [],                "dmv_ref": "CA DMV AV Program - Vulnerable Road User Interaction"},
+  "cut_in":                {"title": "Aggressive Vehicle Cut-In",         "weather": "ClearNoon",      "trigger_dist": 16.0, "needs": ["adjacent_lane"], "dmv_ref": "NHTSA Pre-Crash Typology: Lane Change / Cut-In"},
+  "red_light_violation":   {"title": "Cross-Traffic Red Light Runner",    "weather": "ClearNoon",      "trigger_dist": 45.0, "needs": ["junction"],      "dmv_ref": "CA CVC 21453 - Signal Violation Response"},
+  "unprotected_left":      {"title": "Oncoming Unprotected Left Turn",    "weather": "ClearNoon",      "trigger_dist": 42.0, "needs": ["junction"],      "dmv_ref": "NHTSA Pre-Crash Typology: LTAP/OD"},
+  "emergency_vehicle":     {"title": "Emergency Vehicle Yield",           "weather": "ClearNoon",      "trigger_dist": 20.0, "needs": ["adjacent_lane"], "dmv_ref": "CA CVC 21806 - Yield to Emergency Vehicles"},
+  "cyclist_merge":         {"title": "Cyclist Merging Into Lane",         "weather": "ClearNoon",      "trigger_dist": 18.0, "needs": [],                "dmv_ref": "CA CVC 21760 - Three Feet for Safety Act"},
+  "wrong_way_driver":      {"title": "Head-On Wrong-Way Driver",          "weather": "ClearNoon",      "trigger_dist": 55.0, "needs": [],                "dmv_ref": "NHTSA Pre-Crash Typology: Opposite Direction"},
+  "occluded_pedestrian":   {"title": "Occluded Pedestrian Dash-Out",      "weather": "ClearNoon",      "trigger_dist": 15.0, "needs": [],                "dmv_ref": "Euro NCAP CPNC-style Occlusion Case"},
+  "construction_zone":     {"title": "Construction Zone Forced Merge",    "weather": "ClearNoon",      "trigger_dist": 38.0, "needs": ["adjacent_lane"], "dmv_ref": "CA MUTCD Temporary Traffic Control"},
+  "adverse_weather":       {"title": "Hard Rain + Lead Vehicle Brake",    "weather": "HardRainSunset", "trigger_dist": 17.0, "needs": [],                "dmv_ref": "CA DMV AV Program - Adverse Weather Operation"},
+  "night_pedestrian":      {"title": "Night-Time Pedestrian Crossing",    "weather": "Night",          "trigger_dist": 22.0, "needs": [],                "dmv_ref": "FMVSS 127-aligned Low-Light PAEB Case"},
+  "jaywalking_group":      {"title": "Multi-Pedestrian Jaywalking Group", "weather": "CloudyNoon",     "trigger_dist": 26.0, "needs": [],                "dmv_ref": "CA DMV AV Program - Vulnerable Road User Interaction"},
+  "sudden_brake":          {"title": "Lead Vehicle Panic Brake",          "weather": "ClearNoon",      "trigger_dist": 15.0, "needs": [],                "dmv_ref": "NHTSA Pre-Crash Typology: Rear-End (Lead Decelerating)"},
+  "stationary_hazard":     {"title": "Stalled Vehicle In Lane",           "weather": "ClearNoon",      "trigger_dist": 32.0, "needs": ["adjacent_lane"], "dmv_ref": "NHTSA Pre-Crash Typology: Rear-End (Lead Stopped)"},
+  "intersection_gridlock": {"title": "Signal Failure + Cross Traffic",    "weather": "CloudyNoon",     "trigger_dist": 40.0, "needs": ["junction"],      "dmv_ref": "CA CVC 21800(d) - Inoperative Signal Protocol"},
+
+  "motorcycle_lane_splitting": {"title": "Motorcycle Lane-Splitting",       "weather": "ClearNoon",      "trigger_dist": 14.0, "needs": [],                "dmv_ref": "CA V.C. 21658.1 - Lane Splitting Awareness"},
+  "bus_stop_pedestrian":      {"title": "Bus-Stop Pedestrian Dart-Out",     "weather": "ClearNoon",      "trigger_dist": 22.0, "needs": [],                "dmv_ref": "CA DMV AV Program - Transit VRUs"},
+  "highway_onramp_merge":     {"title": "Freeway On-Ramp Merge Conflict",   "weather": "ClearNoon",      "trigger_dist": 30.0, "needs": ["adjacent_lane"], "dmv_ref": "NHTSA Pre-Crash Typology: Lane Change / Merge"},
+  "dui_erratic_weave":       {"title": "Impaired Driver Erratic Weave",    "weather": "ClearNoon",      "trigger_dist": 18.0, "needs": [],                "dmv_ref": "NHTSA - Impairment-Related Crash Precursor"},
+  "running_stop_sign":       {"title": "Running Stop Sign / Cross Traffic","weather": "ClearNoon",      "trigger_dist": 22.0, "needs": ["junction"],      "dmv_ref": "CA CVC 22450 - Stop Sign Compliance"},
+  "truck_breakdown":         {"title": "Disabled Truck Blocking Lane",      "weather": "ClearNoon",      "trigger_dist": 32.0, "needs": [],                "dmv_ref": "Caltrans Move-Over / FMS Incident"},
+  "cyclist_overtake_close":  {"title": "Unsafe Close-Pass of Cyclist",      "weather": "ClearNoon",      "trigger_dist": 24.0, "needs": [],                "dmv_ref": "CA V.C. 21760 - Three Feet for Safety Act"},
+  "road_debris":            {"title": "Roadway Debris / Object Avoidance", "weather": "ClearNoon",      "trigger_dist": 30.0, "needs": [],                "dmv_ref": "Caltrans FMS - Object on Roadway"}
+}

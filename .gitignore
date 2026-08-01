@@ -1,0 +1,44 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Project data & runtime artifacts (NOT source) ----
+.workbuddy/
+
+# CARLA run logs
+logs/
+*.log
+
+# Simulation outputs (thousands of generated png / npy / mp4 / csv)
+outputs/
+outputs_*/
+delivery/
+delivery_package/
+
+# Generated binary packages
+*.zip
+*.rar
+*.tar.gz
+
+# ---- Large generated media inside any tree (keep assets/ pngs via ! rule) ----
+**/outputs/**/*.png
+**/outputs/**/*.npy
+**/outputs/**/*.mp4
+**/outputs/**/*.csv
+logs/**/*.png
+logs/**/*.npy
+*.npy
+
+# ---- Local secrets / env ----
+.env
+*.secret

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Scenario Replay · pedestrian_crossing · SantaClara Aegis</title>
+<meta name="description" content="Interactive telemetry replay of a CARLA-validated pedestrian-crossing safety scenario — ego speed, AEB, threat distance and TTC, live." />
+<style>
+  :root{
+    --bg:#0a0e14; --card:#121a24; --card2:#0f1620; --txt:#e9eef5; --muted:#8595ab;
+    --acc:#39a8ff; --acc2:#8b6cff; --ok:#3fd07a; --warn:#f0a23e; --bad:#ff5d6c; --line:#1e2a38;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#14233a 0%,var(--bg) 55%);color:var(--txt);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:920px;margin:0 auto;padding:34px 22px 80px}
+  .hd{display:flex;align-items:center;gap:13px;margin-bottom:6px}
+  .logo{width:38px;height:38px;background:linear-gradient(135deg,var(--acc),var(--acc2));border-radius:10px;box-shadow:0 6px 20px rgba(57,168,255,.35)}
+  .brand{font-weight:700;letter-spacing:.3px}
+  .brand small{display:block;color:var(--muted);font-weight:500;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+  h1{font-size:29px;line-height:1.2;margin:18px 0 6px}
+  .lede{color:var(--muted);font-size:15.5px;max-width:680px}
+  .pill{display:inline-block;background:#13202c;color:var(--acc);padding:4px 12px;border-radius:99px;font-size:12px;margin:10px 6px 0 0;border:1px solid var(--line)}
+  .stage{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 14px;margin-top:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  svg{width:100%;height:auto;display:block}
+  .controls{display:flex;align-items:center;gap:14px;margin-top:14px;flex-wrap:wrap}
+  button.play{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#04121f;border:0;border-radius:10px;padding:10px 20px;font-weight:800;font-size:15px;cursor:pointer}
+  button.play:hover{filter:brightness(1.06)}
+  input[type=range]{flex:1;min-width:180px;accent-color:var(--acc)}
+  .readouts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:14px}
+  .ro{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+  .ro .k{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+  .ro .v{font-size:20px;font-weight:700;margin-top:3px}
+  .aeb-on{color:var(--bad)}
+  .aeb-off{color:var(--ok)}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .b{background:var(--card2);border:1px solid var(--line);color:var(--ok);padding:6px 12px;border-radius:99px;font-size:12.5px;font-weight:600}
+  .cta{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#04121f;border-radius:14px;padding:22px;margin-top:24px;text-align:center}
+  .cta h2{margin:0 0 6px;color:#04121f;font-size:20px}
+  .cta p{margin:0 0 14px;color:#06243b;font-size:14.5px}
+  .cta a{display:inline-block;background:#04121f;color:#fff;font-weight:800;padding:12px 26px;border-radius:10px;text-decoration:none}
+  footer{color:var(--muted);font-size:12.5px;text-align:center;margin-top:26px}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-top:8px}
+  .legend i{display:inline-block;width:12px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hd">
+    <div class="logo"></div>
+    <div class="brand">SantaClara Aegis<small>Safety-critical scenario data</small></div>
+  </div>
+
+  <h1>Live telemetry replay · <code style="font-size:24px">pedestrian_crossing</code></h1>
+  <p class="lede">One real scenario from the library, replayed from its 20&nbsp;Hz CARLA telemetry log. Ego at 50&nbsp;km/h; a pedestrian steps out from behind a parked van at t=4.0&nbsp;s, 24&nbsp;m ahead. Watch AEB engage and bring the vehicle to a full stop — with zero contact.</p>
+  <div>
+    <span class="pill">CARLA 0.9.16+</span>
+    <span class="pill">Deterministic</span>
+    <span class="pill">20 Hz telemetry</span>
+    <span class="pill">Reproducible script included</span>
+  </div>
+
+  <div class="stage">
+    <svg id="chart" viewBox="0 0 680 360" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Telemetry charts">
+      <!-- gridlines + axes drawn by JS -->
+      <g id="grid"></g>
+      <g id="curves"></g>
+      <g id="playhead">
+        <line id="ph" x1="0" y1="20" x2="0" y2="340" stroke="#fff" stroke-width="1.5" stroke-dasharray="4 4" opacity=".8"/>
+        <circle id="dotV" r="4.5" fill="#39a8ff"/>
+        <circle id="dotB" r="4.5" fill="#8b6cff"/>
+        <circle id="dotD" r="4.5" fill="#3fd07a"/>
+        <circle id="dotT" r="4.5" fill="#f0a23e"/>
+      </g>
+      <g id="labels" font-size="11" fill="#8595ab" font-family="sans-serif"></g>
+    </svg>
+    <div class="legend">
+      <span><i style="background:#39a8ff"></i>Ego speed (m/s)</span>
+      <span><i style="background:#8b6cff"></i>Brake (%/100)</span>
+      <span><i style="background:#3fd07a"></i>Threat distance (m)</span>
+      <span><i style="background:#f0a23e"></i>TTC (s)</span>
+    </div>
+    <div class="controls">
+      <button class="play" id="playBtn">▶ Play</button>
+      <input type="range" id="seek" min="0" max="800" value="0" />
+      <span id="tLabel" style="color:var(--muted);font-size:13px;min-width:64px">t = 0.0 s</span>
+    </div>
+    <div class="readouts">
+      <div class="ro"><div class="k">Ego speed</div><div class="v" id="roV">0.0 m/s</div></div>
+      <div class="ro"><div class="k">Brake</div><div class="v" id="roB">0%</div></div>
+      <div class="ro"><div class="k">Threat dist</div><div class="v" id="roD">— m</div></div>
+      <div class="ro"><div class="k">TTC</div><div class="v" id="roT">— s</div></div>
+      <div class="ro"><div class="k">AEB</div><div class="v aeb-off" id="roA">standby</div></div>
+    </div>
+  </div>
+
+  <div class="badges">
+    <span class="b">✓ VRU detected before 24 m · CA DMV §3.2</span>
+    <span class="b">✓ TTC &gt; 1.0 s at first brake · Euro NCAP AEB VRU</span>
+    <span class="b">✓ Max decel &lt; 0.8 g · FMVSS 105/135</span>
+    <span class="b">✓ No contact with VRU · ISO 21448 SOTIF</span>
+  </div>
+
+  <div class="cta">
+    <h2>Want your own ODD built this rigorously?</h2>
+    <p>Custom scenarios, fully reproducible in CARLA, evidence-ready for certification — starting at ¥8,000.</p>
+    <a href="proposal-custom.html">See the Custom package →</a>
+  </div>
+
+  <footer>SantaClara Aegis · Replay generated from real 20 Hz telemetry (8 keyframes shown) · No contact, full stop by t=8.0 s</footer>
+</div>
+
+<script>
+  // Real telemetry keyframes from sample-scenario.html (pedestrian_crossing, 20 Hz log)
+  const KF = [
+    {t:0.0, v:0.00, brk:0.00, dist:0.0,  ttc:0.00, aeb:0},
+    {t:2.0, v:8.67, brk:0.00, dist:0.0,  ttc:0.00, aeb:0},
+    {t:4.0, v:13.50,brk:0.00, dist:23.8, ttc:1.77, aeb:0},
+    {t:5.0, v:10.86,brk:0.45, dist:16.2, ttc:1.49, aeb:0},
+    {t:6.0, v:6.22, brk:0.82, dist:9.4,  ttc:0.00, aeb:1},
+    {t:7.0, v:2.47, brk:0.95, dist:0.0,  ttc:0.00, aeb:1},
+    {t:8.0, v:0.00, brk:1.00, dist:0.0,  ttc:0.00, aeb:0}
+  ];
+  const T_MAX = 8.0;
+  // build 200 interpolated samples for smooth curves
+  const N = 200, S = [];
+  for(let i=0;i<=N;i++){
+    const t = T_MAX*i/N;
+    let a=KF[0], b=KF[KF.length-1];
+    for(let k=0;k<KF.length-1;k++){ if(t>=KF[k].t && t<=KF[k+1].t){ a=KF[k]; b=KF[k+1]; break; } }
+    const f = (b.t-a.t)===0 ? 0 : (t-a.t)/(b.t-a.t);
+    const lerp=(x,y)=>x+(y-x)*f;
+    S.push({t, v:lerp(a.v,b.v), brk:lerp(a.brk,b.brk), dist:lerp(a.dist,b.dist), ttc:lerp(a.ttc,b.ttc), aeb:b.aeb});
+  }
+
+  // layout
+  const W=680, H=360, padL=44, padR=16, padT=20, padB=28;
+  const X = t => padL + (W-padL-padR)*(t/T_MAX);
+  const yV = v => padT + (H-padT-padB)*(1 - v/14);      // speed 0..14 m/s
+  const yB = b => padT + (H-padT-padB)*(1 - b/1);        // brake 0..1
+  const yD = d => padT + (H-padT-padB)*(1 - d/25);       // dist 0..25 m
+  const yT = c => padT + (H-padT-padB)*(1 - c/2);        // ttc 0..2 s
+
+  function poly(accessor, yfn){
+    return S.map(p=>`${X(p.t).toFixed(1)},${yfn(accessor(p)).toFixed(1)}`).join(' ');
+  }
+  const NS='http://www.w3.org/2000/svg';
+  const grid=document.getElementById('grid');
+  // horizontal grid + y labels
+  [0,0.25,0.5,0.75,1].forEach(v=>{
+    const y=padT+(H-padT-padB)*v;
+    const l=document.createElementNS(NS,'line');
+    l.setAttribute('x1',padL);l.setAttribute('x2',W-padR);l.setAttribute('y1',y);l.setAttribute('y2',y);
+    l.setAttribute('stroke','#1e2a38');l.setAttribute('stroke-width','1');grid.appendChild(l);
+  });
+  // x ticks
+  for(let t=0;t<=8;t++){
+    const x=X(t);
+    const l=document.createElementNS(NS,'line');
+    l.setAttribute('x1',x);l.setAttribute('x2',x);l.setAttribute('y1',padT);l.setAttribute('y2',H-padB);
+    l.setAttribute('stroke','#16202c');l.setAttribute('stroke-width','1');grid.appendChild(l);
+  }
+  const curves=document.getElementById('curves');
+  function path(d,color,w){const p=document.createElementNS(NS,'polyline');p.setAttribute('points',d);p.setAttribute('fill','none');p.setAttribute('stroke',color);p.setAttribute('stroke-width',w);p.setAttribute('stroke-linejoin','round');curves.appendChild(p);}
+  path(poly(p=>p.v,yV),'#39a8ff',2.4);
+  path(poly(p=>p.brk,yB),'#8b6cff',2);
+  path(poly(p=>p.dist,yD),'#3fd07a',2.4);
+  path(poly(p=>p.ttc,yT),'#f0a23e',2);
+  // AEB engagement marker at t=6
+  const ax=X(6.0);
+  const am=document.createElementNS(NS,'line');
+  am.setAttribute('x1',ax);am.setAttribute('x2',ax);am.setAttribute('y1',padT);am.setAttribute('y2',H-padB);
+  am.setAttribute('stroke','#ff5d6c');am.setAttribute('stroke-width','1.5');am.setAttribute('stroke-dasharray','2 3');grid.appendChild(am);
+
+  // labels
+  const labels=document.getElementById('labels');
+  function txt(x,y,s,anchor){const t=document.createElementNS(NS,'text');t.setAttribute('x',x);t.setAttribute('y',y);t.setAttribute('text-anchor',anchor||'middle');t.textContent=s;labels.appendChild(t);}
+  txt(padL-6,padT+4,'14', 'end'); txt(padL-6,H-padB,'0','end'); txt(padL-6,(padT+H-padB)/2,'m/s','end');
+  for(let t=0;t<=8;t++) txt(X(t),H-padB+16,t+'s');
+  txt(ax,padT-6,'AEB @6s','middle'); txt(ax,padT+10,'●','middle').setAttribute('fill','#ff5d6c');
+
+  // playhead
+  const ph=document.getElementById('ph'), dotV=document.getElementById('dotV'), dotB=document.getElementById('dotB'), dotD=document.getElementById('dotD'), dotT=document.getElementById('dotT');
+  const roV=document.getElementById('roV'), roB=document.getElementById('roB'), roD=document.getElementById('roD'), roT=document.getElementById('roT'), roA=document.getElementById('roA');
+  const tLabel=document.getElementById('tLabel'), seek=document.getElementById('seek'), playBtn=document.getElementById('playBtn');
+
+  let cur=0; // 0..T_MAX
+  function sampleAt(t){
+    let a=S[0], b=S[S.length-1];
+    for(let k=0;k<S.length-1;k++){ if(t>=S[k].t && t<=S[k+1].t){ a=S[k]; b=S[k+1]; break; } }
+    const f=(b.t-a.t)===0?0:(t-a.t)/(b.t-a.t);
+    const l=(x,y)=>x+(y-x)*f;
+    return {v:l(a.v,b.v),brk:l(a.brk,b.brk),dist:l(a.dist,b.dist),ttc:l(a.ttc,b.ttc),aeb:b.aeb};
+  }
+  function render(){
+    const p=sampleAt(cur);
+    const x=X(cur);
+    ph.setAttribute('x1',x);ph.setAttribute('x2',x);
+    dotV.setAttribute('cx',x);dotV.setAttribute('cy',yV(p.v));
+    dotB.setAttribute('cx',x);dotB.setAttribute('cy',yB(p.brk));
+    dotD.setAttribute('cx',x);dotD.setAttribute('cy',yD(p.dist));
+    dotT.setAttribute('cx',x);dotT.setAttribute('cy',yT(p.ttc));
+    roV.textContent=p.v.toFixed(1)+' m/s';
+    roB.textContent=Math.round(p.brk*100)+'%';
+    roD.textContent=(p.dist<0.05?'—':p.dist.toFixed(1))+' m';
+    roT.textContent=(p.ttc<0.05?'—':p.ttc.toFixed(2))+' s';
+    if(p.aeb===1){roA.textContent='ENGAGED';roA.className='v aeb-on';}else{roA.textContent='standby';roA.className='v aeb-off';}
+    tLabel.textContent='t = '+cur.toFixed(1)+' s';
+    seek.value=Math.round(cur*100);
+  }
+  let playing=false, raf=null, last=0;
+  function loop(ts){
+    if(!last) last=ts;
+    const dt=(ts-last)/1000; last=ts;
+    cur+=dt; if(cur>=T_MAX){cur=0;}
+    render();
+    if(playing) raf=requestAnimationFrame(loop);
+  }
+  playBtn.addEventListener('click',()=>{
+    playing=!playing; playBtn.textContent=playing?'❚❚ Pause':'▶ Play';
+    if(playing){last=0;raf=requestAnimationFrame(loop);} else {cancelAnimationFrame(raf);}
+  });
+  seek.addEventListener('input',()=>{cur=seek.value/100; render();});
+  render();
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "scenario": "pedestrian_crossing",
+  "title": "Sudden Pedestrian Crossing",
+  "duration_s": 30.0,
+  "verdict": "PASS",
+  "risk_level": "low",
+  "max_speed_kmh": 48.6,
+  "min_ttc_s": 1.49,
+  "min_gap_m": 9.4,
+  "max_decel_mps2": 4.10,
+  "hard_braking_count": 1,
+  "aeb_activations": 1,
+  "collisions": 0,
+  "regulatory_ref": "CA DMV AV Program - Vulnerable Road User Interaction",
+  "metrics": {
+    "time_to_collision_min_s": 1.49,
+    "clearance_gap_min_m": 9.4,
+    "deceleration_max_mps2": 4.10,
+    "ego_engaged": true
+  },
+  "notes": "Pedestrian detected at 23.8 m; ego held safe gap and brought vehicle to a full stop without contact.",
+  "engine_version": "3.0"
+}

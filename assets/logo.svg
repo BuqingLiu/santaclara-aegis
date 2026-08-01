@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SantaClara Aegis logo">
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13294B"/>
+      <stop offset="1" stop-color="#0B1F3A"/>
+    </linearGradient>
+    <linearGradient id="chev" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34E0E8"/>
+      <stop offset="1" stop-color="#2C7BE5"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 3 L57 13 V33 C57 47 46 56 32 61 C18 56 7 47 7 33 V13 Z"
+        fill="url(#shield)" stroke="#1E3A66" stroke-width="1.2"/>
+  <path d="M22 24 L32 40 L42 24" fill="none" stroke="url(#chev)" stroke-width="4.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 19 L42 19" fill="none" stroke="#9FB6D6" stroke-width="3"
+        stroke-linecap="round"/>
+  <circle cx="32" cy="47" r="2.4" fill="#34E0E8"/>
+</svg>
