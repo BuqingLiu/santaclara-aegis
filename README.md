@@ -1,5 +1,7 @@
 # SantaClara Aegis — AV Safety-Critical Scenario Library
 
+> 🚀 **Founding-member cohort closes 2026-08-03 15:58 (GMT+8)** — Custom pack from **¥8,000** locked at this price for the first buyers. Refer a peer, earn **15% commission**.
+
 > Subscription library of **23 safety-critical autonomous-driving scenarios** — each with real telemetry CSV + a reproducible CARLA script + compliance annotations (EU NCAP 2026/2030, ISO 21448 SOTIF, UN-R157).
 
 ## What you get

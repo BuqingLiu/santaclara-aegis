@@ -158,15 +158,34 @@
       ".sc-input input{flex:1;background:#1c2536;border:1px solid #2c3a52;color:#e8edf5;border-radius:9px;padding:9px 11px;font-size:13px;outline:none}",
       ".sc-input button{background:#0a84ff;border:none;color:#fff;border-radius:9px;padding:0 14px;font-weight:700;cursor:pointer}",
       ".sc-foot{padding:6px 12px;font-size:11px;color:#7e8aa0;text-align:center;border-top:1px solid #1c2536}",
-      "@media(max-width:480px){.sc-panel{right:8px;bottom:84px;width:calc(100vw - 16px)}}"
+      ".sc-banner{background:linear-gradient(135deg,#0a84ff,#00c2a8);color:#fff;font-size:13.5px;padding:9px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;font-weight:600;z-index:2147483001;position:relative}",
+      ".sc-banner b{font-weight:800}",
+      ".sc-banner-btn{background:#fff;color:#04201b;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:800;text-decoration:none;margin-left:2px}",
+      "@media(max-width:480px){.sc-panel{right:8px;bottom:84px;width:calc(100vw - 16px)}}",
+      "@media(max-width:480px){.sc-banner{font-size:12.5px;padding:8px 12px}}"
     ].join("");
     var s = el("style");
     s.textContent = css;
     document.head.appendChild(s);
   }
 
+  function addFoundingBanner() {
+    var banner = el("div", "sc-banner");
+    banner.innerHTML = (lang === "zh"
+      ? "🚀 <b>创始会员席位 24h 内关闭</b> · Custom ¥8,000 锁定价（交付 23 类安全场景）。推荐同行购买，您赚 <b>15% 佣金</b>。"
+      : "🚀 <b>Founding-member cohort closes in 24h</b> · Custom ¥8,000 locked price (23 safety scenarios). Refer a peer, earn <b>15% commission</b>.");
+    var b1 = btn(lang === "zh" ? "立即锁定 ¥8,000" : "Lock ¥8,000 now", LINKS.custom);
+    b1.className = "sc-banner-btn";
+    var b2 = btn(lang === "zh" ? "推荐赚佣金" : "Refer & earn 15%", LINKS.tg);
+    b2.className = "sc-banner-btn";
+    banner.appendChild(b1);
+    banner.appendChild(b2);
+    document.body.insertBefore(banner, document.body.firstChild);
+  }
+
   function build() {
     injectCSS();
+    addFoundingBanner();
     var fab = el("button", "sc-fab", "💬");
     fab.setAttribute("aria-label", "AI sales assistant");
     var panel = el("div", "sc-panel");
