@@ -65,8 +65,8 @@
     },
     {
       k: ["企业", "定制", "对公", "private", "enterprise", "custom", "bespoke", "consult"],
-      zh: "企业定制 ¥8,000 起：5 天交付、直接对接工程师、按您的车型/ODD/法规定制场景。先付 50% 定金（$556）启动，尾款交付前结清。看完整方案点「企业定制方案」。",
-      en: "Custom engagement from ¥8,000: 5-day turnaround, direct engineer contact, scenarios tailored to your vehicle/ODD/regulation. 50% deposit ($556) to start. See the full plan via 'Enterprise plan'.",
+      zh: "企业定制 ¥8,000 起：5 天交付、直接对接工程师、按您的车型/ODD/法规定制场景。先付 50% 定金（$556）启动，尾款交付前结清。🎁 创始会员前 3 位加赠 2 周免费试点。看完整方案点「企业定制方案」。",
+      en: "Custom engagement from ¥8,000: 5-day turnaround, direct engineer contact, scenarios tailored to your vehicle/ODD/regulation. 50% deposit ($556) to start. 🎁 First 3 founding buyers also get a free 2-week pilot. See the full plan via 'Enterprise plan'.",
       cta: "proposal"
     },
     {
@@ -172,8 +172,8 @@
   function addFoundingBanner() {
     var banner = el("div", "sc-banner");
     banner.innerHTML = (lang === "zh"
-      ? "🚀 <b>创始会员席位 24h 内关闭</b> · Custom ¥8,000 锁定价（交付 23 类安全场景）。推荐同行购买，您赚 <b>15% 佣金</b>。"
-      : "🚀 <b>Founding-member cohort closes in 24h</b> · Custom ¥8,000 locked price (23 safety scenarios). Refer a peer, earn <b>15% commission</b>.");
+      ? "🚀 <b>创始会员 24h 关闭</b> · 前 3 位订 Custom ¥8,000 送 <b>2 周免费试点 + 15% 转介绍权</b>。推荐同行，您赚 15% 佣金。"
+      : "🚀 <b>Founding cohort closes in 24h</b> · First 3 Custom ¥8,000 buyers get a <b>free 2-week pilot + 15% referral rights</b>. Refer a peer, earn 15%.");
     var b1 = btn(lang === "zh" ? "立即锁定 ¥8,000" : "Lock ¥8,000 now", LINKS.custom);
     b1.className = "sc-banner-btn";
     var b2 = btn(lang === "zh" ? "推荐赚佣金" : "Refer & earn 15%", LINKS.tg);

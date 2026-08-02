@@ -42,3 +42,4 @@ logs/**/*.npy
 # ---- Local secrets / env ----
 .env
 *.secret
+growth/config.json
