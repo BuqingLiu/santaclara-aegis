@@ -9,7 +9,8 @@
     custom: "https://www.paypal.com/paypalme/BuqingLiu/556", // 50% deposit ¥8,000 (~$556)
     trial: "https://www.paypal.com/paypalme/BuqingLiu/55",    // Trial ¥399 (~$55)
     sample: "samples/sample-scenario.html",
-    proposal: "proposal-custom.html"
+    proposal: "proposal-custom.html",
+    tg: "https://t.me/santaclaraaegis_bot"
   };
 
   // Knowledge base: keywords (lowercase) -> bilingual answer + optional CTA type
@@ -67,6 +68,12 @@
       zh: "企业定制 ¥8,000 起：5 天交付、直接对接工程师、按您的车型/ODD/法规定制场景。先付 50% 定金（$556）启动，尾款交付前结清。看完整方案点「企业定制方案」。",
       en: "Custom engagement from ¥8,000: 5-day turnaround, direct engineer contact, scenarios tailored to your vehicle/ODD/regulation. 50% deposit ($556) to start. See the full plan via 'Enterprise plan'.",
       cta: "proposal"
+    },
+    {
+      k: ["推荐", "佣金", "返利", "referral", "commission", "affiliate", "赚钱", "earn", "介绍"],
+      zh: "推荐同行/朋友购买任意套餐，您拿成交额 15% 佣金，成交当天 PayPal 直发。把落地页或 Telegram 机器人转发给做 ADAS/AV 安全的朋友即可，其余我们自动跟进成交。点「Telegram 秒出定制方案」把机器人发给他们。",
+      en: "Refer a peer who buys any plan and earn 15% commission, paid same-day via PayPal. Just forward our landing page or Telegram bot to anyone in ADAS/AV safety — we auto-close the rest. Hit 'Telegram instant plan' to send them the bot.",
+      cta: "tg"
     }
   ];
 
@@ -104,6 +111,7 @@
     if (type === "proposal" || type == null) {
       wrap.appendChild(btn("📄 " + (lang === "zh" ? "企业定制方案" : "Enterprise plan"), LINKS.proposal));
     }
+    wrap.appendChild(btn("🤖 " + (lang === "zh" ? "Telegram 秒出定制方案" : "Telegram instant plan"), LINKS.tg));
     return wrap;
   }
 
@@ -201,8 +209,8 @@
       push(el("div", "sc-msg sc-bot", GREET[lang]));
       var chips = el("div", "sc-chips");
       var topics = lang === "zh"
-        ? ["这是什么？", "场景有哪些？", "合规怎么对应？", "交付物是什么？", "价格多少？", "能先试用吗？", "怎么买？", "企业定制？"]
-        : ["What is this?", "Which scenarios?", "Compliance?", "Deliverables?", "Pricing?", "Free trial?", "How to buy?", "Enterprise?"];
+        ? ["这是什么？", "场景有哪些？", "合规怎么对应？", "交付物是什么？", "价格多少？", "能先试用吗？", "怎么买？", "企业定制？", "推荐赚佣金？"]
+        : ["What is this?", "Which scenarios?", "Compliance?", "Deliverables?", "Pricing?", "Free trial?", "How to buy?", "Enterprise?", "Referral & 15%?"];
       topics.forEach(function (t, i) {
         var c = el("div", "sc-chip", t);
         c.onclick = function () { ask(KB[i].k[0], true); };
