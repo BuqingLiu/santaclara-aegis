@@ -7,6 +7,7 @@
 
   var LINKS = {
     custom: "https://www.paypal.com/paypalme/BuqingLiu/556", // 50% deposit ¥8,000 (~$556)
+    single: "https://www.paypal.com/paypalme/BuqingLiu/14",  // Single-1 ¥99 (~$14) — lowest entry
     trial: "https://www.paypal.com/paypalme/BuqingLiu/55",    // Trial ¥399 (~$55)
     sample: "samples/sample-scenario.html",
     proposal: "proposal-custom.html",
@@ -41,26 +42,32 @@
     },
     {
       k: ["价格", "多少钱", "报价", "定价", "price", "pricing", "cost", "how much", "收费"],
-      zh: "买断：Trial ¥399 / Core-4 ¥1,999 / Full-23 ¥4,999 / 定制 ¥8,000 起。订阅：Pilot ¥999/月、Pro ¥4,999/月、Enterprise ¥19,999/月。全部支持 7 天无理由退款。对标价的市场（Applied Intuition / Foretellix 企业授权 $30K–500K/年）便宜 10–100 倍。",
-      en: "One-time: Trial ¥399 / Core-4 ¥1,999 / Full-23 ¥4,999 / Custom from ¥8,000. Subscription: Pilot ¥999/mo, Pro ¥4,999/mo, Enterprise ¥19,999/mo. All with 7-day no-question refund. 10–100x cheaper than market (Applied Intuition / Foretellix enterprise $30K–500K/yr).",
-      cta: "trial"
+      zh: "买断：单场景 ¥99 / Trial ¥399 / Core-4 ¥1,999 / Full-23 ¥4,999 / 定制 ¥8,000 起。订阅：Pilot ¥999/月、Pro ¥4,999/月、Enterprise ¥19,999/月。全部支持 7 天无理由退款。对标价的市场（Applied Intuition / Foretellix 企业授权 $30K–500K/年）便宜 10–100 倍。",
+      en: "One-time: Single ¥99 / Trial ¥399 / Core-4 ¥1,999 / Full-23 ¥4,999 / Custom from ¥8,000. Subscription: Pilot ¥999/mo, Pro ¥4,999/mo, Enterprise ¥19,999/mo. All with 7-day no-question refund. 10–100x cheaper than market (Applied Intuition / Foretellix enterprise $30K–500K/yr).",
+      cta: "single"
     },
     {
       k: ["试用", "体验", "免费", "样例", "trial", "free", "sample", "demo", "试"],
-      zh: "两个零风险入口：① 免费样例场景（点下方「免费样例」看真实遥测+报告）② Trial ¥399 一次性买断 1 类场景跑通再决定。企业客户还可申请 2 周免费试点转付费。",
-      en: "Two zero-risk entries: (1) a free sample scenario (hit 'Free sample' below for real telemetry + report), (2) Trial ¥399 one-time for 1 class to validate before scaling. Enterprise buyers can also request a 2-week free pilot.",
-      cta: "sample"
+      zh: "三个零风险入口：① 免费样例场景（点下方「免费样例」看真实遥测+报告）② 单场景包 ¥99 先花一杯咖啡钱验真 1 类场景 ③ Trial ¥399 一次性买断 1 类跑通再决定。企业客户还可申请 2 周免费试点转付费。",
+      en: "Three zero-risk entries: (1) a free sample scenario (hit 'Free sample' below for real telemetry + report), (2) Single-1 pack at ¥99 to verify one class for the price of a coffee, (3) Trial ¥399 one-time for 1 class to validate before scaling. Enterprise buyers can also request a 2-week free pilot.",
+      cta: "single"
+    },
+    {
+      k: ["单场景", "¥99", "便宜", "cheap", "entry", "入门", "最低", "small", "single", "先验真"],
+      zh: "想用最低成本先验真？单场景包 ¥99（≈ $14）：任选 1 类安全场景的完整数据（逐帧遥测 CSV + 真值 JSONL + 雷达回波 + 合规报告样例），7 天无理由退款。先花一杯咖啡钱，确认数据是真的、标注是对的，再决定要不要上 Core-4 / Full-23 / 定制。这 ¥99 后续升级全套可全额抵扣。",
+      en: "Lowest-cost way to verify: the Single-1 pack at ¥99 (~$14) gives one full scenario class (frame telemetry CSV + ground-truth JSONL + radar + compliance report sample), with 7-day refund. Spend a coffee, confirm the data is real and the tags are right, then decide on Core-4 / Full-23 / Custom. The ¥99 counts fully toward any upgrade.",
+      cta: "single"
     },
     {
       k: ["怎么买", "购买", "付款", "支付", "buy", "purchase", "pay", "payment", "下单"],
-      zh: "点「立即购买」→ 跳转 PayPal（美元实时到账）/ 或微信、支付宝收款码扫码。支持 7 天无理由退款，拍下后 2 小时内自动发货。整个流程不需要和任何人说话。",
-      en: "Click 'Buy Now' -> PayPal (USD, instant) / or WeChat & Alipay QR. 7-day no-question refund; files auto-deliver within 2h of payment. No human needed in the loop.",
+      zh: "点「立即购买」→ 跳转 PayPal（美元实时到账）/ 或微信、支付宝收款码扫码。支持 7 天无理由退款，拍下后 2 小时内自动发货。整个流程不需要和任何人说话。单场景 ¥99 也能直接付，先验真再放大。",
+      en: "Click 'Buy Now' -> PayPal (USD, instant) / or WeChat & Alipay QR. 7-day no-question refund; files auto-deliver within 2h of payment. No human needed in the loop. Even the ¥99 single pack pays directly — verify first, scale later.",
       cta: "custom"
     },
     {
       k: ["信任", "靠谱", "为什么", "案例", "trust", "why", "credibility", "who uses"],
-      zh: "我们给的是「真跑出来的数据」，不是 PPT：免费样例可验真、7 天无理由退款兜底、转介绍分成 15%、已服务 OEM / Tier-1 / 认证机构级别的精准买家。您先拿样例自己跑一遍再决定。",
-      en: "We sell real run data, not slides: verify via the free sample, 7-day refund as downside protection, 15% referral commission, already serving OEM / Tier-1 / certification-grade buyers. Run the sample yourself first.",
+      zh: "我们给的是「真跑出来的数据」，不是 PPT：免费样例可验真、7 天无理由退款兜底、转介绍分成 15%、已服务 OEM / Tier-1 / 认证机构级别的精准买家。您先拿样例或 ¥99 单场景自己跑一遍再决定。",
+      en: "We sell real run data, not slides: verify via the free sample or the ¥99 single pack, 7-day refund as downside protection, 15% referral commission, already serving OEM / Tier-1 / certification-grade buyers. Run it yourself first.",
       cta: "sample"
     },
     {
@@ -99,6 +106,9 @@
 
   function ctaButtons(type) {
     var wrap = el("div", "sc-cta");
+    if (type === "single" || type == null) {
+      wrap.appendChild(btn("💰 " + (lang === "zh" ? "先花 ¥99 验真 1 类" : "Verify 1 class $14"), LINKS.single));
+    }
     if (type === "custom" || type == null) {
       wrap.appendChild(btn("💳 " + (lang === "zh" ? "立即购买 Custom 定金 $556" : "Buy Custom deposit $556"), LINKS.custom));
     }
@@ -172,8 +182,8 @@
   function addFoundingBanner() {
     var banner = el("div", "sc-banner");
     banner.innerHTML = (lang === "zh"
-      ? "🚀 <b>创始会员 24h 关闭</b> · 前 3 位订 Custom ¥8,000 送 <b>2 周免费试点 + 15% 转介绍权</b>。推荐同行，您赚 15% 佣金。"
-      : "🚀 <b>Founding cohort closes in 24h</b> · First 3 Custom ¥8,000 buyers get a <b>free 2-week pilot + 15% referral rights</b>. Refer a peer, earn 15%.");
+      ? "🚀 <b>创始会员仅 20 席 · 8/31 关闭</b> · 前 3 位订 Custom ¥8,000 送 <b>2 周免费试点 + 15% 转介绍权</b>。推荐同行，您赚 15% 佣金。"
+      : "🚀 <b>Founding cohort · 20 seats · closes 8/31</b> · First 3 Custom ¥8,000 buyers get a <b>free 2-week pilot + 15% referral rights</b>. Refer a peer, earn 15%.");
     var b1 = btn(lang === "zh" ? "立即锁定 ¥8,000" : "Lock ¥8,000 now", LINKS.custom);
     b1.className = "sc-banner-btn";
     var b2 = btn(lang === "zh" ? "推荐赚佣金" : "Refer & earn 15%", LINKS.tg);
@@ -193,6 +203,7 @@
 
     var head = el("div", "sc-head");
     var title = el("div", "sc-title", "SantaClara Aegis · AI 销售顾问");
+    title.textContent = "SantaClara Aegis · AI 销售顾问";
     var langBox = el("div", "sc-lang");
     var bZh = el("button", "on", "中文");
     var bEn = el("button", "", "EN");
@@ -206,7 +217,7 @@
     input.placeholder = "问点什么…";
     var send = el("button", "", "发送");
     inputRow.appendChild(input); inputRow.appendChild(send);
-    var foot = el("div", "sc-foot", "7 天无理由退款 · 真人工程师同日支持");
+    var foot = el("div", "sc-foot", "7 天无理由退款 · 真人工程师同日支持 · 推荐同行赚 15% 佣金");
 
     panel.appendChild(head); panel.appendChild(body); panel.appendChild(inputRow); panel.appendChild(foot);
     document.body.appendChild(fab); document.body.appendChild(panel);
@@ -228,8 +239,8 @@
       push(el("div", "sc-msg sc-bot", GREET[lang]));
       var chips = el("div", "sc-chips");
       var topics = lang === "zh"
-        ? ["这是什么？", "场景有哪些？", "合规怎么对应？", "交付物是什么？", "价格多少？", "能先试用吗？", "怎么买？", "企业定制？", "推荐赚佣金？"]
-        : ["What is this?", "Which scenarios?", "Compliance?", "Deliverables?", "Pricing?", "Free trial?", "How to buy?", "Enterprise?", "Referral & 15%?"];
+        ? ["这是什么？", "场景有哪些？", "合规怎么对应？", "交付物是什么？", "价格多少？", "¥99 先验真？", "能先试用吗？", "怎么买？", "企业定制？", "推荐赚佣金？"]
+        : ["What is this?", "Which scenarios?", "Compliance?", "Deliverables?", "Pricing?", "Verify for $14?", "Free trial?", "How to buy?", "Enterprise?", "Referral & 15%?"];
       topics.forEach(function (t, i) {
         var c = el("div", "sc-chip", t);
         c.onclick = function () { ask(KB[i].k[0], true); };

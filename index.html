@@ -248,13 +248,19 @@
   .mclose{position:absolute;top:14px;right:16px;background:none;border:none;font-size:26px;color:#98a4b8;cursor:pointer;line-height:1}
   .alt-pay{margin-top:16px;font-size:13.4px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
   .alt-pay a{color:var(--blue);font-weight:700}
+  /* i18n switchers */
+  .switchers{display:flex;gap:8px;align-items:center;margin-left:14px}
+  .sw{font:600 13px/1 -apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;cursor:pointer;white-space:nowrap;transition:.15s}
+  .sw:hover{border-color:var(--blue);color:var(--blue)}
+  .sw.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+  @media(max-width:860px){.switchers{margin-left:0}.sw{padding:6px 9px;font-size:12px}}
 </style>
 </head>
 <body>
 
 <!-- 48H LAUNCH BAR -->
 <div class="topbar">
-  🚀 <b>首发限时</b>：一次性场景数据包最高直降 ¥2,000，剩余
+  🚀 <b>创始会员 8/31 关闭</b>：首发价一次性数据包最高直降 ¥2,000，剩余
   <span class="cd" id="cdDay">--</span>天
   <span class="cd" id="cdHour">--</span>时
   <span class="cd" id="cdMin">--</span>分
@@ -275,6 +281,10 @@
       <a href="#pricing">订阅</a>
       <a href="docs/index.md">文档</a>
     </div>
+    <div class="switchers">
+      <button class="sw" id="swLang" type="button" title="Language / 语言">🌐 <span id="swLangTxt">EN</span></button>
+      <button class="sw" id="swCur" type="button" title="Currency / 货币">💱 <span id="swCurTxt">$ USD</span></button>
+    </div>
     <a href="#packs" class="btn btn-primary btn-sm">立即购买</a>
   </div>
 </nav>
@@ -286,7 +296,7 @@
     <h1>把合规证据，变成可订阅的仿真数据资产</h1>
     <p class="sub">SantaClara Aegis 是基于 CARLA 的自动驾驶安全仿真与场景数据订阅平台。23 类安全关键场景、可复现的逐帧标签数据、DMV 风格的审计报告——让 ADAS / AV 团队更快通过监管、训练算法、验证行为。支持在线订阅，信用卡 / 微信 / 支付宝自动收款。</p>
     <div class="hero-cta">
-      <a href="#packs" class="btn btn-primary">买数据包 · 首发价 ¥399 起</a>
+      <a href="#packs" class="btn btn-primary">买数据包 · 首发价</a>
       <a href="#pricing" class="btn btn-ghost">查看订阅方案</a>
       <a href="docs/index.md" class="btn btn-ghost" style="background:rgba(255,255,255,.08);color:#eaf1fb;border-color:rgba(255,255,255,.28)">阅读技术文档</a>
     </div>
@@ -469,18 +479,35 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
 <section id="packs">
   <div class="wrap">
     <div class="shead">
-      <div class="eyebrow" style="color:#e2573f">48 小时首发 · 一次性买断 · 无需订阅</div>
+      <div class="eyebrow" style="color:#e2573f">首发 Founding-Member · 仅 20 席 · 8/31 关闭 · 一次性买断 · 无需订阅</div>
       <h2>不想订阅？直接买数据包</h2>
       <p>已经跑完的成品数据，不是脚本。拍下后 2 小时内发货，支持微信 / 支付宝 / PayPal。<b>7 天无理由退款</b>。</p>
     </div>
 
     <div class="pack-grid">
       <div class="pack">
+        <h3>单场景包 Single-1</h3>
+        <div class="sk">一杯咖啡钱，先验真</div>
+        <div class="pnow" data-cny="¥99" data-usd="$14">¥99</div>
+        <div class="pold" data-cny="原价 ¥199" data-usd="Was $28">原价 ¥199</div>
+        <div class="pusd" data-cny="≈ ¥99" data-usd="≈ $14 USD">≈ $14 USD</div>
+        <ul>
+          <li>任选 <b>1 个</b>场景的完整数据</li>
+          <li>逐帧自车遥测 CSV</li>
+          <li>逐帧真值标注 JSONL</li>
+          <li>雷达回波原始数据</li>
+          <li>HTML 合规报告样例</li>
+          <li>升级全套可全额抵扣 ¥99</li>
+        </ul>
+        <button class="btn btn-ghost btn-block" data-buy="single" data-amt="99" data-nm="单场景包 Single-1">立即购买</button>
+      </div>
+
+      <div class="pack">
         <h3>体验包 Trial-1</h3>
         <div class="sk">先验货，不满意直接退</div>
-        <div class="pnow">¥399</div>
-        <div class="pold">原价 ¥599</div>
-        <div class="pusd">≈ $55 USD</div>
+        <div class="pnow" data-cny="¥399" data-usd="$55">¥399</div>
+        <div class="pold" data-cny="原价 ¥599" data-usd="Was $83">原价 ¥599</div>
+        <div class="pusd" data-cny="≈ ¥399" data-usd="≈ $55 USD">≈ $55 USD</div>
         <ul>
           <li>任选 1 个场景的完整数据</li>
           <li>逐帧自车遥测 CSV</li>
@@ -496,9 +523,9 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
         <div class="tag">最多人选</div>
         <h3>核心场景包 Core-4</h3>
         <div class="sk">工程师自己就能拍板的档位</div>
-        <div class="pnow">¥1,999</div>
-        <div class="pold">原价 ¥2,999</div>
-        <div class="pusd">≈ $279 USD</div>
+        <div class="pnow" data-cny="¥1,999" data-usd="$278">¥1,999</div>
+        <div class="pold" data-cny="原价 ¥2,999" data-usd="Was $417">原价 ¥2,999</div>
+        <div class="pusd" data-cny="≈ ¥1,999" data-usd="≈ $278 USD">≈ $279 USD</div>
         <ul>
           <li><b>4 类核心安全场景</b>全量数据</li>
           <li>行人突然横穿 · 车辆恶意加塞</li>
@@ -513,9 +540,9 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
       <div class="pack">
         <h3>全库场景包 Full-23</h3>
         <div class="sk">一次拿全，省掉一个多月工期</div>
-        <div class="pnow">¥4,999</div>
-        <div class="pold">原价 ¥6,999</div>
-        <div class="pusd">≈ $699 USD</div>
+        <div class="pnow" data-cny="¥4,999" data-usd="$694">¥4,999</div>
+        <div class="pold" data-cny="原价 ¥6,999" data-usd="Was $972">原价 ¥6,999</div>
+        <div class="pusd" data-cny="≈ ¥4,999" data-usd="≈ $694 USD">≈ $699 USD</div>
         <ul>
           <li><b>全部 23 类</b>安全关键场景数据</li>
           <li>完整场景清单与参数说明</li>
@@ -529,9 +556,9 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
       <div class="pack">
         <h3>定制场景开发</h3>
         <div class="sk">按你的 ODD 做，可拆定金</div>
-        <div class="pnow">¥8,000<small> 起</small></div>
-        <div class="pold">原价 ¥12,000</div>
-        <div class="pusd">≈ $1,120 USD 起</div>
+        <div class="pnow" data-cny="¥8,000 起" data-usd="$1,111+">¥8,000 起</div>
+        <div class="pold" data-cny="原价 ¥12,000" data-usd="Was $1,667">原价 ¥12,000</div>
+        <div class="pusd" data-cny="≈ ¥8,000 起" data-usd="≈ $1,111 USD+">≈ $1,120 USD 起</div>
         <ul>
           <li>按客户 ODD 定制 3-5 个场景</li>
           <li>交付可复现运行脚本</li>
@@ -738,6 +765,7 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
     pilot:  { name:"订阅 Pilot · 月度",          amt:"¥999 / 月 (≈ $139 USD)", paypal:"https://www.paypal.com/paypalme/BuqingLiu", stripe:"", lemon:"",  /* ← Lemon Pilot 月付链接（可选） */ wechat:"", alipay:"" },
     pro:    { name:"订阅 Professional · 月度",   amt:"¥4,999 / 月 (≈ $694 USD)",paypal:"https://www.paypal.com/paypalme/BuqingLiu", stripe:"", lemon:"",  /* ← Lemon Pro 月付链接 */ wechat:"", alipay:"" },
     ent:    { name:"企业定制 / 对公",            amt:"定制报价 (PayPal · USD)", paypal:"https://www.paypal.com/paypalme/BuqingLiu", stripe:"", lemon:"", wechat:"", alipay:"" },
+    single: { name:"单场景包 Single-1",           amt:"¥99（≈ $14）",           paypal:"https://www.paypal.com/paypalme/BuqingLiu/14",  stripe:"", lemon:"", wechat:"", alipay:"" },
     trial:  { name:"体验包 Trial-1",             amt:"¥399（首发价 · ≈ $55）",   paypal:"https://www.paypal.com/paypalme/BuqingLiu/55",  stripe:"", lemon:"", wechat:"", alipay:"" },
     core4:  { name:"核心场景包 Core-4",          amt:"¥1,999（首发价 · ≈ $278）", paypal:"https://www.paypal.com/paypalme/BuqingLiu/278", stripe:"", lemon:"", wechat:"", alipay:"" },
     full23: { name:"全库场景包 Full-23",         amt:"¥4,999（首发价 · ≈ $694）", paypal:"https://www.paypal.com/paypalme/BuqingLiu/694", stripe:"", lemon:"", wechat:"", alipay:"" },
@@ -788,7 +816,7 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
     [22,"cyclist_overtake_close","Unsafe Close-Pass of Cyclist","弱势道路使用者","VRU","CA V.C. 21760"],
     [23,"road_debris","Roadway Debris / Object Avoidance","突发事件","Incident","Caltrans FMS – Object on Roadway"]
   ];
-  const CN={vru:"VRU",intersection:"交叉口",highway:"高速",weather:"天气",incident:"突发事件"};
+  const CN={vru:"VRU",intersection:"Intersection",highway:"Highway",weather:"Weather",incident:"Incident"};
   const grid=document.getElementById('scnGrid');
   function render(f){
     grid.innerHTML=SCN.filter(s=>f==='all'||s[4].toLowerCase()===f).map(s=>`
@@ -807,19 +835,215 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
     e.target.classList.add('active'); render(e.target.dataset.f);
   });
 
-  // Currency display — BOTH currencies always visible
-  function applyCur(cur){
-    document.querySelectorAll('.plan .price').forEach(el=>{
-      const v=el.getAttribute('data-'+cur);
-      const sym=cur==='cny'?'¥':'$';
-      const num=v.replace(/[¥$]/g,'');
-      el.querySelector('.cur').textContent=sym;
-      el.querySelector('.amt').textContent=num;
-    });
-    document.querySelectorAll('.plan .eq span[data-cny]').forEach(el=>{
-      el.textContent=el.getAttribute('data-'+cur);
+  // ===================== 货币 / 语言 双切换 =====================
+  const I18N = {
+    "场景目录":"Scenarios","场景实拍":"Capture","数据样本":"Data","合规":"Compliance",
+    "数据包 · 首发价":"Data packs · launch","订阅":"Plans","文档":"Docs","立即购买":"Buy now",
+    "买数据包 · 首发价":"Buy data packs · launch price","查看订阅方案":"View plans","阅读技术文档":"Read docs",
+    "在线订阅全球收款":"Global subscription · worldwide payments",
+    "把合规证据，变成可订阅的仿真数据资产":"Turn compliance evidence into subscription-ready simulation data",
+    "SantaClara Aegis 是基于 CARLA 的自动驾驶安全仿真与场景数据订阅平台。23 类安全关键场景、可复现的逐帧标签数据、DMV 风格的审计报告——让 ADAS / AV 团队更快通过监管、训练算法、验证行为。支持在线订阅，信用卡 / 微信 / 支付宝自动收款。":"SantaClara Aegis is a CARLA-based AV safety simulation and scenario-data subscription platform. 23 safety-critical scenarios, reproducible frame-labeled data, and DMV-style audit reports help ADAS / AV teams pass regulation, train models and verify behavior faster. Online subscription with card / WeChat / Alipay auto-collection.",
+    "对齐 CA DMV / NHTSA 框架":"Aligned with CA DMV / NHTSA",
+    "20 Hz 确定性同步仿真":"20 Hz deterministic simulation",
+    "23 类安全关键场景":"23 safety-critical scenarios",
+    "笔记本即可运行":"Runs on a laptop",
+    "在线订阅 · 自动收款":"Online subscription · auto-collection",
+    "安全关键场景类":"Scenarios","逐帧标签数据":"Frame-labeled data","法规框架对齐":"Frameworks aligned","交付即可运行":"Ready to run on delivery",
+    "创始会员 8/31 关闭":"Founding-Member closes 8/31",
+    "首发价一次性数据包最高直降 ¥2,000，剩余":"Launch data packs up to ¥2,000 off, left",
+    "立即查看 →":"View now →",
+    "首发 Founding-Member 席位 · 仅 20 个 · 8/31 关闭":"Founding-Member seats · only 20 · close 8/31",
+    "锁定首发价（Core-4 ¥1,999 / Full-23 ¥4,999），并享 7 天无理由退款。国内买家支付宝扫码即付，已上线。":"Lock launch prices (Core-4 ¥1,999 / Full-23 ¥4,999) with 7-day no-questions refund. Domestic buyers pay via Alipay scan — live now.",
+    "立即锁定席位 →":"Lock your seat →",
+    "为什么选择 Aegis":"Why Aegis",
+    "不建仿真栈，直接拿到合规级证据":"Skip the simulation stack — get compliance-grade evidence",
+    "从许可审查、算法训练到行为验证，一套订阅覆盖自动驾驶团队的硬需求。":"From permit review and model training to behavior verification — one subscription covers your hard requirements.",
+    "合规证据":"Compliance evidence",
+    "23 类场景自动执行、自动评分，产出 DMV 风格合规报告，直接用于许可审查与尽调。":"23 scenarios auto-run and scored, producing DMV-style compliance reports ready for permit review and due diligence.",
+    "标签化数据":"Labeled data",
+    "20 Hz 遥测、真值事件、摄像头帧与评分 KPI，开箱即用，适合算法训练与回归验证。":"20 Hz telemetry, ground-truth events, camera frames and scoring KPIs — ready to use for training and regression.",
+    "审计就绪":"Audit-ready",
+    "一条命令生成 PDF/MD 报告与指标工作簿，可交付评审、投资人与合作伙伴。":"One command generates PDF/MD reports and a metrics workbook for reviewers, investors and partners.",
+    "真实道路迁移":"Real-road transfer",
+    "场景基于相对道路拓扑构建，可从 CARLA 标准地图无缝迁移到客户真实走廊（如 El Camino Real × Lawrence）。":"Scenarios are built on relative topology, transferable from CARLA maps to your real corridors (e.g. El Camino Real × Lawrence).",
+    "每一类都映射到权威法规或碰撞前典型场景（CA DMV / NHTSA / Euro NCAP / FMVSS / Caltrans）。":"Each maps to an authority regulation or pre-crash typology (CA DMV / NHTSA / Euro NCAP / FMVSS / Caltrans).",
+    "全部":"All","弱势道路使用者":"VRU","交叉口":"Intersection","高速":"Highway","天气":"Weather","突发事件":"Incident",
+    "场景实拍 · CARLA 仿真画面":"Scenario capture · CARLA sim frames",
+    "以下为平台在 CARLA 中实际仿真输出的追车摄像头画面（节选）。":"Sample chase-camera frames rendered by the platform in CARLA.",
+    "从驾驶域到可辩护的证据":"From ODD to defensible evidence",
+    "确定性 CARLA 仿真 + 专有行为引擎，输出可复现、带标签、可审计的安全证据。":"Deterministic CARLA sim plus proprietary behavior engine output reproducible, labeled, auditable safety evidence.",
+    "定义驾驶域（ODD）":"Define the ODD",
+    "地图（标准或客户专属 OpenDRIVE）、天气与车辆画像，确定仿真上下文。":"Maps (standard or your OpenDRIVE), weather and vehicle profiles set the simulation context.",
+    "专有场景引擎（elite™）":"Proprietary scenario engine (elite™)",
+    "确定性运行时构建并驱动每个安全事件，运行安全行为模型（含排队保持、纵/横向安全逻辑）并评分。":"A deterministic runtime builds and drives each safety event, runs safety-behavior models (queue-keeping, longitudinal/lateral safety) and scores them.",
+    "CARLA 确定性仿真":"Deterministic CARLA simulation",
+    "20 Hz 同步步进、种子化交通流，每次运行在场景逻辑层可完整复现。":"20 Hz sync stepping and seeded traffic make every run fully reproducible at the scenario level.",
+    "采集与评分":"Capture and scoring",
+    "逐帧记录动力学、雷达与真值，生成数据集并汇总为 DMV 风格合规报告。":"Frame-by-frame dynamics, radar and ground truth are recorded into a dataset and summarized into a DMV-style report.",
+    "每个场景，一份自包含数据集":"One self-contained dataset per scenario",
+    "逐帧标签 + 真值事件 + 证据帧 + 评分摘要，可直接用于训练与评审。":"Frame labels plus truth events plus evidence frames plus score summary — directly usable for training and review.",
+    "telemetry.csv 20 Hz 动力学、控制指令、威胁间距、TTC":"telemetry.csv — 20 Hz dynamics, controls, threat distance, TTC",
+    "events.json 真值触发时间线与碰撞日志":"events.json — ground-truth timeline and collision log",
+    "frames/*.png 追车摄像头证据帧":"frames/*.png — chase-camera evidence frames",
+    "summary.json 评分 KPI（结论、最小 TTC、最小间距…）":"summary.json — scoring KPIs (verdict, min TTC, min gap…)",
+    "compliance_report.pdf/.md 汇总合规报告":"compliance_report.pdf/.md — summary compliance report",
+    "对齐主流安全与监管框架":"Aligned with mainstream safety and regulatory frameworks",
+    "仿真证据作为安全案例、许可交互与尽调的支撑材料（非替代道路验证）。":"Simulation evidence supports safety cases, permit interactions and due diligence (not a substitute for road testing).",
+    "首发 Founding-Member · 仅 20 席 · 8/31 关闭 · 一次性买断 · 无需订阅":"Founding-Member · 20 seats · close 8/31 · one-time buyout · no subscription",
+    "不想订阅？直接买数据包":"Prefer no subscription? Buy data packs directly",
+    "已经跑完的成品数据，不是脚本。拍下后 2 小时内发货，支持微信 / 支付宝 / PayPal。7 天无理由退款。":"Finished datasets, not scripts. Shipped within 2 hours of purchase via WeChat / Alipay / PayPal. 7-day no-questions refund.",
+    "单场景包 Single-1":"Single scenario · Single-1",
+    "一杯咖啡钱，先验真":"A coffee to verify first",
+    "任选 1 个场景的完整数据":"Full data for any 1 scenario",
+    "逐帧自车遥测 CSV":"Per-frame ego telemetry CSV",
+    "逐帧真值标注 JSONL":"Per-frame ground-truth JSONL",
+    "雷达回波原始数据":"Raw radar returns",
+    "HTML 合规报告样例":"Sample HTML compliance report",
+    "升级全套可全额抵扣 ¥99":"Full-set upgrade credits the full ¥99",
+    "体验包 Trial-1":"Trial pack · Trial-1",
+    "先验货，不满意直接退":"Try first, refund if not satisfied",
+    "后续升级全套可抵扣 ¥399":"Full-set upgrade credits the full ¥399",
+    "核心场景包 Core-4":"Core scenarios · Core-4",
+    "工程师自己就能拍板的档位":"The tier an engineer can approve alone",
+    "4 类核心安全场景全量数据":"Full data for 4 core safety scenarios",
+    "行人突然横穿 · 车辆恶意加塞":"Sudden pedestrian · malicious cut-in",
+    "侧向闯红灯 · 紧急车辆避让":"Red-light runner · emergency-vehicle yield",
+    "每场景含遥测 / 真值 / 雷达 / 指标":"Each scenario has telemetry / truth / radar / metrics",
+    "4 份 HTML 合规报告":"4 HTML compliance reports",
+    "实测 4/4 通过，零碰撞":"Validated 4/4, zero collisions",
+    "最多人选":"Most chosen",
+    "全库场景包 Full-23":"Full library · Full-23",
+    "一次拿全，省掉一个多月工期":"Get all at once — save over a month of work",
+    "全部 23 类安全关键场景数据":"All 23 safety-critical scenario datasets",
+    "完整场景清单与参数说明":"Full scenario list and parameter notes",
+    "汇总合规报告 + 指标工作簿":"Summary report plus metrics workbook",
+    "12 个月新增场景免费更新":"12 months of free new-scenario updates",
+    "可用于论文实验与课题验收":"Usable for paper experiments and project acceptance",
+    "定制场景开发":"Custom scenario development",
+    "按你的 ODD 做，可拆定金":"Built to your ODD, deposit split allowed",
+    "按客户 ODD 定制 3-5 个场景":"3 to 5 scenarios customized to your ODD",
+    "交付可复现运行脚本":"Deliver reproducible run scripts",
+    "交付验收报告":"Deliver acceptance report",
+    "支持 50% 定金 + 50% 验收付":"50% deposit plus 50% on acceptance",
+    "可开发票 / 走对公":"Invoice / corporate payment supported",
+    "谈定制需求":"Discuss custom needs",
+    "透明订阅，按需扩展":"Transparent subscription, scale as needed",
+    "年付享 2 个月免费。人民币与美元同屏显示；支持信用卡（Stripe）/ 微信 / 支付宝，点击即付、自动开通。":"Annual billing gives 2 months free. CNY and USD shown side-by-side; card (Stripe) / WeChat / WeChat Pay / Alipay — click to pay, auto-provisioned.",
+    "Pilot 试点版":"Pilot",
+    "用于评估与单场景验证，快速看到价值。":"For evaluation and single-scenario validation — see value fast.",
+    "5 类核心场景":"5 core scenarios",
+    "样本数据集（带水印）":"Sample dataset (watermarked)",
+    "合规报告模板":"Compliance report template",
+    "社区支持":"Community support",
+    "立即订阅 Pilot":"Subscribe to Pilot",
+    "Professional 专业版":"Professional",
+    "持续获取全量场景数据与 API 接入，适合算法团队。":"Continuous full-scenario data and API access for algorithm teams.",
+    "全部 23 类场景":"All 23 scenarios",
+    "订阅 API 接入":"Subscription API access",
+    "逐帧标签数据集":"Frame-labeled datasets",
+    "每月新增场景":"New scenarios monthly",
+    "邮件支持 · SLA":"Email support · SLA",
+    "立即订阅 Professional":"Subscribe to Professional",
+    "Enterprise 企业版":"Enterprise",
+    "定制场景、私有部署与专属 SLA，面向规模团队。":"Custom scenarios, private deployment and dedicated SLA for scaling teams.",
+    "含专属报价 · 年框可议":"Dedicated quote · annual frame negotiable",
+    "支持对公转账 / 合同":"Wire transfer / contract supported",
+    "专业版全部能力":"All Professional features",
+    "定制场景与走廊":"Custom scenarios and corridors",
+    "私有云 / 本地部署":"Private cloud / on-prem",
+    "专属 SLA 与客户成功":"Dedicated SLA and success",
+    "集成与培训":"Integration and training",
+    "联系销售 · 获取报价":"Contact sales · get a quote",
+    "年付 ¥9,990（省 2 个月）":"Annual ¥9,990 (2 months free)",
+    "年付 ¥49,990（省 2 个月）":"Annual ¥49,990 (2 months free)",
+    "最受欢迎":"Most popular",
+    "支付由 Stripe / 微信支付 / 支付宝 等持牌机构处理，SantaClara Aegis 不接触你的卡号与密码。未配置收款链接时，按钮将引导你留下需求，我们主动联系——不漏掉任何客户。":"Payments are processed by licensed providers (Stripe / WeChat Pay / Alipay); SantaClara Aegis never touches your card or password. If no payment link is set, buttons capture your need and we follow up — no lead lost.",
+    "留个邮箱，我们主动联系你":"Leave your email — we will reach out",
+    "无论你想评估、采购，还是只是想看一份样本合规报告——留下联系方式，一个工作日内必有回应。":"Whether you want to evaluate, purchase, or just see a sample report — leave your contact and we respond within one business day.",
+    "公司邮箱（必填）":"Work email (required)",
+    "想验证的场景 / 需求（选填）":"Scenario or need to validate (optional)",
+    "提交需求":"Submit request",
+    "已收到你的需求，我们会尽快联系你。":"We received your request and will contact you soon.",
+    "邮箱":"Email","微信":"WeChat","仓库":"Repo",
+    "常见问题":"FAQ",
+    "和自建仿真栈相比，优势在哪？":"How is this better than building in-house?",
+    "自建一套 CARLA 仿真与合规评分栈通常要 $300K+ 与约 3 个月。Aegis 交付即可运行，并提供已对齐 CA DMV / NHTSA 的 23 类场景与评分逻辑，把工程与合规风险一并外包。":"Building a CARLA sim plus compliance stack in-house typically costs $300K+ and about 3 months. Aegis ships ready-to-run with 23 CA DMV / NHTSA-aligned scenarios and scoring — outsourcing both engineering and compliance risk.",
+    "代码是开源的吗？":"Is the code open source?",
+    "本仓库是对外开放的参考层（场景定义、CARLA 客户端、传感装置、地图工具与样本数据，MIT 许可）。运行整套仿真的专有行为引擎 elite/ 仅向订阅客户交付，以保护核心 IP。":"This repo is an open reference layer (scenario defs, CARLA client, sensors, map tools, sample data — MIT). The proprietary behavior engine elite/ is delivered only to subscribers to protect core IP.",
+    "付款后多久开通？":"How soon after payment?",
+    "信用卡 / 微信 / 支付宝支付为即时自动开通：支付成功后系统自动下发接入凭证与数据集下载地址。企业版与定制场景在签约后由客户成功团队开通。":"Card / WeChat / Alipay are instant: credentials and download links are sent automatically. Enterprise and custom are provisioned by the success team post-signature.",
+    "能在我们自己的真实道路上跑吗？":"Can it run on our real roads?",
+    "可以。场景基于相对道路拓扑构建，可从标准地图迁移到客户真实走廊。提供 OSM → OpenDRIVE 工具，企业版支持 RoadRunner / UE4 照片级还原与私有部署。":"Yes. Scenarios are built on relative topology and transfer to your real corridors. OSM to OpenDRIVE tooling; Enterprise adds RoadRunner / UE4 photoreal and private deployment.",
+    "数据怎么交付？":"How is data delivered?",
+    "通过订阅 API 拉取数据集与合规报告，或由托管仿真服务定期产出并回调。详见 API 文档。":"Pull via subscription API, or have the hosted sim produce and callback. See API docs.",
+    "仿真能替代道路验证吗？":"Can simulation replace road testing?",
+    "不能也不应替代。Aegis 的仿真证据作为安全案例、许可交互与尽调的支撑材料；场景参数可按客户 ODD 配置。":"No, nor should it. Aegis evidence supports safety cases, permits and due diligence; scenario params are configurable to your ODD.",
+    "用合规级仿真数据，加速你的自动驾驶落地":"Accelerate your AV deployment with compliance-grade sim data",
+    "预约一次演示，我们将用你的驾驶域跑一套场景，并交付一份样本合规报告。":"Book a demo: we will run scenarios in your ODD and deliver a sample compliance report.",
+    "立即订阅":"Subscribe now","预约演示":"Book a demo",
+    "© 2026 SantaClara Aegis · 自动驾驶安全仿真与场景数据订阅平台 · 专有引擎按商业订阅交付":"© 2026 SantaClara Aegis · AV safety simulation and scenario-data subscription · proprietary engine under commercial subscription",
+    "GitHub":"GitHub","联系":"Contact",
+    "付款后 2 小时内把数据发到你的邮箱":"Data sent to your email within 2 hours of payment",
+    "应付":"Amount due","微信支付":"WeChat Pay","支付宝":"Alipay",
+    "购买步骤":"How to buy",
+    "扫码付款，":"Scan to pay, ","付款备注填你的邮箱":"put your email in the note","（用于发数据）。":"(for data delivery).",
+    "点下方「我已付款」留邮箱，我们 2 小时内发网盘链接。":"Tap I have paid below to leave your email; we send the link within 2 hours.",
+    "7 天无理由退款：与描述对不上全额退。":"7-day no-questions refund: full refund if it does not match.",
+    "海外信用卡 / PayPal 付款（USD 实时到账）：":"Overseas card / PayPal (USD, instant):",
+    "企业定制 / 对公发票：":"Custom / corporate invoice:",
+    "我已付款 · 留邮箱收数据":"I have paid · leave email for data"
+  };
+  let _tnodes=null;
+  function collectText(){
+    _tnodes=[];
+    document.body.querySelectorAll('*').forEach(el=>{
+      if(el.closest('[data-cny]')||el.closest('script')||el.closest('style'))return;
+      el.childNodes.forEach(n=>{ if(n.nodeType===3 && n.nodeValue.trim()) _tnodes.push({n,orig:n.nodeValue}); });
     });
   }
+  function applyLang(lang){
+    if(!_tnodes) collectText();
+    _tnodes.forEach(({n,orig})=>{
+      let v=orig;
+      if(lang==='en'){ Object.keys(I18N).sort((a,b)=>b.length-a.length).forEach(k=>{ if(v.indexOf(k)>=0) v=v.split(k).join(I18N[k]); }); }
+      n.nodeValue=v;
+    });
+    document.documentElement.lang = lang==='en'?'en':'zh-CN';
+    try{localStorage.setItem('sc_lang',lang);}catch(e){}
+  }
+  function applyCur(cur){
+    document.querySelectorAll('[data-cny]').forEach(el=>{
+      const v=el.getAttribute('data-'+cur);
+      if(v==null)return;
+      const curEl=el.querySelector(':scope > .cur');
+      const amtEl=el.querySelector(':scope > .amt');
+      if(curEl&&amtEl){ curEl.textContent=cur==='cny'?'¥':'$'; amtEl.textContent=v.replace(/[¥$]/g,''); }
+      else el.textContent=v;
+    });
+    try{localStorage.setItem('sc_cur',cur);}catch(e){}
+  }
+  // init: follow browser language; English -> USD, Chinese -> CNY
+  const navLang=(navigator.language||'zh').toLowerCase();
+  let lang = (function(){ try{return localStorage.getItem('sc_lang');}catch(e){return null;} })();
+  let cur  = (function(){ try{return localStorage.getItem('sc_cur');}catch(e){return null;} })();
+  if(!lang) lang = navLang.indexOf('zh')>=0 ? 'zh' : 'en';
+  if(!cur)  cur  = lang==='en' ? 'usd' : 'cny';
+  applyLang(lang); applyCur(cur);
+  const swLang=document.getElementById('swLang'), swCur=document.getElementById('swCur');
+  const swLangTxt=document.getElementById('swLangTxt'), swCurTxt=document.getElementById('swCurTxt');
+  function syncSw(){ try{
+    swLangTxt.textContent = (localStorage.getItem('sc_lang')==='en'?'中文':'EN');
+    swCurTxt.textContent  = (localStorage.getItem('sc_cur')==='usd'?'$ USD':'¥ CNY');
+  }catch(e){} }
+  syncSw();
+  swLang.addEventListener('click',()=>{
+    const L=(function(){try{return localStorage.getItem('sc_lang');}catch(e){return 'zh';}}())==='en'?'zh':'en';
+    applyLang(L); if(L==='en') applyCur('usd'); else applyCur('cny'); syncSw();
+  });
+  swCur.addEventListener('click',()=>{
+    const C=(function(){try{return localStorage.getItem('sc_cur');}catch(e){return 'cny';}}())==='usd'?'cny':'usd';
+    applyCur(C); syncSw();
+  });
   // wire plan buttons
   document.querySelectorAll('[data-tier]').forEach(b=>{
     b.addEventListener('click',()=>openPay(b.dataset.tier));
@@ -841,9 +1065,9 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
     b.addEventListener('click',()=>openPay(b.dataset.buy));
   });
 
-  // 48 小时闪购倒计时（与 growth/tracker.json 的 deadline 保持一致）
+  // 创始会员倒计时（真实关闭日 2026-08-31，与首页 Founding-Member 席位一致）
   (function(){
-    const end = new Date("2026-08-03T15:58:00+08:00").getTime();
+    const end = new Date("2026-08-31T23:59:00+08:00").getTime();
     const d=document.getElementById('cdDay'),h=document.getElementById('cdHour'),
           m=document.getElementById('cdMin'),s=document.getElementById('cdSec');
     if(!d) return;
