@@ -657,7 +657,7 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
       </form>
       <div id="leadOk">✅ 已收到你的需求，我们会尽快联系你。</div>
       <div class="chan">
-        <span>📧 <b>邮箱</b> contact@santaclara-aegis.example</span>
+        <span>📧 <b>邮箱</b> 8069dg@163.com</span>
         <span>💬 <b>微信</b> 替换成你的微信号</span>
         <span>🌐 <b>仓库</b> github.com/BuqingLiu/santaclara-aegis</span>
       </div>
@@ -697,7 +697,7 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
       <p>预约一次演示，我们将用你的驾驶域跑一套场景，并交付一份样本合规报告。</p>
       <div class="hero-cta">
         <a href="#pricing" class="btn btn-primary">立即订阅</a>
-        <a href="mailto:contact@santaclara-aegis.example" class="btn btn-ghost" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.3)">预约演示</a>
+        <a href="mailto:8069dg@163.com" class="btn btn-ghost" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.3)">预约演示</a>
       </div>
     </div>
   </div>
@@ -710,7 +710,7 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
     <div>
       <a href="https://github.com/BuqingLiu/santaclara-aegis">GitHub</a>
       <a href="docs/index.md">文档</a>
-      <a href="mailto:contact@santaclara-aegis.example">联系</a>
+      <a href="mailto:8069dg@163.com">联系</a>
     </div>
   </div>
 </footer>
@@ -742,8 +742,8 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
         <li>7 天无理由退款：与描述对不上全额退。</li>
       </ol>
     </div>
-    <div class="alt-pay">
-      海外信用卡 / PayPal 付款（USD 实时到账）：<a id="payStripe" href="https://www.paypal.com/paypalme/BuqingLiu" target="_blank" rel="noopener" style="display:inline;color:#0070ba;font-weight:600">👉 PayPal · paypal.me/BuqingLiu（点此付款）</a><span id="payStripeNa" style="color:#1a7f37;font-weight:600"> ✅ 海外收款已上线 · 美元直付，实时到账</span>
+    <div class="alt-pay" id="paypalBlock">
+      海外信用卡 / PayPal 付款（USD 实时到账）：<a id="payStripe" href="https://www.paypal.com/paypalme/LiuXiaochu2" target="_blank" rel="noopener" style="display:inline;color:#0070ba;font-weight:600">👉 PayPal · paypal.me/LiuXiaochu2（点此付款）</a><span id="payStripeNa" style="color:#1a7f37;font-weight:600"> ✅ 海外收款已上线 · 美元直付，实时到账</span>
       <br>企业定制 / 对公发票：<a href="#lead">点此留联系方式 →</a>
     </div>
     <div style="margin-top:16px"><a href="#lead" class="btn btn-primary btn-block" onclick="closePay()">我已付款 · 留邮箱收数据</a></div>
@@ -754,27 +754,27 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
   /* ============================================================
      支付配置 · 自动收款
        • 微信/支付宝：把收款码截图命名为 assets/qr/wechat.png 与 assets/qr/alipay.png
-       • 海外付款：PayPal（paypal.me/BuqingLiu）已接好，点「立即订阅」直接跳转付款。
-           —— 注意：该账户为家人账户，存在 ToS/封号连带风险；
-              缓解 = 先 $10 测试单验证到账、单笔≤$300、日≤$800、独立设备+独立 IP。
-              Lemon Squeezy 因 Stripe 不支持中国大陆已 DROP，lemon 字段留空无害。
-       • 任一 tier 配了 paypal/stripe/lemon → 点「立即订阅」直接跳转付款；
-         全部留空 → 弹窗引导留资，不漏客户。
+       • 海外付款：PayPal（paypal.me/LiuXiaochu2）已接好，英文页点「立即订阅」直接跳转付款。
+           缓解建议 = 先 $10 测试单验证到账、单笔≤$300、日≤$800、独立设备+独立 IP（降 ToS 风险）。
+           Lemon Squeezy 因 Stripe 不支持中国大陆已 DROP，lemon 字段留空无害。
+       • 语言分流：英文页 → 直接跳 PayPal（paypal.me/LiuXiaochu2）；中文页 → 弹微信/支付宝收款码。
      ============================================================ */
   const PAY = {
-    pilot:  { name:"订阅 Pilot · 月度",          amt:"¥999 / 月 (≈ $139 USD)", paypal:"https://www.paypal.com/paypalme/BuqingLiu", stripe:"", lemon:"",  /* ← Lemon Pilot 月付链接（可选） */ wechat:"", alipay:"" },
-    pro:    { name:"订阅 Professional · 月度",   amt:"¥4,999 / 月 (≈ $694 USD)",paypal:"https://www.paypal.com/paypalme/BuqingLiu", stripe:"", lemon:"",  /* ← Lemon Pro 月付链接 */ wechat:"", alipay:"" },
-    ent:    { name:"企业定制 / 对公",            amt:"定制报价 (PayPal · USD)", paypal:"https://www.paypal.com/paypalme/BuqingLiu", stripe:"", lemon:"", wechat:"", alipay:"" },
-    single: { name:"单场景包 Single-1",           amt:"¥99（≈ $14）",           paypal:"https://www.paypal.com/paypalme/BuqingLiu/14",  stripe:"", lemon:"", wechat:"", alipay:"" },
-    trial:  { name:"体验包 Trial-1",             amt:"¥399（首发价 · ≈ $55）",   paypal:"https://www.paypal.com/paypalme/BuqingLiu/55",  stripe:"", lemon:"", wechat:"", alipay:"" },
-    core4:  { name:"核心场景包 Core-4",          amt:"¥1,999（首发价 · ≈ $278）", paypal:"https://www.paypal.com/paypalme/BuqingLiu/278", stripe:"", lemon:"", wechat:"", alipay:"" },
-    full23: { name:"全库场景包 Full-23",         amt:"¥4,999（首发价 · ≈ $694）", paypal:"https://www.paypal.com/paypalme/BuqingLiu/694", stripe:"", lemon:"", wechat:"", alipay:"" },
-    custom: { name:"定制场景开发（定金 50%）",   amt:"¥8,000 起（50% 预付 ≈ $556）",paypal:"https://www.paypal.com/paypalme/BuqingLiu/556",stripe:"", lemon:"", wechat:"", alipay:"" }
+    pilot:  { name:"订阅 Pilot · 月度",          amt:"¥999 / 月 (≈ $139 USD)", paypal:"https://www.paypal.com/paypalme/LiuXiaochu2", stripe:"", lemon:"",  /* ← Lemon Pilot 月付链接（可选） */ wechat:"", alipay:"" },
+    pro:    { name:"订阅 Professional · 月度",   amt:"¥4,999 / 月 (≈ $694 USD)",paypal:"https://www.paypal.com/paypalme/LiuXiaochu2", stripe:"", lemon:"",  /* ← Lemon Pro 月付链接 */ wechat:"", alipay:"" },
+    ent:    { name:"企业定制 / 对公",            amt:"定制报价 (PayPal · USD)", paypal:"https://www.paypal.com/paypalme/LiuXiaochu2", stripe:"", lemon:"", wechat:"", alipay:"" },
+    single: { name:"单场景包 Single-1",           amt:"¥99（≈ $14）",           paypal:"https://www.paypal.com/paypalme/LiuXiaochu2/14",  stripe:"", lemon:"", wechat:"", alipay:"" },
+    trial:  { name:"体验包 Trial-1",             amt:"¥399（首发价 · ≈ $55）",   paypal:"https://www.paypal.com/paypalme/LiuXiaochu2/55",  stripe:"", lemon:"", wechat:"", alipay:"" },
+    core4:  { name:"核心场景包 Core-4",          amt:"¥1,999（首发价 · ≈ $278）", paypal:"https://www.paypal.com/paypalme/LiuXiaochu2/278", stripe:"", lemon:"", wechat:"", alipay:"" },
+    full23: { name:"全库场景包 Full-23",         amt:"¥4,999（首发价 · ≈ $694）", paypal:"https://www.paypal.com/paypalme/LiuXiaochu2/694", stripe:"", lemon:"", wechat:"", alipay:"" },
+    custom: { name:"定制场景开发（定金 50%）",   amt:"¥8,000 起（50% 预付 ≈ $556）",paypal:"https://www.paypal.com/paypalme/LiuXiaochu2/556",stripe:"", lemon:"", wechat:"", alipay:"" }
   };
   function openPay(id){
     const p = PAY[id] || {};
     const url = p.paypal || p.stripe || p.lemon || "";
-    if(url){ window.open(url, "_blank", "noopener"); return; }   // 配了在线支付（PayPal/Stripe/Lemon）则直接跳转付款
+    // 语言分流：英文页 → 直接跳 PayPal（paypal.me/LiuXiaochu2）；中文页 → 弹微信/支付宝收款码弹窗
+    const isEn = (document.documentElement.lang || '').toLowerCase().indexOf('en') >= 0;
+    if(isEn && url){ window.open(url, "_blank", "noopener"); return; }
     document.getElementById('payName').textContent = p.name || "购买";
     document.getElementById('payAmt').textContent  = p.amt  || "";
     const st = document.getElementById('payStripe'), sna = document.getElementById('payStripeNa');

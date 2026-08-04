@@ -6,9 +6,9 @@
   "use strict";
 
   var LINKS = {
-    custom: "https://www.paypal.com/paypalme/BuqingLiu/556", // 50% deposit ¥8,000 (~$556)
-    single: "https://www.paypal.com/paypalme/BuqingLiu/14",  // Single-1 ¥99 (~$14) — lowest entry
-    trial: "https://www.paypal.com/paypalme/BuqingLiu/55",    // Trial ¥399 (~$55)
+    custom: "https://www.paypal.com/paypalme/LiuXiaochu2/556", // 50% deposit ¥8,000 (~$556)
+    single: "https://www.paypal.com/paypalme/LiuXiaochu2/14",  // Single-1 ¥99 (~$14) — lowest entry
+    trial: "https://www.paypal.com/paypalme/LiuXiaochu2/55",    // Trial ¥399 (~$55)
     sample: "samples/sample-scenario.html",
     proposal: "proposal-custom.html",
     tg: "https://t.me/santaclaraaegis_bot"
@@ -92,7 +92,7 @@
     zh: "这个问题我建议直接对接真人工程师（同一天回复）。留个邮箱，我们把定制方案发您：",
     en: "For this one, let's loop in a real engineer (same-day reply). Drop your email and we'll send a tailored plan:"
   };
-  var MAILTO = "liuxiaochu@agent.qq.com";
+  var MAILTO = "8069dg@163.com";
 
   var lang = "zh";
   var panelOpen = false;
