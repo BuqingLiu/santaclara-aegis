@@ -1,7 +1,7 @@
 # 收款开通指南（非技术，照做即可）
 
 > 目标：让海外客户点「立即购买」后**能真正付钱给你**。
-> 当前状态（2026-08-01）：✅ 国内支付宝已上线（assets/qr/alipay.png，好味个人号）。✅ 海外 PayPal 已上线（家人账户 paypalme/BuqingLiu，订阅 pilot/pro/ent + 独立按钮）。⚠️ 微信收款码待补（用户发送的实为支付宝 QR，未上传 wechat.png）。📌 大额海外单仍推荐 **Lemon Squeezy**（MoR 代收，规避本人/家人 PayPal 封号风险）。
+> 当前状态（2026-08-04）：✅ 国内支付宝已上线（assets/qr/alipay.png，商户名“好味”个人号）。✅ 微信收款码已上线（assets/qr/wechat.png）。✅ 海外 PayPal 已上线（家人账户 paypalme/BuqingLiu，订阅 pilot/pro/ent + 独立按钮）。📌 大额海外单仍推荐 **Lemon Squeezy**（MoR 代收，规避本人/家人 PayPal 封号风险）。
 
 ---
 
