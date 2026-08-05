@@ -1,26 +1,25 @@
 # 收款开通指南（非技术，照做即可）
 
 > 目标：让海外客户点「立即购买」后**能真正付钱给你**。
-> 当前状态（2026-08-04）：✅ 国内支付宝已上线（assets/qr/alipay.png，商户名“好味”个人号）。✅ 微信收款码已上线（assets/qr/wechat.png）。✅ 海外 PayPal 已上线（家人账户 paypalme/BuqingLiu，订阅 pilot/pro/ent + 独立按钮）。📌 大额海外单仍推荐 **Lemon Squeezy**（MoR 代收，规避本人/家人 PayPal 封号风险）。
+> 当前状态（2026-08-05）：✅ 国内支付宝已上线（assets/qr/alipay.png，商户名“好味”个人号）。✅ 微信收款码已上线（assets/qr/wechat.png）。✅ 海外 PayPal 已上线（统一收款账户 `paypal.com/paypalme/LiuXiaochu2`，订阅 pilot/pro/ent + 买断包 + 定制定金按钮全部指向它）。⚠️ Lemon Squeezy 已弃用（底层 Stripe 不支持中国大陆主体），当前海外主通道为 PayPal.Me。
 
 ---
 
-## ✅ PayPal · 已上线（家人账户 · 2026-08-01）
+## ✅ PayPal · 已上线（统一账户 · 2026-08-04 起）
 
-站点海外订阅按钮 + PAY 订阅类（pilot/pro/ent）已指向 `https://www.paypal.com/paypalme/BuqingLiu`。
+站点海外订阅按钮 + PAY 订阅类（pilot/pro/ent）已指向 `https://www.paypal.com/paypalme/LiuXiaochu2`。
 
-⚠️ **风险须知（务必读完）**：本人 PayPal 已被永久封禁（参照号 PP-L-283471408239，180 天冻结，关联卡不能建新账户）。现用家人 PayPal 收款，**违反 PayPal《用户协议》**（他人账户 + 禁封规避），PayPal 风险引擎可经设备指纹 / IP / 银行卡关联识别并**再次封号、冻结家人账户资金 180 天**。
+⚠️ **风险须知（务必读完）**：PayPal 风险引擎会经设备指纹 / IP / 银行卡关联识别异常收款行为并可能**封号、冻结资金**。使用 `paypal.me/LiuXiaochu2` 收款时：单笔别超 $300、单日别超 $800；先小额测试确认不被封再放大额。当前无其他海外代收通道（Lemon Squeezy 已弃用），大额建议拆多笔或引导客户走订阅/月付。
 
-**如果仍要走 PayPal，必须做到**：
-1. 家人账户使用**全新设备**（新手机 / 干净笔记本，**不要共用被封账户的电脑**）。
-2. **独立 IP**（家人用手机流量，别共用家里 Wi-Fi；浏览器开隐私模式）。
-3. **独立银行卡**（不能与被封账户同卡、同开户人；最好用家人自己名下、从未在 PayPal 用过的卡）。
-4. **先小额测试**：先收 1–2 笔 $10–$50，确认 1–2 周不被封，再放大额。
-5. 单笔别超 $300；单日别超 $800。超过立刻收手改走 Lemon。
+**PayPal 收款风控规避**：
+1. 使用**干净设备 / 浏览器隐私模式**，避免与被风控账户共用设备指纹。
+2. **独立网络环境**，避免频繁切换 IP 或与被风控账户共用网络。
+3. **先小额测试**：先收 1–2 笔 $10–$50，确认 1–2 周不被封，再放大额。
+4. 单笔别超 $300；单日别超 $800。超过建议拆多笔或改用订阅月付。
 
-## 仍推荐补 Lemon Squeezy（规避风险）
+## 已弃用：Lemon Squeezy
 
-大额海外单仍建议走 **Lemon Squeezy**（MoR 商家代收）：Lemon 用自己的支付通道（含 PayPal/Stripe）收钱，再通过**银行打款**给你，完全规避你/家人 PayPal 风险。详见 `docs/lemon-squeezy-setup.md`。
+~~大额海外单仍建议走 Lemon Squeezy（MoR 商家代收）~~。经实测，Lemon Squeezy 底层依赖 Stripe，Stripe 当前不支持中国大陆主体注册，因此该通道已弃用。当前海外收款统一走 PayPal.Me `LiuXiaochu2`。
 
 ---
 

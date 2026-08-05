@@ -1,24 +1,20 @@
-# Security Policy
+# Security & Compliance
 
-## Reporting a vulnerability
+## Scenario data integrity
+- Every scenario ships with a **20 Hz CARLA telemetry CSV** recorded from a real simulation run — not hand-crafted numbers.
+- Each run is **reproducible**: the bundled `run_*.py` script replays the exact scenario in CARLA 0.9.16.
+- A **compliance JSON** maps the scenario to EU NCAP 2026/2030, ISO 21448 (SOTIF), and UN-R157 requirements.
 
-If you discover a security issue in the **open reference layer** of SantaClara
-Aegis, please report it privately rather than opening a public issue.
+## How we validate
+1. Define the triggering condition and Operational Design Domain (ODD).
+2. Run the scenario in CARLA with ego + actors; log telemetry.
+3. Annotate risk and SOTIF validation targets.
+4. Peer-review the annotation before release.
 
-- Email: **security@santaclara-aegis.example** (replace with your intake alias)
-- Include a description, reproduction steps, and impact.
-- We aim to acknowledge within **3 business days** and provide a remediation
-  timeline.
+## Reporting a vulnerability or data issue
+- Email **8069dg@163.com** with subject `SECURITY: <short description>`.
+- We acknowledge within 2 business days and provide a remediation timeline.
 
-## Scope
-
-- In-scope: the reference-layer code and sample data in this repository.
-- Out-of-scope: the proprietary `elite/` engine and the managed simulation
-  service, which are covered under separate commercial agreements and their
-  own security review.
-
-## Protected secrets
-
-This repository contains **no secrets, tokens, or client data**. The
-proprietary engine and any client-specific map extracts are delivered through
-the subscription channel, never committed here.
+## Licensing & revenue integrity
+- All payments are processed through verified channels (PayPal `paypal.me/LiuXiaochu2`, WeChat / Alipay QR).
+- We do **not** fabricate usage, payment, or compliance figures. Paid status reflects only real received payments.
