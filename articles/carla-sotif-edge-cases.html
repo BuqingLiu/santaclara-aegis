@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用 CARLA 构建 ISO 21448 (SOTIF) 边缘场景：从 0 到可复现合规证据</title>
+<meta name="description" content="技术干货：如何用量产级 CARLA 仿真搭建 ISO 21448 SOTIF 未知/已知不安全场景，含遥测 CSV、确定性种子与合规标注，可直接复现。">
+<style>
+  body { font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 820px; margin: 40px auto; padding: 0 20px; color: #1f2937; line-height: 1.75; }
+  h1 { font-size: 28px; color: #0f172a; }
+  h2 { font-size: 21px; color: #1d4ed8; margin-top: 36px; border-left: 4px solid #1d4ed8; padding-left: 10px; }
+  code, pre { background: #f1f5f9; border-radius: 6px; }
+  code { padding: 2px 6px; font-size: 14px; }
+  pre { padding: 14px 16px; overflow-x: auto; font-size: 13px; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+  th, td { border: 1px solid #cbd5e1; padding: 8px 10px; text-align: left; }
+  th { background: #e2e8f0; }
+  .cta { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 16px 18px; margin-top: 28px; }
+  a { color: #1d4ed8; }
+</style>
+</head>
+<body>
+<h1>用 CARLA 构建 ISO 21448 (SOTIF) 边缘场景：从 0 到可复现合规证据</h1>
+<p><em>技术干货 · 面向功能安全 / SOTIF 工程师、AV 算法与 V&amp;V 团队</em></p>
+
+<h2>1. 为什么 SOTIF 边缘场景是 AV 落地的硬骨头</h2>
+<p>ISO 21448（SOTIF，预期功能安全）关注「系统在无故障情况下，因性能局限或可预见误用导致的危害」。它的核心证据不是「代码没崩」，而是「我们在大量<strong>未知不安全 / 已知不安全场景</strong>下验证过系统行为」。难点在于：这些场景（遮挡行人、极端光照、非常规切入）很难在真实道路上有成本地采集，而手工在仿真里搭一个又慢又不可复现。</p>
+
+<h2>2. 为什么用 CARLA</h2>
+<ul>
+  <li><strong>开源可批量化</strong>：脚本驱动，一次定义、千次重放；</li>
+  <li><strong>确定性</strong>：固定随机种子即可 100% 复现同一帧的同一行为——这是合规证据的前提；</li>
+  <li><strong>可观测</strong>：每一步都能导出 ego / 行人 / 车辆的遥测（位置、速度、加速度、标签），直接喂给 SOTIF 触发条件分析。</li>
+</ul>
+
+<h2>3. 一个具体场景：路口行人遮挡 AEB</h2>
+<p>以「路口右侧车辆遮挡、行人横穿、ego 触发 AEB」为例。我们用固定 <code>seed=42</code> 生成，关键遥测时序如下（单位 km/h）：</p>
+<table>
+  <tr><th>t (s)</th><th>ego 速度</th><th>事件</th></tr>
+  <tr><td>0</td><td>0.0</td><td>起步</td></tr>
+  <tr><td>2</td><td>31.2</td><td>正常巡航</td></tr>
+  <tr><td>4</td><td>48.6</td><td>接近路口，右侧卡车遮挡</td></tr>
+  <tr><td>6</td><td>22.4</td><td>行人检出，AEB 介入</td></tr>
+  <tr><td>8</td><td>0.0</td><td>刹停，未碰撞</td></tr>
+</table>
+<p>这段时序物理自洽：加速→遮挡期无法检出→行人露出后 AEB 减速→最终刹停。把它存成 CSV，就是一条<strong>可审计、可复现</strong>的 SOTIF 证据样本。</p>
+
+<h2>4. 23 类场景如何覆盖 SOTIF 触发条件</h2>
+<p>单一场景不够。我们把边缘场景按 SOTIF 触发条件归类为 23 类（遮挡、切入、极端光照、湿滑路面、非常规道路使用者等），每类都配套：</p>
+<ul>
+  <li>遥测 CSV（ego + 关键交通参与者）；</li>
+  <li>可复现 CARLA 脚本（带 seed）；</li>
+  <li>合规标注（映射到 CA DMV / ISO 21448 / FMVSS 的判定项）。</li>
+</ul>
+
+<h2>5. 复现与合规标注的最小实践</h2>
+<pre># 复现单个场景（伪代码）
+python run_full_auto.py --scenario pedestrian_occlusion --seed 42
+# 导出遥测
+python export_telemetry.py --out telemetry.csv
+# 合规检查（全 PASS 即视为该触发条件下行为可接受）
+python validate_compliance.py --standard ISO21448</pre>
+<p>关键是<strong>确定性</strong>：同样的 seed 与场景定义，任何审核员跑出来都应该是同一结果——这才是 SOTIF 证据能被认证机构（TÜV SÜD / DEKRA 等）接受的基础。</p>
+
+<div class="cta">
+  <strong>想直接看一个可复现样例？</strong><br>
+  免费单场景样例（行人横穿 · 含遥测 CSV + 复现脚本 + 合规表）：<br>
+  <a href="https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html">santaclara-aegis · 免费样例</a><br>
+  完整 23 类场景库与自动化数据管道：<a href="https://buqingliu.github.io/santaclara-aegis/">项目主页</a>
+</div>
+
+<p style="margin-top:30px; font-size:13px; color:#64748b;">本文为技术分享，不构成认证结论；具体合规判定请以贵司 SOTIF 流程与认证机构要求为准。</p>
+</body>
+</html>
