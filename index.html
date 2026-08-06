@@ -656,6 +656,15 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
         <button type="submit" class="btn btn-primary">提交需求</button>
       </form>
       <div id="leadOk">✅ 已收到你的需求，我们会尽快联系你。</div>
+      <div id="leadSample" style="display:none;margin-top:14px;padding:14px 16px;border:1px solid rgba(126,240,200,.35);border-radius:14px;background:rgba(126,240,200,.08);text-align:left">
+        <b style="color:#7ef0c8">🎁 不等邮件，先拿走这两样：</b>
+        <ul style="margin:8px 0 0;padding-left:18px;line-height:1.9">
+          <li>👉 <a href="https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html" target="_blank" rel="noopener" style="color:#bfe9ff">免费真实场景样例（1 个可跑 CARLA 边缘场景 + 合规标注）</a></li>
+          <li>💳 直接下单（小额起步 Custom ¥8,000 起）：<a href="https://www.paypal.com/paypalme/LiuXiaochu2" target="_blank" rel="noopener" style="color:#bfe9ff">PayPal 直付</a> ｜ 微信 <b>a1398432379</b></li>
+          <li>🤝 介绍其他团队成交，返 <b>15%</b> 佣金（PayPal 结算）</li>
+        </ul>
+        <p style="margin:8px 0 0;font-size:13px;opacity:.85">已为你记下邮箱，1 个工作日内我们带着定制方案回来。</p>
+      </div>
       <div class="chan">
         <span>📧 <b>邮箱</b> 8069dg@163.com</span>
         <span>💬 <b>微信</b> <span id="wxId" title="点击复制" style="cursor:pointer;text-decoration:underline dotted">a1398432379</span> <button type="button" onclick="copyWx()" style="margin-left:4px;padding:2px 8px;font-size:11px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#eaf1fb;border-radius:999px;cursor:pointer">复制</button></span>
@@ -1087,10 +1096,11 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
       window.location.href='mailto:8069dg@163.com?subject='+subject+'&body='+body;
       ok.style.display='block'; ok.style.color='#7ef0c8';
       ok.textContent='✅ 已为你打开邮件，发送即完成提交；1 个工作日内回复（也可直接加微信 a1398432379）。';
+      document.getElementById('leadSample').style.display='block';
     } else {
       fetch(action,{method:'POST',body:new FormData(lf),headers:{'Accept':'application/json'}})
-        .then(function(r){ if(r.ok){ ok.style.display='block'; ok.style.color='#7ef0c8'; ok.textContent='✅ 已收到，我们会尽快联系你。'; lf.reset(); } else { throw 0; } })
-        .catch(function(){ window.location.href='mailto:8069dg@163.com?subject='+subject+'&body='+body; ok.style.display='block'; ok.style.color='#7ef0c8'; ok.textContent='✅ 已为你打开邮件，发送即完成提交。'; });
+        .then(function(r){ if(r.ok){ ok.style.display='block'; ok.style.color='#7ef0c8'; ok.textContent='✅ 已收到，我们会尽快联系你。'; document.getElementById('leadSample').style.display='block'; lf.reset(); } else { throw 0; } })
+        .catch(function(){ window.location.href='mailto:8069dg@163.com?subject='+subject+'&body='+body; ok.style.display='block'; ok.style.color='#7ef0c8'; ok.textContent='✅ 已为你打开邮件，发送即完成提交。'; document.getElementById('leadSample').style.display='block'; });
     }
   });
 

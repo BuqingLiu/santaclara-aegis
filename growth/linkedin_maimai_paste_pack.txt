@@ -1,0 +1,171 @@
+# SantaClara Aegis · LinkedIn/脉脉 每日拓客 · 纯文本粘贴包
+生成日期：2026-08-06 ｜ 用途：你每天加 5–10 个决策人（复制粘贴即可，无需 AI 代发）
+
+⚠️ 海外优先（重点看这篇）：growth/OVERSEAS_LINKEDIN_GUIDE.md
+- 自动邮件引擎（MI/TX 500 家）才是规模主力，本包是「高触达补充」。
+- 脉脉 = 中国版 LinkedIn，触达不到美国买家，已降级为「国内补充」仅用于深圳 17 家等 CN 公司。
+- 更有价值的用法：在 LinkedIn 找到 MI/TX 真实对接人后，把核实过的真实邮箱补进邮件名单，让引擎去规模触达。
+
+═════════════════════════════════════════
+【怎么用】（每天 5–10 分钟）
+1. 看当天批次，每条有「搜索词」→ 复制到 脉脉（国内公司）/ LinkedIn（海外公司）搜索框，找到对应公司的对接人。
+2. 点「加好友 / 建立联系」，验证语粘贴「首句连接语」。
+3. 对方通过后，发「私信模板」。
+4. 所有链接已统一（收款身份干净）：
+   • 免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html
+   • 直付 PayPal：https://www.paypal.com/paypalme/LiuXiaochu2
+   • 落地页：https://buqingliu.github.io/santaclara-aegis/
+   • 推荐佣金：介绍其他团队成交，给 15%（PayPal 结算）
+
+【说明】华强科技生态园 17 家全部有真实商务邮箱（@gly-ai.com 等），可双线并行：
+   • 这里：你手动加决策人（LinkedIn/脉脉）；
+   • 邮件：AI 自动外联引擎也会用这些邮箱自动发（无需你操作）。
+═════════════════════════════════════════
+
+━━━━━━━━━━ 第 1 天（8 人）━━━━━━━━━━
+
+---
+【1】枢途科技（9栋16层·交通路径规划算法）
+搜索词：枢途科技 算法 / 交通算法工程师
+首句连接语：您好，看到贵司在做城市路径规划算法，我们有一套现成可跑的海外 CARLA 城镇场景+车流数据集，可能能省下自研搭建时间，方便加个好友聊聊？
+私信模板：
+您好，我是 SantaClara Aegis 的场景数据方。贵司自研城市路径规划算法、缺标准化海外 CARLA 城镇场景与车流数据集——我们 23 类安全关键场景里就有可直接用的城镇车流包（遥测 CSV + 可复现脚本 + ISO 21448 合规标注）。先发您一个免费单场景样例看看是否对路：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。若合适，小额起步即可；也欢迎推荐其他做算法的团队，成交我们给 15% 推荐佣金（PayPal 结算）。
+---
+
+---
+【2】智坤动力（9栋17层·低速无人车/机器人）
+搜索词：智坤动力 研发 / 无人车算法
+首句连接语：您好，看到贵司做园区低速无人车，我们有一套城郊简单道路的 CARLA 避障/路线测试场景，可能能直接用于小车测试，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司园区低速无人车做避障/路线测试，需要城郊简单道路 CARLA 场景——我们正好有现成的低速无人车避障场景包（确定性可复现、带合规标注）。免费样例在这：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。小额就能用，推荐其他团队有 15% 佣金。
+---
+
+---
+【3】速博达智能（9栋17层·视觉/激光焊接·感知训练）
+搜索词：速博达 项目 / 感知算法
+首句连接语：您好，看到贵司做视觉与激光焊接设备的感知模型，我们有多光照、昼夜、雨天的 CARLA 仿真图像素材，月度小额补货那种，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司摄像头/激光雷达感知训练需要多光照、昼夜、雨天仿真图像——我们有 23 类场景覆盖这些工况的素材包，可月度小额补货。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。推荐同行有 15% 佣金。
+---
+
+---
+【4】光明道途规划工作室（园区孵化·交通规划）
+搜索词：光明道途规划工作室 / 交通规划 刘工
+首句连接语：您好，看到贵司做交通规划项目，我们有乡村/市政道路的虚拟车流仿真视频和可视化图表，长期稳定素材那种，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司乡村/市政道路规划项目需要虚拟车流仿真视频+可视化图表——我们可长期稳定提供 CARLA 车流录屏与 CSV 统计。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。长期合作可谈月度包，推荐有 15% 佣金。
+---
+
+---
+【5】万屏时代（9栋15层·智慧城市大屏）
+搜索词：万屏时代 商务 / 智慧城市
+首句连接语：您好，看到贵司做智慧城市大屏，我们有标准化 CARLA 城市车流录屏和静态场景文件，适合大屏演示，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司智慧城市大屏需要动态车流演示素材——我们提供标准化 CARLA 城市车流录屏+静态场景文件，无需深度定制。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。小额即用，推荐有 15% 佣金。
+---
+
+---
+【6】纳智传感科技（9栋15层·仿生电子鼻/车载传感）
+搜索词：纳智传感 研发 / 车载毫米波
+首句连接语：您好，看到贵司做车载传感，我们有城市道路、高速简易 CARLA 仿真环境，可用于送检佐证，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司车载毫米波传感验证需要城市道路/高速简易 CARLA 环境做送检佐证——我们现成提供。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。推荐同行有 15% 佣金。
+---
+
+---
+【7】塔其米智能（9栋16层·智能穿戴/HMI）
+搜索词：塔其米 交互研发 / 车载 HMI
+首句连接语：您好，看到贵司做智能穿戴与 HMI，我们有简易 CARLA 驾驶场景可做车载 HMI 界面配套演示，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司车载 HMI 人机界面演示需要简易 CARLA 驾驶场景——我们有现成基础可视化场景。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。小额即用，推荐有 15% 佣金。
+---
+
+---
+【8】深圳智途科创（A12层·政务投标 ·【高优先】）
+搜索词：深圳智途科创 技术 / 交通局 智驾投标
+首句连接语：您好，看到贵司在做光明交通局海外智驾投标，我们有加州圣何塞/圣莫尼卡预制场景+自动化数据管道，能赶上投标节点，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司光明交通局海外智驾投标需要加州圣何塞/圣莫尼卡 CARLA 预制场景+自动化数据管道做技术佐证——我们现成可交付，自研搭建周期长、我们直接给能赶上节点。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。若需加速，直付定制包在这：https://www.paypal.com/paypalme/LiuXiaochu2 。推荐其他投标团队有 15% 佣金。
+---
+
+━━━━━━━━━━ 第 2 天（9 人）━━━━━━━━━━
+
+---
+【9】深圳车联智控（B8层·零部件测试）
+搜索词：深圳车联智控 测试部 / 车载感知
+首句连接语：您好，看到贵司做车载零部件测试，我们有多光照、车流仿真图片用于送检报告，控制外包成本那种，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司车载感知摄像头路测需要多光照/车流仿真图片做送检报告——我们批量提供，控制外包成本。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。推荐有 15% 佣金。
+---
+
+---
+【10】光明交通数据工坊（C5层·交通规划外包）
+搜索词：光明交通数据工坊 / 交通规划 陈工
+首句连接语：您好，看到贵司做交通规划外包，我们有低成本快速出图的仿真效果图+车流CSV，适合政府道路方案汇报，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司交通规划汇报需要仿真效果图+车流CSV——我们低成本快速出图。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。推荐有 15% 佣金。
+---
+
+---
+【11】深大光明交通工程实验室（产学研配套）
+搜索词：深大光明交通工程实验室 / 交通工程 周老师
+首句连接语：您好，看到贵实验室做交通工程教学，我们有毕设/课程用的海外 CARLA 场景+简易教程，学生能快速上手，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司本科毕设/课程实验需要海外 CARLA 场景+简易操作教程——我们提供教学友好包，降实验室配套成本。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。推荐有 15% 佣金。
+---
+
+---
+【12】星途智能网联（隔壁产业园·智驾初创 ·【高优先】）
+搜索词：星途智能网联 商务 / 智驾算法
+首句连接语：您好，看到贵司做智驾算法，我们可持续月度提供海外城市仿真数据集用于算法迭代，方便加好友谈长期合作？
+私信模板：
+您好，我是 SantaClara Aegis。贵司自研智驾算法需要海外城市仿真数据集持续迭代——我们 23 类场景可月度持续供货。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。长期合作可谈订阅包，推荐其他算法团队有 15% 佣金。
+---
+
+---
+【13】前海智行仿真（产业合作单位·外包服务商 ·【高优先】）
+搜索词：前海智行仿真 商务总监 / 仿真外包
+首句连接语：您好，看到贵司承接大量政企仿真项目、自有算力不足，我们可长期外包海外预制场景/数据集，方便加好友谈外包？
+私信模板：
+您好，我是 SantaClara Aegis。贵司承接政企仿真项目、自有算力不足——我们长期外包海外预制场景+仿真数据集，补贵司产能。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。长期外包可签框架，推荐有 15% 佣金。
+---
+
+---
+【14】深光明新能源车辆研究院（配套科研机构）
+搜索词：深光明新能源车辆研究院 / 新能源 罗老师
+首句连接语：您好，看到贵司做新能源车辆研究，我们有多坡度、多路况海外道路仿真场景用于能耗实验，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司新能源商用车虚拟路测需要多坡度/多路况海外场景做能耗实验——我们现成提供。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。推荐有 15% 佣金。
+---
+
+---
+【15】为思润华科技（9栋18层·GIS 数据）
+搜索词：为思润华 数据总监 / ArcGIS
+首句连接语：您好，看到贵司做 GIS 数据，我们有 ArcGIS 城市路网轻量化导入 CARLA 的基础场景，小额配套，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司 ArcGIS 城市路网轻量化导入 CARLA——我们有基础场景包（仅路网映射，无大型数字孪生）。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。小额配套即用，推荐有 15% 佣金。
+---
+
+---
+【16】明城地理信息科技（光明周边·GIS 小微）
+搜索词：明城地理信息科技 技术总监 / 数字孪生
+首句连接语：您好，看到贵司做 GIS，我们可提供 ArcGIS 路网与 CARLA 场景融合定制、数字孪生道路可视化配套，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司 ArcGIS 路网与 CARLA 融合定制、数字孪生道路——我们补仿真模块配套能力。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。推荐有 15% 佣金。
+---
+
+---
+【17】光科人机交互实验室（楼上研发团队·脑机 HMI）
+搜索词：光科人机交互实验室 / SSVEP 脑机
+首句连接语：您好，看到贵司做脑机人机交互，我们有 SSVEP 脑机驾驶协同的 CARLA 仿真载体，方便加好友？
+私信模板：
+您好，我是 SantaClara Aegis。贵司 SSVEP 脑机驾驶协同需要虚实结合 CARLA 仿真载体——我们提供。免费样例：https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html 。推荐有 15% 佣金。
+---
+
+━━━━━━━━━━ 后续可扩展（每天 5–10 人，复用上面结构）━━━━━━━━━━
+高意向 / 海外名单见仓库：
+  • growth/prospects_hot_2026_08_05.csv（元戎启行 / WeRide / 小鹏 / Pony / Momenta / Waabi …）
+  • growth/michigan_prospects_2026_08_05.csv（GM / Ford / Stellantis / May Mobility / Mcity …）
+搜索词模板（LinkedIn 海外）："<公司名> + simulation engineer / safety case / AV validation"
+私信模板（套用）：把【公司名】和【需求关键词】替换进第 1–17 条的私信即可，链接不变。
+推荐佣金统一 15%（PayPal 结算），落地页：https://buqingliu.github.io/santaclara-aegis/
