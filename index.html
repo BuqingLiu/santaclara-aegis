@@ -226,7 +226,7 @@
   .guar p{font-size:13.4px;color:#3d5b52;margin:0}
 
   /* ===== PAY MODAL ===== */
-  .mask{position:fixed;inset:0;background:rgba(11,31,58,.62);backdrop-filter:blur(3px);z-index:200;
+  .mask{position:fixed;inset:0;background:rgba(11,31,58,.62);backdrop-filter:blur(3px);z-index:2147483002;
     display:none;align-items:center;justify-content:center;padding:20px}
   .mask.on{display:flex}
   .modal{background:#fff;border-radius:18px;max-width:560px;width:100%;padding:30px;position:relative;
@@ -651,14 +651,14 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
       <h2>留个邮箱，我们主动联系你</h2>
       <p>无论你想评估、采购，还是只是想看一份样本合规报告——留下联系方式，一个工作日内必有回应。</p>
       <form id="leadForm" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
-        <input type="email" name="email" placeholder="公司邮箱（必填）" required/>
+        <input type="email" id="leadEmail" name="email" placeholder="公司邮箱（必填）" required/>
         <input type="text" name="need" placeholder="想验证的场景 / 需求（选填）"/>
         <button type="submit" class="btn btn-primary">提交需求</button>
       </form>
       <div id="leadOk">✅ 已收到你的需求，我们会尽快联系你。</div>
       <div class="chan">
         <span>📧 <b>邮箱</b> 8069dg@163.com</span>
-        <span>💬 <b>微信</b> 替换成你的微信号</span>
+        <span>💬 <b>微信</b> <span id="wxId" title="点击复制" style="cursor:pointer;text-decoration:underline dotted">a1398432379</span> <button type="button" onclick="copyWx()" style="margin-left:4px;padding:2px 8px;font-size:11px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#eaf1fb;border-radius:999px;cursor:pointer">复制</button></span>
         <span>🌐 <b>仓库</b> github.com/BuqingLiu/santaclara-aegis</span>
       </div>
     </div>
@@ -697,7 +697,7 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
       <p>预约一次演示，我们将用你的驾驶域跑一套场景，并交付一份样本合规报告。</p>
       <div class="hero-cta">
         <a href="#pricing" class="btn btn-primary">立即订阅</a>
-        <a href="mailto:8069dg@163.com" class="btn btn-ghost" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.3)">预约演示</a>
+        <a href="#lead" onclick="bookDemo(event)" class="btn btn-ghost" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.3)">预约演示</a>
       </div>
     </div>
   </div>
@@ -725,13 +725,13 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
     <div class="qrs">
       <div class="qr">
         <img id="qrWx" src="assets/qr/wechat.png" alt="微信收款码" onerror="this.style.display='none';document.getElementById('phWx').style.display='flex'">
-        <div class="ph" id="phWx" style="display:none">放入你的微信收款码<br>assets/qr/wechat.png</div>
-        <div class="nm">微信支付</div>
+        <div class="ph" id="phWx" style="display:none">微信收款码未配置<br>微信：a1398432379（备注邮箱发数据）</div>
+        <div class="nm">微信支付 · a1398432379</div>
       </div>
       <div class="qr">
         <img id="qrAli" src="assets/qr/alipay.png" alt="支付宝收款码" onerror="this.style.display='none';document.getElementById('phAli').style.display='flex'">
-        <div class="ph" id="phAli" style="display:none">放入你的支付宝收款码<br>assets/qr/alipay.png</div>
-        <div class="nm">支付宝</div>
+        <div class="ph" id="phAli" style="display:none">支付宝收款码未配置<br>改用 PayPal：paypal.me/LiuXiaochu2</div>
+        <div class="nm">支付宝 / PayPal</div>
       </div>
     </div>
     <div class="steps">
@@ -769,15 +769,36 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
     full23: { name:"全库场景包 Full-23",         amt:"¥4,999（首发价 · ≈ $694）", paypal:"https://www.paypal.com/paypalme/LiuXiaochu2/694", stripe:"", lemon:"", wechat:"", alipay:"" },
     custom: { name:"定制场景开发（定金 50%）",   amt:"¥8,000 起（50% 预付 ≈ $556）",paypal:"https://www.paypal.com/paypalme/LiuXiaochu2/556",stripe:"", lemon:"", wechat:"", alipay:"" }
   };
+  // ---- 复制微信 ID ----
+  function copyWx(){
+    var id='a1398432379';
+    try{ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(id).then(function(){flashWx('已复制 '+id);},function(){flashWx(id);}); return; } }catch(_){}
+    flashWx(id);
+  }
+  function flashWx(t){ var e=document.getElementById('wxId'); if(e){ var o=e.textContent; e.textContent=t; setTimeout(function(){e.textContent=o;},1200); } }
+
+  // ---- 预约演示 → 滚动到留资并预填 ----
+  function bookDemo(e){
+    if(e&&e.preventDefault) e.preventDefault();
+    var nf=document.getElementById('leadForm');
+    if(nf&&nf.need){ nf.need.value='预约演示（请发一份样本合规报告）'; }
+    var sec=document.getElementById('lead');
+    if(sec){ sec.scrollIntoView({behavior:'smooth'}); var inp=document.getElementById('leadEmail'); if(inp){ setTimeout(function(){ try{inp.focus();}catch(_){} },400); } }
+  }
+
+  // ---- 独立 SKU 点击埋点（GoatCounter 真实统计；未配置则仅本地记录）----
+  function trackSku(sku){
+    try{ if(window.goatcounter&&window.goatcounter.count){ window.goatcounter.count({path:'/sku/'+sku, title:'SKU: '+sku, event:true}); } }catch(_){}
+    try{ var a=JSON.parse(localStorage.getItem('sc_sku')||'[]'); a.push({sku:sku,t:Date.now()}); localStorage.setItem('sc_sku', JSON.stringify(a.slice(-300))); }catch(_){}
+  }
+
   function openPay(id){
-    const p = PAY[id] || {};
-    const url = p.paypal || p.stripe || p.lemon || "";
-    // 语言分流：英文页 → 直接跳 PayPal（paypal.me/LiuXiaochu2）；中文页 → 弹微信/支付宝收款码弹窗
-    const isEn = (document.documentElement.lang || '').toLowerCase().indexOf('en') >= 0;
-    if(isEn && url){ window.open(url, "_blank", "noopener"); return; }
+    var p = PAY[id] || {};
+    var url = p.paypal || p.stripe || p.lemon || "";
+    // 中英文都弹同一收款弹窗，微信/支付宝/PayPal 三通道齐全，避免浏览器拦截 window.open
     document.getElementById('payName').textContent = p.name || "购买";
     document.getElementById('payAmt').textContent  = p.amt  || "";
-    const st = document.getElementById('payStripe'), sna = document.getElementById('payStripeNa');
+    var st = document.getElementById('payStripe'), sna = document.getElementById('payStripeNa');
     if(url){ st.href = url; st.style.display='inline'; sna.style.display='none'; }
     else { st.style.display='none'; sna.style.display='inline'; }
     document.getElementById('payMask').classList.add('on');
@@ -787,7 +808,7 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
     document.getElementById('payMask').classList.remove('on');
     document.body.style.overflow='';
   }
-  document.getElementById('payMask').addEventListener('click',e=>{ if(e.target.id==='payMask') closePay(); });
+  document.getElementById('payMask').addEventListener('click',function(e){ if(e.target.id==='payMask') closePay(); });
 
 
   // Scenario catalog
@@ -1029,6 +1050,8 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
   if(!lang) lang = navLang.indexOf('zh')>=0 ? 'zh' : 'en';
   if(!cur)  cur  = lang==='en' ? 'usd' : 'cny';
   applyLang(lang); applyCur(cur);
+  // 预加载收款码，避免弹窗时才加载导致“不弹出”
+  ['assets/qr/wechat.png','assets/qr/alipay.png'].forEach(function(s){ try{ var i=new Image(); i.src=s; }catch(_){} });
   const swLang=document.getElementById('swLang'), swCur=document.getElementById('swCur');
   const swLangTxt=document.getElementById('swLangTxt'), swCurTxt=document.getElementById('swCurTxt');
   function syncSw(){ try{
@@ -1046,23 +1069,34 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
   });
   // wire plan buttons
   document.querySelectorAll('[data-tier]').forEach(b=>{
-    b.addEventListener('click',()=>openPay(b.dataset.tier));
+    b.addEventListener('click',()=>{ trackSku('tier-'+b.dataset.tier); openPay(b.dataset.tier); });
   });
 
-  // lead form
+  // lead form — 真实收集线索（Formspree 优先；未配置则邮件直达 8069dg@163.com，POP3 自动回复引擎跟进）
   const lf=document.getElementById('leadForm');
-  lf.addEventListener('submit',e=>{
+  lf.addEventListener('submit',function(e){
+    e.preventDefault();
+    const email=((lf.email&&lf.email.value)||'').trim();
+    const need=((lf.need&&lf.need.value)||'').trim();
     const action=lf.getAttribute('action')||'';
+    const ok=document.getElementById('leadOk');
+    if(!email){ ok.style.display='block'; ok.style.color='#ffb4b4'; ok.textContent='请先填写公司邮箱。'; return; }
+    const subject=encodeURIComponent('SantaClara Aegis 需求：'+(need||'咨询'));
+    const body=encodeURIComponent('邮箱：'+email+'\n需求：'+(need||'（未填）')+'\n来源：官网落地页');
     if(action.indexOf('REPLACE_WITH_YOUR_FORM_ID')>=0){
-      e.preventDefault();
-      document.getElementById('leadOk').style.display='block';
-      document.getElementById('leadOk').textContent='✅ 已记录（演示模式）。请在 docs/payment-setup.md 配置 Formspree 后正式收集线索。';
+      window.location.href='mailto:8069dg@163.com?subject='+subject+'&body='+body;
+      ok.style.display='block'; ok.style.color='#7ef0c8';
+      ok.textContent='✅ 已为你打开邮件，发送即完成提交；1 个工作日内回复（也可直接加微信 a1398432379）。';
+    } else {
+      fetch(action,{method:'POST',body:new FormData(lf),headers:{'Accept':'application/json'}})
+        .then(function(r){ if(r.ok){ ok.style.display='block'; ok.style.color='#7ef0c8'; ok.textContent='✅ 已收到，我们会尽快联系你。'; lf.reset(); } else { throw 0; } })
+        .catch(function(){ window.location.href='mailto:8069dg@163.com?subject='+subject+'&body='+body; ok.style.display='block'; ok.style.color='#7ef0c8'; ok.textContent='✅ 已为你打开邮件，发送即完成提交。'; });
     }
   });
 
-  // 数据包“立即购买”按钮 → 打开收款弹窗
+  // 数据包“立即购买”按钮 → 打开收款弹窗 + SKU 埋点
   document.querySelectorAll('[data-buy]').forEach(b=>{
-    b.addEventListener('click',()=>openPay(b.dataset.buy));
+    b.addEventListener('click',()=>{ trackSku('buy-'+b.dataset.buy); openPay(b.dataset.buy); });
   });
 
   // 创始会员倒计时（真实关闭日 2026-08-31，与首页 Founding-Member 席位一致）
@@ -1081,6 +1115,18 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
       m.textContent=String(mm).padStart(2,'0'); s.textContent=String(ss).padStart(2,'0');
     }
     tick(); setInterval(tick,1000);
+  })();
+</script>
+<!-- 独立 SKU 点击埋点：在 https://www.goatcounter.com 免费建站得到代码后，把下方 GC_CODE 填入即可自动统计每个 SKU 的点击/热度（真实独立数据，不依赖回信推测）。留空则关闭，页面照常运行。 -->
+<script>
+  (function(){
+    var GC_CODE=""; // ← 填入你的 GoatCounter 代码（如 "abcde"）
+    if(!GC_CODE) return;
+    window.goatcounter={no_onload:true, allow_local:true, count:function(p){}};
+    var s=document.createElement('script');
+    s.async=true; s.src='https://gc.zgo.at/count.js';
+    s.setAttribute('data-goatcounter','https://'+GC_CODE+'.goatcounter.com/count');
+    document.head.appendChild(s);
   })();
 </script>
 <script src="assets/salesclerk.js"></script>
