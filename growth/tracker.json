@@ -97,6 +97,14 @@
   ],
   "skus": [
     {
+      "id": "verify99",
+      "name": "单场景包 Single-1（验真档）",
+      "price": 99,
+      "list_price": 199,
+      "need_for_goal": 81,
+      "delivery": "任选 1 个场景完整数据（遥测CSV+真值JSONL+雷达原始+HTML合规报告），7天无理由全额退款，升级全套可全额抵扣 ¥99 —— 与落地页 data-buy=single 同一档"
+    },
+    {
       "id": "trial",
       "name": "体验包 Trial-1",
       "price": 399,
@@ -144,10 +152,11 @@
     "assumed_avg_deal": 2200
   },
   "funnel": {
-    "touch": 59,
-    "reply": 0,
+    "touch": 143,
+    "reply": 1,
     "demo": 0,
-    "quote": 0
+    "quote": 0,
+    "reply_rate": 0.0
   },
   "channel_log": [
     {
@@ -687,6 +696,132 @@
       "reply": 0,
       "demo": 0,
       "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-04T13:19+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 65,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-04T21:17+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 66,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-05T06:41+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 72,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-05T13:40+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 102,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-05T20:25+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 111,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-06T07:05+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 111,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-06T12:08+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 111,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-06T12:17+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 112,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-06T12:18+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 112,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-06T12:23+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 112,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-06T14:14+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 142,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-06T18:10+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 143,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-06T20:07+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 143,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
+    },
+    {
+      "ts": "2026-08-07T06:32+08:00",
+      "paid": 0,
+      "gap": 1080000,
+      "touch": 143,
+      "reply": 1,
+      "demo": 0,
+      "bottleneck": "LOW_REPLY"
     }
   ],
   "notes": [
@@ -696,7 +831,7 @@
     "2026-08-01 ⚠️ PayPal 风险（务必诚实告知用户）：本人 PayPal 永久封（PP-L-283471408239，180 天冻结，关联卡不能建新账户，截图在 xwechat_files）。家人 PayPal 违反 ToS（他人账户+禁封规避），PayPal 风险引擎可经设备指纹/IP/银行卡关联→封号→冻结家人资金 180 天。缓解：全新设备+独立 IP+独立银行卡+先小额 $10-50 测试。更稳妥 = Lemon Squeezy（MoR 代收）。",
     "2026-08-01 微信收款码：用户称已有，但本次附件实为支付宝 QR（好味），未上传 wechat.png。等用户重发正确微信 QR。",
     "2026-08-01 国内支付宝已上线（assets/qr/alipay.png，好味个人号，待确认是否换 SantaClara Aegis 品牌）。",
-    "2026-08-04 微信收款码已上线：assets/qr/wechat.png 已推送至 GitHub Pages（https://buqingliu.github.io/santaclara-aegis/assets/qr/wechat.png），与 alipay.png 同时作为一次性买断包（Trial/Core-4/Full-23/Custom）的 QR 弹窗收款方式。alipay.png 商户名仍为「好味」，待用户确认是否替换为 SantaClara Aegis 品牌名后重截图。"
+    "2026-08-04 微信收款码已上线：assets/qr/wechat.png 已推送至 GitHub Pages（https://buqingliu.github.io/santaclara-aegis/assets/qr/wechat.png），与 alipay.png 同时作为一次性买断包（Trial/Core-4/Full-23/Custom）的 QR 弹窗收款方式。alipay.png 商户名仍为「好味」，待用户确认是否替换为 SantaClara Aegis 品牌名后重截图。",
     "2026-08-01 重复优化循环：loop.py 每 4h 复盘 + 每 1h 收件箱温馨回复 + 每 2h 海外铺信；产出 dashboard.html / WAR_ROOM.html / state/report-*.md；自动任务覆盖至 2026-08-03 01:00。",
     "2026-08-01 触达队列：海外 291 封（uni/sim/tier1/operator/oem 5 段×64 机构×~4 轮）+ 国内 36 家 B2B（百度/小马/文远/蔚来/理想/小鹏/比亚迪/地平线 等）。",
     "2026-08-01 抖音账号：用户有 @日常普通乡村生活（抖音号 1625902106，57 粉/9 赞），与 AV/ADAS 受众不匹配，不建议借号推广。建议另建专业号或专注海外 X/LinkedIn/Reddit 权威内容。",
@@ -832,11 +967,67 @@
     {
       "ts": "2026-08-03T19:11+08:00",
       "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-04T13:19+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-04T21:15+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-05T06:41+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-05T13:40+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-05T20:24+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-06T07:05+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-06T12:08+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-06T12:16+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-06T12:20+08:00",
+      "text": "R58 每日循环：306封未发文案改写(钩子+免费2周试点+7天退款+15%转介绍+¥99验真)；¥99验真档进台账并与落地页对齐；pay_notify升级多邮箱(QQ待授权码)；dev.to仍403；TG直连超时改文件播报"
+    },
+    {
+      "ts": "2026-08-06T12:23+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-06T14:14+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-06T18:10+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-06T20:07+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
+    },
+    {
+      "ts": "2026-08-07T06:32+08:00",
+      "text": "[self-check] 2026-08 达成率 0.0%，自动触发'重启循环'：升级稀缺/退款/试点/转介绍；新增联盟+KOL 转介绍；上调基础设施。"
     }
   ],
   "pipeline": {
     "generated": 256,
-    "dispatched": 59
+    "dispatched": 83
   },
   "pending_notify": [],
   "self_check_log": [
@@ -1175,6 +1366,168 @@
         "expand_channels",
         "upgrade_infra"
       ]
+    },
+    {
+      "ts": "2026-08-04T13:19+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-04T21:15+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-05T06:41+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-05T13:40+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-05T20:24+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-06T07:05+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-06T12:08+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-06T12:16+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-06T12:23+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-06T14:14+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-06T18:10+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-06T20:07+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
+    },
+    {
+      "ts": "2026-08-07T06:32+08:00",
+      "month": "2026-08",
+      "expected_cny": 8000,
+      "actual_cny": 0,
+      "pct": 0.0,
+      "actions": [
+        "upgrade_prescription",
+        "expand_channels",
+        "upgrade_infra"
+      ]
     }
-  ]
+  ],
+  "last_optimize": "2026-08-07 09:14",
+  "health": {
+    "smtp": true,
+    "pop3": true,
+    "csv_rows": 684
+  }
 }

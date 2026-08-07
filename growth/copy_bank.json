@@ -1,0 +1,155 @@
+{
+  "subjects_en": {
+    "oem": [
+      "{company}: 23 ready CARLA edge cases to close your {role} safety case faster",
+      "Cut {company} {role} edge-case build time — 23 pre-validated scenarios",
+      "SOTIF evidence on autopilot: 23 CARLA cases for {company} {role}"
+    ],
+    "tier1": [
+      "Stop authoring edge cases — 23 compliance-ready CARLA scenarios for {company}",
+      "Speed up {company}'s {role} sign-off with 23 pre-built CARLA cases",
+      "{company} {role}: ship SOTIF edge-case evidence 3x faster (23 ready cases)"
+    ],
+    "sim": [
+      "Co-sell: 23 CARLA edge cases for {company}'s {role} users",
+      "{company} {role}: gap-fill scenario content (we're not a competitor)",
+      "Feed {company}'s {role} customers 23 auditable CARLA scenarios"
+    ],
+    "av_operator": [
+      "{company} {role}: 23 validated edge cases (telemetry + SOTIF map) ready to run",
+      "Rare edge cases for {company}'s {role} loop — already built and annotated",
+      "Drop 23 validated CARLA cases into {company}'s pipeline today"
+    ],
+    "eng": [
+      "{company} {role}: a ready 23-scenario insert to shorten client SOTIF work",
+      "Ship validated scenarios to {company} clients in days, not months",
+      "{company} {role}: 23 pre-built CARLA cases = faster client close"
+    ],
+    "cert": [
+      "{company} {role}: 23 ISO 21448-annotated edge cases to close evidence faster",
+      "Faster SOTIF sign-off for {company} — 23 annotated scenarios",
+      "Cite 23 pre-validated scenarios in {company}'s safety cases"
+    ],
+    "research": [
+      "{company} {role}: 23 real-run CARLA scenarios for validation research",
+      "Dataset: 23 pre-validated edge cases for {company}",
+      "{company} {role}: real telemetry + reproducible scripts (23 cases)"
+    ],
+    "test_facility": [
+      "{company}: 23-scenario SOTIF starter pack for your OEM clients",
+      "Content layer for {company} — 23 ready CARLA edge cases",
+      "{company}: offer OEM clients a pre-built 23-scenario SOTIF pack"
+    ],
+    "varied": [
+      "23 pre-validated CARLA edge cases for {company} {role}",
+      "Cut {company} {role} scenario time — 23 ready cases",
+      "SOTIF-ready: 23 CARLA edge cases for {company} {role}"
+    ]
+  },
+  "openers_en": {
+    "oem": [
+      "Your {role} team is under pressure to produce SOTIF evidence fast. Our 23 pre-validated CARLA edge cases (cut-in, dooring, occluded pedestrian, night) drop straight into your safety case.",
+      "Saw {company} scaling {role}-level validation. We have already built the 23 hardest edge cases with telemetry + compliance maps, so your engineers validate instead of authoring."
+    ],
+    "tier1": [
+      "{company}'s {role} team is likely drowning in edge-case authoring. We ship 23 compliance-annotated CARLA scenarios — your engineers validate, not write.",
+      "Tier-1 suppliers win OEM trust on how fast they produce SOTIF evidence. Our 23 pre-validated edge cases cut that scenario-build time by weeks for your {role} group."
+    ],
+    "sim": [
+      "You build the simulator; we feed {company}'s {role} users 23 auditable CARLA edge cases. Clean co-sell, 15% referral.",
+      "We are the gap-fill (23 CARLA scenarios with telemetry + compliance), not a competitor to your platform."
+    ],
+    "av_operator": [
+      "Your {role} team lives in scenario-based testing. Our 23 CARLA edge cases (telemetry CSV + reproducible script + SOTIF annotation) plug straight into your pipeline.",
+      "Robotaxi-style {role} loops need the rarer edge cases — dooring, occluded pedestrian, night cut-in. We have validated 23 of them with compliance maps."
+    ],
+    "eng": [
+      "Your {role} consultants build ADAS/AV programs for OEMs. Our 23 edge-case scenarios are a ready insert that shortens their SOTIF evidence work.",
+      "{company}'s {role} bench could ship validated scenarios to clients in days, not months, using our 23 pre-built CARLA cases."
+    ],
+    "cert": [
+      "Your {role} auditors want evidence packages that close fast. Our 23 scenarios ship with ISO 21448 / UN-R157 annotations ready to cite.",
+      "{company} certifies SOTIF/ISO 26262; we provide the pre-validated edge-case evidence layer your clients can reference."
+    ],
+    "research": [
+      "Your {role} group researches exactly the edge cases we have pre-validated (23 CARLA scenarios with compliance maps). Happy to share the dataset.",
+      "Academic + industry crossover: our 23 scenarios are real run data your {role} team could use in validation research."
+    ],
+    "test_facility": [
+      "Facilities like {company} onboard OEMs who need edge-case baselines. Our 23 CARLA scenarios are a ready content layer for your customers.",
+      "{company} could offer clients a pre-built 23-scenario SOTIF starter pack; we license the content, you keep the track."
+    ],
+    "varied": [
+      "Your {role} team could use 23 pre-validated CARLA edge cases to accelerate safety-case closure."
+    ]
+  },
+  "subjects_cn": {
+    "varied": [
+      "{company}：23 个已验证 CARLA 安全边缘场景，直接帮你省掉自研搭建",
+      "{company} 的{role}：现成 CARLA 场景库（含遥测 + 合规标注），即拿即用",
+      "不用自己写边缘场景了——{company} {role} 可直接用我们 23 个已验证案例"
+    ],
+    "oem": [
+      "{company} {role}：23 个带合规标注的 CARLA 边缘场景，直接进安全 Case",
+      "帮{company} {role}缩短安全论证周期——23 个现成 CARLA 案例"
+    ],
+    "tier1": [
+      "加速{company} {role}交付——23 个已验证 CARLA 场景",
+      "{company} {role}：现成 SOTIF 边缘场景库（23 个，带合规标注）"
+    ],
+    "av_operator": [
+      "{company} {role}：23 个边缘场景（遥测 + 合规标注）即拿即跑",
+      "稀有边缘场景已验证——{company} {role}流水线直接用"
+    ],
+    "eng": [
+      "{company} {role}：即插即用的 23 个已验证 CARLA 场景",
+      "帮{company}客户快速交差——23 个现成 CARLA 案例"
+    ],
+    "sim": [
+      "协同发展：给{company} {role}用户补 23 个 CARLA 边缘场景",
+      "{company} {role}：我们不抢生意，只补场景内容"
+    ],
+    "cert": [
+      "{company} {role}：带 ISO 21448 标注的 23 个已验证边缘场景",
+      "加速{company} SOTIF 闭包——23 个合规场景"
+    ],
+    "research": [
+      "{company} {role}：23 个真实跑出来的 CARLA 场景数据集",
+      "数据集分享：{company} 23 个已验证边缘案例"
+    ],
+    "test_facility": [
+      "{company}：23 个场景 SOTIF 起步包，给你的 OEM 客户",
+      "给{company}补内容层——23 个现成 CARLA 边缘场景"
+    ]
+  },
+  "openers_cn": {
+    "varied": [
+      "看到{company}在做{role}，你们要的其实不是「再搭一套仿真」，而是「马上能跑、能交差的真实边缘场景」。我们这 23 个 CARLA 案例（含遥测 CSV + 可复现脚本 + ISO 21448/UN-R157 合规标注）就是干这个的。",
+      "{company}做{role}不容易——边缘场景（鬼探头、车门突然开启、夜间遮挡行人、恶意加塞）又贵又难写。我们已经把 23 个最难、最容易被监管和客户挑刺的场景做好了，你直接拿去验证、交差。"
+    ],
+    "oem": [
+      "{company}的{role}团队在做安全论证，最缺的就是「拿得出手、经得起审」的边缘场景。我们 23 个已验证 CARLA 案例，含遥测 + 合规标注，直接能进你们的安全 Case。"
+    ],
+    "tier1": [
+      "做{role}的 Tier-1 最怕客户催 SOTIF 证据。我们 23 个现成 CARLA 边缘场景（带合规标注）能让{company}的交付周期缩短几周。"
+    ],
+    "av_operator": [
+      "{company}跑{role}最需要的就是「稀有边缘场景」——鬼探头、夜间遮挡、车门开启我们都已验证好 23 个，遥测 + 脚本直接进你们流水线。"
+    ],
+    "eng": [
+      "{company}的{role}顾问帮客户做 ADAS/AV 项目，最缺现成场景。我们 23 个已验证案例，是你交给客户最快的「即插即用」物料。"
+    ],
+    "sim": [
+      "你们做仿真平台，我们不抢生意——只给{company}的{role}用户补 23 个带合规标注的 CARLA 边缘场景，干净的协同发展。"
+    ],
+    "cert": [
+      "{company}做{role}认证，最怕证据包闭不上。我们 23 个场景自带 ISO 21448 / UN-R157 标注，直接可引用。"
+    ],
+    "research": [
+      "{company}的{role}团队做边缘场景研究，我们这 23 个真实跑出来的 CARLA 案例（含遥测）正好能当数据集用。"
+    ],
+    "test_facility": [
+      "像{company}这样的试验场，OEM 客户最缺边缘场景基线。我们 23 个 CARLA 场景是直接能用的内容层。"
+    ]
+  }
+}

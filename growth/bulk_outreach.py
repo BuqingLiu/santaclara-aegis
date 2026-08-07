@@ -30,6 +30,17 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 CSV  = os.path.join(BASE, "prospects_email_ready.csv")
 STATE= os.path.join(BASE, "prospects_email_state.json")
 TRACKER = os.path.join(BASE, "tracker.json")
+COPY_BANK_CACHE = None
+def load_copy_bank():
+    global COPY_BANK_CACHE
+    if COPY_BANK_CACHE is not None:
+        return COPY_BANK_CACHE
+    p = os.path.join(BASE, "copy_bank.json")
+    try:
+        COPY_BANK_CACHE = json.load(open(p, encoding="utf-8"))
+    except Exception:
+        COPY_BANK_CACHE = {}
+    return COPY_BANK_CACHE
 SITE  = "https://buqingliu.github.io/santaclara-aegis/"
 SAMPLE= "https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html"
 PAY   = "https://www.paypal.com/paypalme/LiuXiaochu2"
@@ -291,7 +302,9 @@ def save_state(s):
 def opener_for(row, round_n):
     cn = use_cn(row)
     seg = row.get("segment", "") or "varied"
-    variants = (CN_OPENERS if cn else OPENERS).get(seg, (CN_OPENERS if cn else OPENERS)["varied"])
+    bank = load_copy_bank()
+    key = "openers_cn" if cn else "openers_en"
+    variants = (bank.get(key, {}) or {}).get(seg) or (CN_OPENERS if cn else OPENERS).get(seg, (CN_OPENERS if cn else OPENERS)["varied"])
     idx = abs(hash(row.get("company", "") + str(round_n))) % len(variants)
     base = variants[idx].format(company=row.get("company", ""), role=row.get("role", ""))
     follow = CN_FOLLOW if cn else FOLLOW
@@ -302,7 +315,9 @@ def opener_for(row, round_n):
 def subject_for(row, round_n):
     cn = use_cn(row)
     seg = row.get("segment", "") or "varied"
-    variants = (CN_SUBJECTS if cn else SUBJECTS).get(seg, (CN_SUBJECTS if cn else SUBJECTS)["varied"])
+    bank = load_copy_bank()
+    key = "subjects_cn" if cn else "subjects_en"
+    variants = (bank.get(key, {}) or {}).get(seg) or (CN_SUBJECTS if cn else SUBJECTS).get(seg, (CN_SUBJECTS if cn else SUBJECTS)["varied"])
     idx = abs(hash(row.get("company", "") + str(round_n))) % len(variants)
     return variants[idx].format(company=row.get("company", ""), role=row.get("role", ""))
 
@@ -310,7 +325,7 @@ def body_for(row, round_n):
     c = row.get("company", ""); role = row.get("role", ""); hook = row.get("hook", "")
     cn = use_cn(row)
     if cn:
-        proof = "Foretellix、dSPACE、Vector、AVL、rFpro 的安全团队都在用同一套 23 场景库——现在你的团队也能用。"
+        proof = "23 个场景严格按 ISO 21448 / UN-R157 的 SOTIF 方法论构建，自带遥测 CSV、可复现 CARLA 脚本与合规标注，直接能进你们的安全论证流程。"
         lines = [
             "%s %s 团队，您好：" % (c, role),
             "",
@@ -327,8 +342,8 @@ def body_for(row, round_n):
             "— 刘晓楚，SantaClara Aegis（23 个安全关键 CARLA 边缘场景，含遥测数据 + SOTIF/UN-R157 合规标注）",
         ]
     else:
-        proof = ("Trusted by safety teams at Foretellix, dSPACE, Vector, AVL and rFpro — the same 23-scenario "
-                 "library they piloted, now available to your team.")
+        proof = ("Built to ISO 21448 / UN-R157 SOTIF methodology — every scenario ships with telemetry CSVs, "
+                 "a reproducible CARLA script, and compliance annotations ready to drop into your safety-case workflow.")
         lines = [
             "Hi %s %s team," % (c, role),
             "",
@@ -384,13 +399,17 @@ def send_with_retry(email, subj, body, tries=3):
 def run(dry=False, limit=None, region=None):
     if not send_smtp.configured():
         print("[bulk] SMTP 未配置，退出。"); return 0
-    rows = load()
-    if not rows:
+    if not region:
+        print("[bulk] 未指定 --region，已跳过（防止错时区群发；请用 --region mi|tx|sz）。")
+        return 0
+    all_rows = load()
+    if not all_rows:
         print("[bulk] 名单为空（prospects_email_ready.csv 无数据）。"); return 0
+    rows = all_rows  # 发送时只筛选本区域，但落盘必须写回全量，避免三区域引擎互相覆盖丢失其它区域
 
     # 区域过滤
     if region:
-        rows = [r for r in rows if region_of(r) == region]
+        rows = [r for r in all_rows if region_of(r) == region]
         if not rows:
             print("[bulk] 区域 %s 无待发名单。" % region); return 0
 
@@ -447,7 +466,7 @@ def run(dry=False, limit=None, region=None):
                 row["last_error"] = ""
                 sent += 1
                 print("[ok] %s | %s" % (email, subj))
-                save(rows)
+                save(all_rows)
             else:
                 row["last_error"] = det
                 fails += 1
@@ -458,7 +477,7 @@ def run(dry=False, limit=None, region=None):
                     break
     finally:
         try:
-            save(rows)
+            save(all_rows)
         except Exception as ex:
             print("[bulk] 名单落盘失败：%s" % ex)
         rs["last_run"] = today
