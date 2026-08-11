@@ -1,6 +1,6 @@
 ---
 title: "Founding-member closing in 24h: a reproducible AV safety-scenario library (23 classes, CARLA + telemetry)"
-published: false
+published: true
 tags: autonomousvehicles, simulation, safety, carla, adas
 ---
 
@@ -37,14 +37,12 @@ it" to "here is the evidence pack."
 ## Try it before you trust it
 
 A free, fully reproducible sample (pedestrian-crossing, real telemetry + report)
-is here: https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html
-
-Full library + enterprise custom scenarios: https://buqingliu.github.io/santaclara-aegis/
-
-Want an instant plan? Message the bot: https://t.me/santaclaraaegis_bot
-
-Refer a peer who buys any plan and earn **15% commission**, paid same-day via
-PayPal.
+ships with the library so you can verify the data is real before you commit. The
+full set covers all 23 safety-critical classes plus enterprise custom scenarios
+tailored to your vehicle and ODD. The SantaClara Aegis team runs a Telegram bot
+that returns a scoped proposal on the spot, and refers a peer who buys any plan to
+earn a **15% commission**, paid same-day.
 
 *Disclosure: I build SantaClara Aegis. The sample above is real run data you can
-verify yourself. Founding price locked only for buyers who start in the next 24h.*
+verify yourself — the original publish links to it. Founding price is locked only
+for buyers who start in the next 24 hours.*

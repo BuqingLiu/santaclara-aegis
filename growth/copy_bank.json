@@ -1,155 +1,260 @@
 {
   "subjects_en": {
     "oem": [
-      "{company}: 23 ready CARLA edge cases to close your {role} safety case faster",
-      "Cut {company} {role} edge-case build time — 23 pre-validated scenarios",
-      "SOTIF evidence on autopilot: 23 CARLA cases for {company} {role}"
+      "23 edge cases {company} can run this week",
+      "free sample: one CARLA cut-in scenario for {company}?",
+      "the tedious part of your safety case, pre-built"
     ],
     "tier1": [
-      "Stop authoring edge cases — 23 compliance-ready CARLA scenarios for {company}",
-      "Speed up {company}'s {role} sign-off with 23 pre-built CARLA cases",
-      "{company} {role}: ship SOTIF edge-case evidence 3x faster (23 ready cases)"
+      "stop hand-building SOTIF evidence — sample?",
+      "{company}: 23 pre-built CARLA cases, ready to run",
+      "we did the 23 worst edge cases so your team doesn't"
     ],
     "sim": [
-      "Co-sell: 23 CARLA edge cases for {company}'s {role} users",
-      "{company} {role}: gap-fill scenario content (we're not a competitor)",
-      "Feed {company}'s {role} customers 23 auditable CARLA scenarios"
+      "co-sell angle: 23 CARLA cases for your users",
+      "not a competitor — we hand you 23 scenarios",
+      "your platform + our 23 edge cases (15% referral)"
     ],
     "av_operator": [
-      "{company} {role}: 23 validated edge cases (telemetry + SOTIF map) ready to run",
-      "Rare edge cases for {company}'s {role} loop — already built and annotated",
-      "Drop 23 validated CARLA cases into {company}'s pipeline today"
+      "the rare cases your robotaxi loop lives on — built",
+      "23 validated CARLA edge cases, ready for {company}",
+      "dooring, occluded pedestrian, night cut-in: done"
     ],
     "eng": [
-      "{company} {role}: a ready 23-scenario insert to shorten client SOTIF work",
-      "Ship validated scenarios to {company} clients in days, not months",
-      "{company} {role}: 23 pre-built CARLA cases = faster client close"
+      "a ready insert for {company}'s client SOTIF work",
+      "ship validated scenarios to clients in days",
+      "23 pre-built cases = faster client close for {company}"
     ],
     "cert": [
-      "{company} {role}: 23 ISO 21448-annotated edge cases to close evidence faster",
-      "Faster SOTIF sign-off for {company} — 23 annotated scenarios",
-      "Cite 23 pre-validated scenarios in {company}'s safety cases"
+      "23 ISO 21448-annotated cases your auditors can cite",
+      "faster SOTIF sign-off — pre-labeled scenarios",
+      "evidence layer your clients actually reference"
     ],
     "research": [
-      "{company} {role}: 23 real-run CARLA scenarios for validation research",
-      "Dataset: 23 pre-validated edge cases for {company}",
-      "{company} {role}: real telemetry + reproducible scripts (23 cases)"
+      "23 real-run CARLA scenarios as a validation dataset",
+      "sharing our edge-case dataset with {company}",
+      "pre-validated cases your {role} team studies"
     ],
     "test_facility": [
-      "{company}: 23-scenario SOTIF starter pack for your OEM clients",
-      "Content layer for {company} — 23 ready CARLA edge cases",
-      "{company}: offer OEM clients a pre-built 23-scenario SOTIF pack"
+      "a content layer for your OEM clients: 23 scenarios",
+      "offer OEMs a 23-scenario SOTIF starter pack",
+      "{company}: ready CARLA edge cases for your track"
     ],
     "varied": [
-      "23 pre-validated CARLA edge cases for {company} {role}",
-      "Cut {company} {role} scenario time — 23 ready cases",
-      "SOTIF-ready: 23 CARLA edge cases for {company} {role}"
+      "23 CARLA edge cases you can run today",
+      "the boring part of edge-case work, done",
+      "free sample: one nasty scenario for {company}?"
     ]
   },
   "openers_en": {
     "oem": [
-      "Your {role} team is under pressure to produce SOTIF evidence fast. Our 23 pre-validated CARLA edge cases (cut-in, dooring, occluded pedestrian, night) drop straight into your safety case.",
-      "Saw {company} scaling {role}-level validation. We have already built the 23 hardest edge cases with telemetry + compliance maps, so your engineers validate instead of authoring."
+      "Straight talk: a safety case lives or dies on edge-case evidence, and building it is the most tedious part of the job. We pre-built 23 of the nasty ones — cut-in, dooring, occluded pedestrian, night — each with real telemetry, a one-command CARLA script, and SOTIF annotations. Your engineers validate; they don't author.",
+      "If your {role} team is hand-rolling cut-in scenarios on a Friday, we should talk. The 23 worst edge cases are already built, runnable, and labeled to ISO 21448. Download and go."
     ],
     "tier1": [
-      "{company}'s {role} team is likely drowning in edge-case authoring. We ship 23 compliance-annotated CARLA scenarios — your engineers validate, not write.",
-      "Tier-1 suppliers win OEM trust on how fast they produce SOTIF evidence. Our 23 pre-validated edge cases cut that scenario-build time by weeks for your {role} group."
+      "OEMs trust Tier-1s on how fast they produce SOTIF evidence. We cut that build time by weeks: 23 pre-validated CARLA scenarios with telemetry + compliance labels, ready for your {role} group to drop in.",
+      "Your {role} folks are probably buried in edge-case authoring. We ship 23 compliance-annotated CARLA scenarios so they validate instead of write. One sample and you'll see the difference."
     ],
     "sim": [
-      "You build the simulator; we feed {company}'s {role} users 23 auditable CARLA edge cases. Clean co-sell, 15% referral.",
-      "We are the gap-fill (23 CARLA scenarios with telemetry + compliance), not a competitor to your platform."
+      "You build the simulator; we hand your {role} users 23 auditable CARLA edge cases. Not competing — clean co-sell, and we pay 15% referral on anything that comes from the intro.",
+      "We're the gap-fill, not a rival. 23 CARLA scenarios with telemetry + compliance, ready to sit inside your platform. Your users get content; you get a referral cut."
     ],
     "av_operator": [
-      "Your {role} team lives in scenario-based testing. Our 23 CARLA edge cases (telemetry CSV + reproducible script + SOTIF annotation) plug straight into your pipeline.",
-      "Robotaxi-style {role} loops need the rarer edge cases — dooring, occluded pedestrian, night cut-in. We have validated 23 of them with compliance maps."
+      "Robotaxi loops live on the rare cases — dooring, occluded pedestrian, night cut-in. We've validated 23 of them with telemetry and a reproducible script your {role} team runs as-is.",
+      "The edge cases that actually scare your safety reviewers? We built 23 of them, labeled, with telemetry. They plug straight into {company}'s pipeline — no rebuild."
     ],
     "eng": [
-      "Your {role} consultants build ADAS/AV programs for OEMs. Our 23 edge-case scenarios are a ready insert that shortens their SOTIF evidence work.",
-      "{company}'s {role} bench could ship validated scenarios to clients in days, not months, using our 23 pre-built CARLA cases."
+      "Your {role} consultants build ADAS/AV programs for OEMs. Our 23 edge-case scenarios are a ready insert that shortens their SOTIF work from months to days.",
+      "When {company}'s {role} bench ships validated scenarios to a client, our 23 pre-built cases turn a months-long build into a download. Faster close, same quality."
     ],
     "cert": [
-      "Your {role} auditors want evidence packages that close fast. Our 23 scenarios ship with ISO 21448 / UN-R157 annotations ready to cite.",
-      "{company} certifies SOTIF/ISO 26262; we provide the pre-validated edge-case evidence layer your clients can reference."
+      "Auditors want evidence that closes fast and survives scrutiny. Our 23 scenarios ship with ISO 21448 / UN-R157 annotations they can cite directly — no rewriting on your end.",
+      "{company} certifies SOTIF/ISO 26262; we provide the pre-validated edge-case evidence layer your clients reference. One less thing your {role} team has to author."
     ],
     "research": [
-      "Your {role} group researches exactly the edge cases we have pre-validated (23 CARLA scenarios with compliance maps). Happy to share the dataset.",
-      "Academic + industry crossover: our 23 scenarios are real run data your {role} team could use in validation research."
+      "Sharing our 23 real-run CARLA scenarios (telemetry + scripts) — handy as a validation dataset for your {role} group, no strings attached.",
+      "Your {role} team researches exactly the edge cases we pre-validated. Happy to share the dataset; if it helps, great."
     ],
     "test_facility": [
-      "Facilities like {company} onboard OEMs who need edge-case baselines. Our 23 CARLA scenarios are a ready content layer for your customers.",
-      "{company} could offer clients a pre-built 23-scenario SOTIF starter pack; we license the content, you keep the track."
+      "Facilities like {company} onboard OEMs who need edge-case baselines. Our 23 CARLA scenarios are a ready content layer you can offer customers — you keep the track, we license the content.",
+      "You could hand OEM clients a 23-scenario SOTIF starter pack built on your track. We license the scenarios; you stay the venue. Clean fit."
     ],
     "varied": [
-      "Your {role} team could use 23 pre-validated CARLA edge cases to accelerate safety-case closure."
+      "Most teams don't need another simulator — they need edge cases they can run today. We built 23 of the nasty ones (cut-in, dooring, occluded pedestrian, night), each with telemetry + a CARLA script.",
+      "Here's the boring truth: edge-case authoring eats your best engineers' weeks. We did the 23 worst ones so your {role} team validates instead of writes. Free sample on request."
     ]
   },
   "subjects_cn": {
     "varied": [
-      "{company}：23 个已验证 CARLA 安全边缘场景，直接帮你省掉自研搭建",
-      "{company} 的{role}：现成 CARLA 场景库（含遥测 + 合规标注），即拿即用",
-      "不用自己写边缘场景了——{company} {role} 可直接用我们 23 个已验证案例"
+      "23 个 CARLA 边缘场景，免费给你跑 1 个",
+      "{company}：最头疼的安全边缘场景，我们跑好了",
+      "别再手搓场景了——免费样例发你"
     ],
     "oem": [
-      "{company} {role}：23 个带合规标注的 CARLA 边缘场景，直接进安全 Case",
-      "帮{company} {role}缩短安全论证周期——23 个现成 CARLA 案例"
+      "{company}：23 个能直接跑的 CARLA 边缘场景",
+      "免费样例：给 {company} 发 1 个鬼探头场景？",
+      "安全 Case 最磨人的部分，我们预置好了"
     ],
     "tier1": [
-      "加速{company} {role}交付——23 个已验证 CARLA 场景",
-      "{company} {role}：现成 SOTIF 边缘场景库（23 个，带合规标注）"
+      "别再手搓 SOTIF 证据——先发你样例？",
+      "{company}：23 个现成 CARLA 场景，下载就能跑",
+      "最难的 23 个边缘场景，我们替你跑完了"
     ],
     "av_operator": [
-      "{company} {role}：23 个边缘场景（遥测 + 合规标注）即拿即跑",
-      "稀有边缘场景已验证——{company} {role}流水线直接用"
+      "Robotaxi 最怕的稀有场景，我们已经验证好",
+      "23 个已验证 CARLA 边缘场景，给 {company} 直接用",
+      "鬼探头、车门开、夜间遮挡——都跑好了"
     ],
     "eng": [
-      "{company} {role}：即插即用的 23 个已验证 CARLA 场景",
-      "帮{company}客户快速交差——23 个现成 CARLA 案例"
+      "给 {company} 客户交差的即插即用场景包",
+      "几天就能给客户交付验证场景",
+      "23 个现成案例 = 更快帮客户结案"
     ],
     "sim": [
-      "协同发展：给{company} {role}用户补 23 个 CARLA 边缘场景",
-      "{company} {role}：我们不抢生意，只补场景内容"
+      "协同不抢生意：给 {company} 用户补 23 个场景",
+      "我们补内容，你做平台（成交返 15%）",
+      "23 个带合规的场景，坐进你的平台"
     ],
     "cert": [
-      "{company} {role}：带 ISO 21448 标注的 23 个已验证边缘场景",
-      "加速{company} SOTIF 闭包——23 个合规场景"
+      "23 个带 ISO 21448 标注的场景，审方直接引用",
+      "加速 SOTIF 闭包——预标注场景",
+      "审方真正用得上的证据层"
     ],
     "research": [
-      "{company} {role}：23 个真实跑出来的 CARLA 场景数据集",
-      "数据集分享：{company} 23 个已验证边缘案例"
+      "23 个真实跑出来的 CARLA 场景数据集",
+      "把我们的边缘场景数据集分享给 {company}",
+      "预验证案例，给 {role} 团队做研究"
     ],
     "test_facility": [
-      "{company}：23 个场景 SOTIF 起步包，给你的 OEM 客户",
-      "给{company}补内容层——23 个现成 CARLA 边缘场景"
+      "给你的 OEM 客户补内容层：23 个场景",
+      "给 OEM 一套 23 场景 SOTIF 起步包",
+      "{company}：现成 CARLA 边缘场景，给赛道用"
     ]
   },
   "openers_cn": {
     "varied": [
-      "看到{company}在做{role}，你们要的其实不是「再搭一套仿真」，而是「马上能跑、能交差的真实边缘场景」。我们这 23 个 CARLA 案例（含遥测 CSV + 可复现脚本 + ISO 21448/UN-R157 合规标注）就是干这个的。",
-      "{company}做{role}不容易——边缘场景（鬼探头、车门突然开启、夜间遮挡行人、恶意加塞）又贵又难写。我们已经把 23 个最难、最容易被监管和客户挑刺的场景做好了，你直接拿去验证、交差。"
+      "说点实在的：做安全论证最磨人的就是边缘场景。我们把最棘手的 23 个（鬼探头、车门突然开、夜间遮挡行人、加塞）一个个跑出来，每个带真实遥测 CSV、一键复现的 CARLA 脚本、还有 SOTIF 合规标注。你们工程师下载就能跑、能交差，不用再熬夜手搓。",
+      "大实话：手搓边缘场景最吃你们最贵工程师的时间。最难的 23 个我们替你跑完了，带遥测、带脚本、带合规标注。免费样例，你跑一个就懂。"
     ],
     "oem": [
-      "{company}的{role}团队在做安全论证，最缺的就是「拿得出手、经得起审」的边缘场景。我们 23 个已验证 CARLA 案例，含遥测 + 合规标注，直接能进你们的安全 Case。"
+      "不绕弯子：安全 Case 成不成，全看边缘场景的证据够不够硬，而这恰恰最磨人。我们把最难的 23 个（加塞、鬼探头、车门开、夜间遮挡）跑好了，带遥测 + 合规标注，你们工程师只验证、不重写。",
+      "要是你们 {role} 团队周五还在手搓加塞场景，那咱得聊聊。最难的 23 个我们早跑好了、能跑、按 ISO 21448 标好了，下载就能用。"
     ],
     "tier1": [
-      "做{role}的 Tier-1 最怕客户催 SOTIF 证据。我们 23 个现成 CARLA 边缘场景（带合规标注）能让{company}的交付周期缩短几周。"
+      "OEM 信不信 Tier-1，看你能多快拿出 SOTIF 证据。我们把搭建时间砍掉几周：23 个预验证 CARLA 场景，带遥测 + 合规标注，你们 {role} 团队直接拖进去用。",
+      "你们 {role} 的人估计正埋在边缘场景的编写里。我们发 23 个带合规标注的现成 CARLA 场景，让他们去验证、别去写。先发你 1 个样例，差距一眼看出来。"
     ],
     "av_operator": [
-      "{company}跑{role}最需要的就是「稀有边缘场景」——鬼探头、夜间遮挡、车门开启我们都已验证好 23 个，遥测 + 脚本直接进你们流水线。"
+      "Robotaxi 最怕的就是那些稀有场景——鬼探头、车门突然开、夜间遮挡。这 23 个我们带遥测 + 可复现脚本验证好了，你们 {role} 团队原样就能跑。",
+      "真正让安全评审皱眉头的边缘场景？我们做了 23 个，带标注、带遥测，直接能进 {company} 的流水线，不用重建。"
     ],
     "eng": [
-      "{company}的{role}顾问帮客户做 ADAS/AV 项目，最缺现成场景。我们 23 个已验证案例，是你交给客户最快的「即插即用」物料。"
+      "你们 {role} 顾问帮 OEM 做项目，最缺现成场景。我们 23 个已验证案例，是交给客户最快的即插即用物料，把几个月的事变成一次下载。",
+      "等 {company} 的 {role} 团队要给客户交付验证场景时，我们 23 个现成 CARLA 案例能把几个月的搭建压成一次下载。结案更快，质量不降。"
     ],
     "sim": [
-      "你们做仿真平台，我们不抢生意——只给{company}的{role}用户补 23 个带合规标注的 CARLA 边缘场景，干净的协同发展。"
+      "你们做仿真平台，我们不抢生意——只给 {role} 用户补 23 个带合规标注的 CARLA 边缘场景。干净协同，介绍成交还返你 15%。",
+      "我们是补内容的，不是对手。23 个带遥测 + 合规的 CARLA 案例，直接坐进你的平台。用户有内容，你有转介绍分成。"
     ],
     "cert": [
-      "{company}做{role}认证，最怕证据包闭不上。我们 23 个场景自带 ISO 21448 / UN-R157 标注，直接可引用。"
+      "审方要的是能快速闭包、经得起查的证据。我们 23 个场景自带 ISO 21448 / UN-R157 标注，审方直接引用，你们 {role} 团队不用重写。",
+      "{company} 做 SOTIF/ISO 26262 认证，我们给的就是客户能直接引用的预验证证据层。你们 {role} 团队少写一样东西。"
     ],
     "research": [
-      "{company}的{role}团队做边缘场景研究，我们这 23 个真实跑出来的 CARLA 案例（含遥测）正好能当数据集用。"
+      "把我们 23 个真实跑出来的 CARLA 场景（带遥测 + 脚本）分享出来，给 {role} 团队当验证数据集正好，没有附加条件。",
+      "你们 {role} 团队研究的边缘场景，恰好是我们预验证的那批。数据集乐于分享，能用上最好。"
     ],
     "test_facility": [
-      "像{company}这样的试验场，OEM 客户最缺边缘场景基线。我们 23 个 CARLA 场景是直接能用的内容层。"
+      "像 {company} 这样的试验场，OEM 客户最缺边缘场景基线。我们 23 个 CARLA 场景是现成的内容层，你们提供给客户——赛道还是你们的，内容我们授权。",
+      "你可以给 OEM 客户一套基于你赛道的 23 场景 SOTIF 起步包。场景我们授权，场地还是你做主。干净契合。"
+    ]
+  },
+  "bridges_cn": {
+    "oem": [
+      "做安全论证的人最怕的，不是技术难，是评审前夜发现那几个边缘场景还没跑——那种悬着的感觉，我们都懂。",
+      "安全 Case 成不成，往往卡在最后一公里那几个没人愿意碰的稀有场景上。"
+    ],
+    "tier1": [
+      "OEM 催 SOTIF 证据时，最难熬的不是团队不懂，是被重复造轮子拖住了交付。",
+      "你们的人最清楚：明明能直接验证，却还在一行行手搓场景，时间就这么没了。"
+    ],
+    "av_operator": [
+      "Robotaxi 安全评审里，最让人睡不着的，就是那几个稀有场景到底跑没跑、证据在不在。",
+      "让安全负责人皱眉头的，从来不是常规路况，是鬼探头、夜间遮挡这种一旦出事就说不清的。"
+    ],
+    "eng": [
+      "你们顾问最懂：给客户交差的场景包，质量不差，可赶工期时最容易在边缘案例上妥协。",
+      "客户要的是能交差的证据，而边缘场景恰恰是最磨人、最容易拖慢结案的那一块。"
+    ],
+    "sim": [
+      "做平台的人最纠结的：用户要边缘场景内容，你又不想跟客户的业务抢饭碗。",
+      "你们要的是生态完整，不是自己下场把客户的活儿都干了。"
+    ],
+    "cert": [
+      "审方最累的不是看材料，是材料里缺的那一环得来回催、来回补。",
+      "评审最怕的，是证据链到关键处断了，整份报告都得返工。"
+    ],
+    "research": [
+      "做研究最怕的，是数据集不完整、又不能复现——那样结论谁也不敢拍板。",
+      "能跑、能复现、带标注的数据集，才是你们真正用得上的。"
+    ],
+    "test_facility": [
+      "试验场最珍视的是自己的场地招牌：补内容可以，但不能喧宾夺主。",
+      "你们要的是给 OEM 客户加分，而不是把赛道变成别人的展示台。"
+    ],
+    "varied": [
+      "做边缘场景的人都有体会：那 23% 的稀有案例，吃掉 80% 最好的工程师时间。",
+      "最磨人的从来不是常规场景，是那些一旦漏了就会在评审现场被点名的。"
+    ]
+  },
+  "notes_cn": {
+    "varied": [
+      "说句心里话：这 23 个场景是我们一个一个跑出来的，就为了让你少熬几个周五的夜。",
+      "我们不是大厂，就是几个较真的人，把最难的边缘场景先跑通了，想帮同样较真的你省点事。"
+    ]
+  },
+  "bridges_en": {
+    "oem": [
+      "The hardest part of owning a safety case isn't the engineering — it's the night before review when you realize the few worst edge cases were never actually run.",
+      "A safety case usually lives or dies on those last rare cases nobody wants to touch."
+    ],
+    "tier1": [
+      "When an OEM is waiting on SOTIF evidence, the painful part isn't a skills gap — it's your team stuck re-building scenarios someone should have shipped already.",
+      "Your people know it best: time vanishes hand-authoring cases they could just validate."
+    ],
+    "av_operator": [
+      "In a robotaxi safety review, what keeps people up is whether the rare cases were actually run, and whether anyone kept the evidence.",
+      "Safety leads don't lose sleep over normal driving — they lose it over dooring and occluded-pedestrian cases that are impossible to explain away if they happen."
+    ],
+    "eng": [
+      "Consultants know best: the scenario pack you hand a client is fine on quality, but under deadline the edge cases are exactly where it gets quietly cut.",
+      "Clients want evidence they can sign off — and edge cases are the part that slows the close the most."
+    ],
+    "sim": [
+      "Platform teams hate one thing: users want edge-case content, but you shouldn't be competing with your own customers' work.",
+      "What you want is a complete ecosystem, not to do your customers' jobs for them."
+    ],
+    "cert": [
+      "Assessors don't mind reading evidence — they mind the missing link they have to chase you for, again and again.",
+      "The dread in review is a broken evidence chain that sends the whole report back for rework."
+    ],
+    "research": [
+      "Research lives or dies on whether the dataset is complete and reproducible — incomplete data means a conclusion no one trusts.",
+      "What your team actually uses is data that runs, reproduces, and carries the annotations."
+    ],
+    "test_facility": [
+      "A proving ground's name is its asset: adding content is fine, upstaging the venue is not.",
+      "What you want is to add value for OEM clients, not turn the track into someone else's showcase."
+    ],
+    "varied": [
+      "Anyone who's done edge cases knows: the rare 23% eat 80% of your best engineers' weeks.",
+      "The painful part was never the routine scenarios — it's the ones that get named in review if you skip them."
+    ]
+  },
+  "notes_en": {
+    "varied": [
+      "Honestly: we built these 23 one by one so you'd lose a few fewer Friday nights to scenario authoring.",
+      "We're not a big vendor — just a small team that ran the hardest cases first, hoping to save people like you the grind."
     ]
   }
 }

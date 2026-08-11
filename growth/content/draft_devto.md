@@ -35,12 +35,13 @@ covered it" to "here is the evidence pack."
 
 ## Try it before you trust it
 
-A free, fully reproducible sample (pedestrian-crossing, real telemetry + report)
-is here: https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html
+A free, fully reproducible sample (pedestrian-crossing, with real telemetry and a
+scenario report) ships with the library so you can verify the data is real before
+you commit. The full set covers all 23 safety-critical classes plus enterprise
+custom scenarios tailored to your vehicle and ODD.
 
-Full library + enterprise custom scenarios: https://buqingliu.github.io/santaclara-aegis/
-
-Want an instant plan? Message the bot: https://t.me/santaclaraaegis_bot
+If you want a tailored plan fast, the SantaClara Aegis team runs a Telegram bot
+that returns a scoped proposal on the spot.
 
 *Disclosure: I build SantaClara Aegis. The sample above is real run data you can
-verify yourself.*
+verify yourself — the original publish links to it.*

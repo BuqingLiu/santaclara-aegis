@@ -16,5 +16,5 @@
 - We acknowledge within 2 business days and provide a remediation timeline.
 
 ## Licensing & revenue integrity
-- All payments are processed through verified channels (PayPal `paypal.me/LiuXiaochu2`, WeChat / Alipay QR).
+- All payments are processed through verified channels (PayPal `paypal.me/LiuXiaochu2`, WeChat QR).
 - We do **not** fabricate usage, payment, or compliance figures. Paid status reflects only real received payments.

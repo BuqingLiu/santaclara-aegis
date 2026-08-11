@@ -36,10 +36,6 @@ A good scenario library should let you:
 ---
 
 ### Try it in 5 minutes
-We publish a free, fully reproducible sample (night pedestrian-crossing) with telemetry and compliance tags:
+We publish a free, fully reproducible sample (night pedestrian-crossing) with telemetry and compliance tags, and a full 23-scenario library for teams that want to skip the build. Custom packs are scoped by the SantaClara Aegis team on request.
 
-- Free sample → https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html
-- Full 23-scenario library → https://buqingliu.github.io/santaclara-aegis/
-- Scope a custom pack → https://t.me/santaclaraaegis_bot
-
-Which part of your validation timeline hurts most? Message the bot and we'll point you at the shortest fix.
+Which part of your validation timeline hurts most? Message the team and we'll point you at the shortest fix.

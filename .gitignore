@@ -43,3 +43,12 @@ logs/**/*.npy
 .env
 *.secret
 growth/config.json
+
+# ---- Private CARLA engine (never public) ----
+elite/
+
+# ---- PII / customer data (never public) ----
+growth/tracker.json
+growth/prospects_email_ready.csv
+growth/prospects*.csv
+growth/*_email_ready.csv

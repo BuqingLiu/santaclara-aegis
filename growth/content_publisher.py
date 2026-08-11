@@ -71,12 +71,18 @@ def _parse_frontmatter(text):
     return meta, body
 
 def _post(key, meta, body):
-    payload = json.dumps({"article": {
+    # dev.to 新账号反垃圾：正文含多个外链会被 403 拦截。改用官方 canonical_url 回链落地页（顶部显示"原文发布于…"带跳转），正文不放裸链接。
+    cfg = json.load(open(CFG, encoding="utf-8"))
+    canonical = cfg.get("landing", "")
+    article = {
         "title": meta.get("title"),
         "body_markdown": body,
         "tags": meta.get("tags", [])[:4],
         "published": meta.get("published", True),
-    }}).encode("utf-8")
+    }
+    if canonical:
+        article["canonical_url"] = canonical
+    payload = json.dumps({"article": article}).encode("utf-8")
     req = urllib.request.Request("https://dev.to/api/articles", data=payload,
                                  headers={"api-key": key, "Content-Type": "application/json",
                                           "User-Agent": "Mozilla/5.0 (SantaClaraAegis content engine)"})

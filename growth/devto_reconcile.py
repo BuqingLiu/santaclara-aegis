@@ -34,6 +34,25 @@ def _api(key, method, url, data=None):
     except Exception as ex:
         return False, "失败: %s" % ex
 
+def _tg_alert(full_cfg, msg):
+    """API 失败时 TG 告警老板，不用他盯后台。"""
+    tg = full_cfg.get("channels", {}).get("telegram", {})
+    if not tg.get("enabled"):
+        return
+    token = tg.get("token")
+    chat = tg.get("owner_chat_id")
+    if not token or not chat:
+        return
+    url = "https://api.telegram.org/bot%s/sendMessage" % token
+    data = json.dumps({"chat_id": chat, "text": msg, "parse_mode": "HTML"}).encode("utf-8")
+    req = urllib.request.Request(url, data=data, method="POST",
+                                 headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=15) as r:
+            r.read()
+    except Exception as ex:
+        print("[devto_reconcile] TG 告警发送失败: %s" % ex)
+
 def _published_set():
     if os.path.exists(PUBLISHED):
         try: return set(json.load(open(PUBLISHED, encoding="utf-8")))
@@ -57,12 +76,17 @@ def _parse_frontmatter(text):
     return meta, body
 
 def run():
-    c = _cfg(); key = c.get("key", "")
+    full_cfg = json.load(open(CFG, encoding="utf-8"))
+    c = full_cfg.get("channels", {}).get("devto", {})
+    key = c.get("key", "")
     if not c.get("enabled") or not key or key.startswith("PASTE"):
         print("[devto_reconcile] 未启用或 key 未填。"); return
     ok, articles = _api(key, "GET", "https://dev.to/api/articles/me")
     if not ok:
-        print("[devto_reconcile] 拉取文章失败：%s" % articles); return
+        err = "[devto_reconcile] 拉取文章失败：%s" % articles
+        print(err)
+        _tg_alert(full_cfg, "dev.to API 异常（请老板重生成 API key 并更新 config.json）：%s" % articles)
+        return
     # 标题 -> 文章对象
     by_title = {}
     for a in (articles or []):
@@ -76,12 +100,12 @@ def run():
         name = os.path.basename(f)
         if name == "published.json": continue
         if name in done:
+            print("[devto_reconcile] 已处理(跳过) -> %s" % name); published_cnt += 1
             continue
         meta, body = _parse_frontmatter(open(f, encoding="utf-8").read())
         title = (meta.get("title") or "").strip()
         tkey = title.lower()
-        cfg = json.load(open(CFG, encoding="utf-8"))
-        canonical = cfg.get("landing", "")
+        canonical = full_cfg.get("landing", "")
         if tkey in by_title:
             art = by_title[tkey]
             if not art.get("published"):

@@ -51,7 +51,7 @@
 ### 推文 / 动态（中文，LinkedIn/微信通用）
 > 做自动驾驶合规验证，自建仿真栈要 $300K+ 和 3 个月。我们用 CARLA 把这件事做成
 > **订阅制**：23 类安全场景、逐帧标签数据、DMV 风格合规报告，笔记本就能跑。
-> 现已上线在线订阅（信用卡 / 微信 / 支付宝自动收款）→ https://buqingliu.github.io/santaclara-aegis/
+> 现已上线在线订阅（微信 / PayPal 自动收款）→ https://buqingliu.github.io/santaclara-aegis/
 
 ### Tweet / X（英文）
 > Show HN-style: SantaClara Aegis turns your driving domain into reproducible,
@@ -62,7 +62,7 @@
 - **Tagline**: CARLA-based AV safety simulation & scenario-data subscription
 - **First comment**: "We turn a client's ODD into reproducible, labeled safety
   evidence — 23 scenario classes, 20 Hz telemetry, DMV-style reports. Subscribe,
-  pay by card/WeChat/Alipay, get data via API."
+  pay by WeChat/PayPal, get data via API."
 
 ### 冷启动邮件（给 AV 公司安全负责人）
 > 主题：合规场景证据，可否用订阅方式快速补齐？
@@ -73,7 +73,7 @@
 ## 五、转化闭环（确保「卖出且收款」）
 
 1. 访客从任意渠道进入站点 → 看场景/合规/定价。
-2. 想买 → 点「立即订阅」→ Stripe/微信/支付宝 收银台 → **自动收款、即时开通**。
+2. 想买 → 点「立即订阅」→ 微信 / PayPal 收银台 → **自动收款、即时开通**。
 3. 犹豫 / 企业需求 → 留资表单或「联系销售」→ 邮件进 Formspree → 销售跟进。
 4. 站点持续迭代：新增场景、客户案例、demo 视频，保持转化力。
 

@@ -38,10 +38,6 @@ Run the suite, collect near-misses, and feed them back as new scenarios. SOTIF i
 ---
 
 ### A shortcut that actually holds up
-If you want a ready taxonomy of **23 safety-critical scenarios** — each with reproducible CARLA script + telemetry CSV + SOTIF/EU-NCAP/UN-R157 compliance tags — we publish a free sample (pedestrian-crossing) you can run today:
+If you want a ready taxonomy of **23 safety-critical scenarios** — each with a reproducible CARLA script, telemetry CSV, and SOTIF / EU-NCAP / UN-R157 compliance tags — a free sample (pedestrian-crossing) ships with the library so you can run it today. The full set plus enterprise custom scenarios is available from SantaClara Aegis, and the team runs a Telegram bot that returns a scoped proposal on the spot.
 
-- Free sample scenario → https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html
-- Full library & pricing → https://buqingliu.github.io/santaclara-aegis/
-- Questions? Message the bot → https://t.me/santaclaraaegis_bot
-
-Most ADAS teams save 6–10 weeks of scenario-building with this. Curious what your worst SOTIF gap looks like reproduced? Grab the sample and ping the bot.
+Most ADAS teams save 6–10 weeks of scenario-building this way. Curious what your worst SOTIF gap looks like reproduced? Grab the sample and ping the bot.

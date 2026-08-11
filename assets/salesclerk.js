@@ -1,5 +1,5 @@
 /* SantaClara Aegis — 24/7 Automated Sales Clerk (no backend, runs forever)
- * Bilingual (中文 / EN). Answers common buyer questions and drives to PayPal / WeChat / Alipay.
+ * Bilingual (中文 / EN). Answers common buyer questions and drives to PayPal / WeChat.
  * Zero human in the loop: a visitor can read, get convinced, and pay without talking to anyone.
  */
 (function () {
@@ -36,8 +36,8 @@
     },
     {
       k: ["交付", "交付物", "包含", "deliver", "deliverable", "include", "csv", "数据"],
-      zh: "交付四件套：① 遥测 CSV（车辆轨迹/信号/事件）② 可复现 CARLA 仿真脚本（一键重跑）③ 合规标注 JSON ④ 场景报告（含风险等级与边界条件）。拍下后 2 小时内发货，支持微信 / 支付宝 / PayPal。",
-      en: "Four deliverables: (1) telemetry CSV (trajectories/signals/events), (2) reproducible CARLA script (one-click rerun), (3) compliance annotation JSON, (4) scenario report (risk tier + boundary conditions). Delivered within 2h of payment via WeChat / Alipay / PayPal.",
+      zh: "交付四件套：① 遥测 CSV（车辆轨迹/信号/事件）② 可复现 CARLA 仿真脚本（一键重跑）③ 合规标注 JSON ④ 场景报告（含风险等级与边界条件）。拍下后 2 小时内发货，支持微信 / PayPal。",
+      en: "Four deliverables: (1) telemetry CSV (trajectories/signals/events), (2) reproducible CARLA script (one-click rerun), (3) compliance annotation JSON, (4) scenario report (risk tier + boundary conditions). Delivered within 2h of payment via WeChat / PayPal.",
       cta: "custom"
     },
     {
@@ -60,8 +60,8 @@
     },
     {
       k: ["怎么买", "购买", "付款", "支付", "buy", "purchase", "pay", "payment", "下单"],
-      zh: "点「立即购买」→ 跳转 PayPal（美元实时到账）/ 或微信、支付宝收款码扫码。支持 7 天无理由退款，拍下后 2 小时内自动发货。整个流程不需要和任何人说话。单场景 ¥99 也能直接付，先验真再放大。",
-      en: "Click 'Buy Now' -> PayPal (USD, instant) / or WeChat & Alipay QR. 7-day no-question refund; files auto-deliver within 2h of payment. No human needed in the loop. Even the ¥99 single pack pays directly — verify first, scale later.",
+      zh: "点「立即购买」→ 跳转 PayPal（美元实时到账）/ 或微信收款码扫码。支持 7 天无理由退款，拍下后 2 小时内自动发货。整个流程不需要和任何人说话。单场景 ¥99 也能直接付，先验真再放大。",
+      en: "Click 'Buy Now' -> PayPal (USD, instant) / or WeChat QR. 7-day no-question refund; files auto-deliver within 2h of payment. No human needed in the loop. Even the ¥99 single pack pays directly — verify first, scale later.",
       cta: "custom"
     },
     {
@@ -71,7 +71,7 @@
       cta: "sample"
     },
     {
-      k: ["企业", "定制", "对公", "private", "enterprise", "custom", "bespoke", "consult"],
+      k: ["企业", "定制", "private", "enterprise", "custom", "bespoke", "consult"],
       zh: "企业定制 ¥8,000 起：5 天交付、直接对接工程师、按您的车型/ODD/法规定制场景。先付 50% 定金（$556）启动，尾款交付前结清。🎁 创始会员前 3 位加赠 2 周免费试点。看完整方案点「企业定制方案」。",
       en: "Custom engagement from ¥8,000: 5-day turnaround, direct engineer contact, scenarios tailored to your vehicle/ODD/regulation. 50% deposit ($556) to start. 🎁 First 3 founding buyers also get a free 2-week pilot. See the full plan via 'Enterprise plan'.",
       cta: "proposal"

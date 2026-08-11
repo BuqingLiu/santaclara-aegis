@@ -50,10 +50,6 @@ Writing 23 of these by hand — each tuned for weather, actor behavior, and comp
 ---
 
 ### Skip the build, keep the evidence
-We ship 23 pre-built safety-critical scenarios (telemetry CSV + reproducible CARLA script + compliance tags) including this exact night pedestrian case. Try the free sample:
+We ship 23 pre-built safety-critical scenarios (telemetry CSV + reproducible CARLA script + compliance tags) including this exact night pedestrian case. A free sample ships with the library so you can run it in minutes, and the SantaClara Aegis team scopes custom scenarios for your specific ODD on request.
 
-- Free sample → https://buqingliu.github.io/santaclara-aegis/samples/sample-scenario.html
-- Library & pricing → https://buqingliu.github.io/santaclara-aegis/
-- Custom scenarios for your ODD → https://t.me/santaclaraaegis_bot
-
-What scenario is blocking your validation right now? Describe it to the bot and we'll scope it.
+What scenario is blocking your validation right now? Describe it to the team and we'll scope it.
