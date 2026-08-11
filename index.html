@@ -737,18 +737,24 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
         <div class="ph" id="phWx" style="display:none">微信收款码未配置<br>微信：a1398432379（备注邮箱发数据）</div>
         <div class="nm">微信支付 · a1398432379</div>
       </div>
+      <div class="qr" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+        <a id="payStripe" href="https://www.paypal.com/paypalme/LiuXiaochu2" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:100%;max-width:190px;aspect-ratio:1;background:#f0f6ff;border:1px solid var(--line);border-radius:10px;text-decoration:none">
+          <span style="color:#003087;font-weight:800;font-size:18px">🔵 PayPal</span>
+        </a>
+        <div class="nm">海外 PayPal · USD</div>
+        <small style="color:#98a4b8;font-size:12px">美元实时到账 · 点卡片付款</small>
+      </div>
     </div>
     <div class="steps">
       <b>购买步骤</b>
       <ol>
-        <li>扫码付款，<b>付款备注填你的邮箱</b>（用于发数据）。</li>
+        <li>国内买家扫左侧微信码，海外买家点右侧 PayPal 卡片；<b>付款备注填你的邮箱</b>（用于发数据）。</li>
         <li>点下方「我已付款」留邮箱，我们 2 小时内发网盘链接。</li>
         <li>7 天无理由退款：与描述对不上全额退。</li>
       </ol>
     </div>
     <div class="alt-pay" id="paypalBlock">
-      海外信用卡 / PayPal 付款（USD 实时到账）：<a id="payStripe" href="https://www.paypal.com/paypalme/LiuXiaochu2" target="_blank" rel="noopener" style="display:inline;color:#0070ba;font-weight:600">👉 PayPal · paypal.me/LiuXiaochu2（点此付款）</a><span id="payStripeNa" style="color:#1a7f37;font-weight:600"> ✅ 海外收款已上线 · 美元直付，实时到账</span>
-      <br>企业定制 / 专属报价：<a href="#lead">点此留联系方式 →</a>
+      企业定制 / 专属报价：<a href="#lead">点此留联系方式 →</a>
     </div>
     <div style="margin-top:16px"><a href="#lead" class="btn btn-primary btn-block" onclick="closePay()">我已付款 · 留邮箱收数据</a></div>
   </div>
@@ -802,9 +808,9 @@ frame,t_s,v_kmh,threat_class,dist_m,ttc_s,gap_m
     // 中英文都弹同一收款弹窗，微信 / PayPal 双通道，避免浏览器拦截 window.open
     document.getElementById('payName').textContent = p.name || "购买";
     document.getElementById('payAmt').textContent  = p.amt  || "";
-    var st = document.getElementById('payStripe'), sna = document.getElementById('payStripeNa');
-    if(url){ st.href = url; st.style.display='inline'; sna.style.display='none'; }
-    else { st.style.display='none'; sna.style.display='inline'; }
+    var st = document.getElementById('payStripe');
+    if(url){ st.href = url; st.style.display='inline-flex'; }
+    else { st.style.display='none'; }
     document.getElementById('payMask').classList.add('on');
     document.body.style.overflow='hidden';
   }

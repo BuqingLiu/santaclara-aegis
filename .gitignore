@@ -52,3 +52,7 @@ growth/tracker.json
 growth/prospects_email_ready.csv
 growth/prospects*.csv
 growth/*_email_ready.csv
+
+# ---- Local stale drafts (do NOT publish; contain old Alipay/对公 copy) ----
+_index_work.html
+growth/WAR_ROOM.html
