@@ -1,0 +1,111 @@
+waymo.com|Waymo|av|CA-SF
+aurora.tech|Aurora|av|CA-SF
+pronto.ai|Pronto.ai|av|CA-San Francisco
+comma.ai|comma.ai|av|CA-SF
+gatik.ai|Gatik|av|CA-SF Bay
+weride.ai|WeRide|av|CA-SF
+pony.ai|Pony.ai|av|CA-SF
+nuro.ai|Nuro|av|CA-SF Bay
+turo.com|Turo|av|CA-San Francisco
+lyft.com|Lyft|av|CA-San Francisco SOMA
+uber.com|Uber (ATG legacy)|av|CA-San Francisco
+zoox.com|Zoox|av|CA-Foster City
+usfca.edu|University of San Francisco|lab|CA-San Francisco
+sfsu.edu|SF State University|lab|CA-San Francisco
+ucop.edu|University of California OP|lab|CA-Oakland
+gomentum.org|Gomentum (testbed)|connector|CA-Concord
+sf.gov|City of San Francisco (MTA)|connector|CA-San Francisco SOMA
+dspace.com|dSPACE|sim|CA-San Francisco
+vector.com|Vector|sim|CA-San Francisco
+etas.com|ETAS|sim|CA-San Francisco
+mathworks.com|MathWorks|sim|CA-San Francisco
+siemens.com|Siemens|sim|CA-San Francisco
+ipg-automotive.com|IPG Automotive|sim|CA-San Francisco
+tuvsud.com|TUV SUD|vv|CA-San Francisco
+dekra.com|DEKRA|vv|CA-San Francisco
+exida.com|exida|vv|CA-San Francisco
+intertek.com|Intertek|vv|CA-San Francisco
+ul.com|UL Solutions|vv|CA-San Francisco
+tuv-rheinland.com|TUV Rheinland|vv|CA-San Francisco
+exponent.com|Exponent|vv|CA-San Francisco
+righthook.com|RightHook|sim|CA-San Francisco
+metamoto.com|Metamoto|sim|CA-Menlo Park
+foretellix.com|Foretellix|sim|CA-Menlo Park
+sonatus.com|Sonatus|sim|CA-San Francisco
+tulatech.com|Tula Technology|sim|CA-San Francisco
+renesas.com|Renesas|sim|CA-San Francisco
+onsemi.com|onsemi|sim|CA-San Francisco
+ceaton.com|Cepton|tier1|CA-San Francisco
+pointonenav.com|Point One Navigation|sim|CA-San Francisco
+swiftnav.com|Swift Navigation|sim|CA-San Francisco
+nauto.com|Nauto|av|CA-San Francisco
+netradyne.com|Netradyne|av|CA-San Francisco
+motive.com|Motive|av|CA-San Francisco
+samsara.com|Samsara|av|CA-San Francisco
+civilmaps.com|Civil Maps|sim|CA-San Francisco
+baraja.com|Baraja|tier1|CA-San Francisco
+aeva.com|Aeva|tier1|CA-San Francisco
+ouster.com|Ouster|tier1|CA-San Francisco
+innoviz-tech.com|Innoviz|tier1|CA-San Francisco
+luminartech.com|Luminar|tier1|CA-San Francisco
+hesaitech.com|Hesai|tier1|CA-San Francisco
+robosense.ai|RoboSense|tier1|CA-San Francisco
+nodar.com|Nodar|tier1|CA-San Francisco
+seyond.com|Seyond|tier1|CA-San Francisco
+ambarella.com|Ambarella|sim|CA-San Francisco
+qualcomm.com|Qualcomm|sim|CA-San Francisco
+trimble.com|Trimble|sim|CA-San Francisco
+tomtom.com|TomTom|sim|CA-San Francisco
+here.com|HERE|sim|CA-San Francisco
+phiar.net|Phiar|av|CA-San Francisco
+polysync.io|PolySync|sim|CA-San Francisco
+carmera.com|Carmera|sim|CA-San Francisco
+deepmap.ai|DeepMap|sim|CA-San Francisco
+atlatec.com|atlatec|sim|CA-San Francisco
+autonomic.ai|Autonomic|sim|CA-San Francisco
+scout.com|Scout|av|CA-San Francisco
+tymetro.com|Tymetro|av|CA-San Francisco
+wejo.com|Wejo|av|CA-San Francisco
+otonomo.com|Otonomo|av|CA-San Francisco
+pegasus.com|Pegasus|av|CA-San Francisco
+phantom.com|Phantom|av|CA-San Francisco
+lvl5.com|Level 5|av|CA-San Francisco
+isee.ai|iSee|av|CA-San Francisco
+caruma.com|Caruma|av|CA-San Francisco
+wavesense.com|WaveSense|av|CA-San Francisco
+leishen.com|LeiShen|tier1|CA-San Francisco
+benewake.com|Benewake|tier1|CA-San Francisco
+hippo.com|Hippo|av|CA-San Francisco
+foretellix.com|Foretellix|sim|CA-San Francisco
+dspace.com|dSPACE|sim|CA-San Francisco
+vector.com|Vector|sim|CA-San Francisco
+etas.com|ETAS|sim|CA-San Francisco
+mathworks.com|MathWorks|sim|CA-San Francisco
+siemens.com|Siemens|sim|CA-San Francisco
+ipg-automotive.com|IPG|sim|CA-San Francisco
+tuvsud.com|TUV SUD|vv|CA-San Francisco
+dekra.com|DEKRA|vv|CA-San Francisco
+exida.com|exida|vv|CA-San Francisco
+intertek.com|Intertek|vv|CA-San Francisco
+ul.com|UL|vv|CA-San Francisco
+tuv-rheinland.com|TUV Rheinland|vv|CA-San Francisco
+exponent.com|Exponent|vv|CA-San Francisco
+righthook.com|RightHook|sim|CA-San Francisco
+metamoto.com|Metamoto|sim|CA-Menlo Park
+waymo.com|Waymo|av|CA-San Francisco
+aurora.tech|Aurora|av|CA-San Francisco
+pronto.ai|Pronto|av|CA-San Francisco
+comma.ai|comma.ai|av|CA-San Francisco
+gatik.ai|Gatik|av|CA-San Francisco
+weride.ai|WeRide|av|CA-San Francisco
+pony.ai|Pony.ai|av|CA-San Francisco
+nuro.ai|Nuro|av|CA-San Francisco
+turo.com|Turo|av|CA-San Francisco
+lyft.com|Lyft|av|CA-San Francisco
+uber.com|Uber|av|CA-San Francisco
+zoox.com|Zoox|av|CA-Foster City
+usfca.edu|University of San Francisco|lab|CA-San Francisco
+sfsu.edu|SF State|lab|CA-San Francisco
+ucop.edu|UC Office of the President|lab|CA-Oakland
+gomentum.org|Gomentum|connector|CA-Concord
+sf.gov|City of San Francisco|connector|CA-San Francisco

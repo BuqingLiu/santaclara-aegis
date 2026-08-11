@@ -1,0 +1,13 @@
+michigancentral.com|Michigan Central (Corktown)|connector|MI-Detroit Corktown / Michigan Central
+newlab.com|Newlab at Michigan Central|connector|MI-Detroit Corktown
+techtowndetroit.org|TechTown Detroit|connector|MI-Detroit Midtown
+detroitregionalpartnership.com|Detroit Regional Partnership|connector|MI-Detroit
+fontinalis.com|Fontinalis Partners (mobility VC)|connector|MI-Detroit Corktown
+michauto.org|MichAuto|connector|MI-Detroit
+nextenergy.org|NextEnergy|connector|MI-Detroit
+centrepolisaccelerator.com|Centrepolis Accelerator|connector|MI-Detroit
+gomentum.org|Gomentum (testbed)|connector|MI-Concord (CA mirror)
+derq.com|Derq|av|MI-Detroit
+prattmiller.com|Pratt Miller|vv|MI-New Hudson
+explico.com|Explico Engineering|vv|MI-Farmington Hills
+realtime-robotics.com|Realtime Robotics|sim|MI-Detroit

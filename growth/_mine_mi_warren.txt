@@ -1,0 +1,43 @@
+aam.com|American Axle & Manufacturing|tier1|MI-Warren GM 周边
+tenneco.com|Tenneco|tier1|MI-Warren GM 周边
+lear.com|Lear Corporation|tier1|MI-Southfield (Warren 周边)
+flex.com|Flex|tier1|MI-Warren GM 周边
+nexteer.com|Nexteer Automotive|tier1|MI-Auburn Hills (Warren 周边)
+duraautomotive.com|Dura Automotive|tier1|MI-Auburn Hills
+kiekert.com|Kiekert|tier1|MI-Auburn Hills
+rohde-schwarz.com|Rohde & Schwarz|sim|MI-Warren GM 周边
+navistar.com|International Motors (Navistar)|oem|MI-Warren GM 周边
+truck-lite.com|Truck-Lite|tier1|MI-Warren GM 周边
+magna.com|Magna International|tier1|MI-Troy (Warren 周边)
+borgwarner.com|BorgWarner|tier1|MI-Auburn Hills
+zf.com|ZF Group|tier1|MI-Northville
+continental.com|Continental|tier1|MI-Auburn Hills
+autoliv.com|Autoliv|tier1|MI-Auburn Hills
+fev.com|FEV Group|vv|MI-Auburn Hills
+avl.com|AVL|vv|MI-Auburn Hills
+exida.com|exida|vv|MI-Troy
+tuvsud.com|TUV SUD|vv|MI-Auburn Hills
+dekra.com|DEKRA|vv|MI-Auburn Hills
+intertek.com|Intertek|vv|MI-Troy
+dspace.com|dSPACE|sim|MI-Troy
+vector.com|Vector|sim|MI-Troy
+etas.com|ETAS|sim|MI-Troy
+elektrobit.com|Elektrobit|sim|MI-Troy
+tttech.com|TTTech Auto|av|MI-Troy
+kistler.com|KISTLER|sim|MI-Novi
+humaneticsgroup.com|Humanetics|sim|MI-Plymouth
+intrepidcs.com|Intrepid Control Systems|sim|MI-Plymouth
+danlawinc.com|Danlaw|av|MI-Novi
+methodicatech.com|Methodica|vv|MI-Troy
+altair.com|Altair|sim|MI-Troy
+ricardo.com|Ricardo|vv|MI-Troy
+horiba.com|HORIBA|sim|MI-Troy
+mts.com|MTS Systems|sim|MI-Troy
+geotab.com|Geotab|av|MI-Novi
+gentherm.com|Gentherm|tier1|MI-Northville
+harman.com|HARMAN|tier1|MI-Novi
+bosch.us|Bosch|tier1|MI-Farmington Hills
+denso.com|DENSO|tier1|MI-Southfield
+hitachiastemo.com|Hitachi Astemo|tier1|MI-Farmington Hills
+lear.com|Lear|tier1|MI-Southfield
+nexteer.com|Nexteer|tier1|MI-Auburn Hills

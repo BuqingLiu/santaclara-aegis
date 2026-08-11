@@ -1,0 +1,60 @@
+berkeley.edu|UC Berkeley|lab|CA-Berkeley
+bdd.berkeley.edu|Berkeley DeepDrive (BDD)|lab|CA-Berkeley
+bair.berkeley.edu|BAIR (Berkeley AI Research)|lab|CA-Berkeley
+lbl.gov|Lawrence Berkeley National Lab|lab|CA-Berkeley
+covariant.ai|Covariant|av|CA-Berkeley
+tri.global|Toyota Research Institute|lab|CA-Los Altos
+oaklandca.gov|City of Oakland|connector|CA-Oakland
+portofoakland.com|Port of Oakland|connector|CA-Oakland
+dspace.com|dSPACE|sim|CA-Oakland
+vector.com|Vector|sim|CA-Oakland
+etas.com|ETAS|sim|CA-Oakland
+mathworks.com|MathWorks|sim|CA-Oakland
+siemens.com|Siemens|sim|CA-Oakland
+ipg-automotive.com|IPG Automotive|sim|CA-Oakland
+tuvsud.com|TUV SUD|vv|CA-Oakland
+dekra.com|DEKRA|vv|CA-Oakland
+exida.com|exida|vv|CA-Oakland
+intertek.com|Intertek|vv|CA-Oakland
+ul.com|UL Solutions|vv|CA-Oakland
+tuv-rheinland.com|TUV Rheinland|vv|CA-Oakland
+sonatus.com|Sonatus|sim|CA-Berkeley
+tulatech.com|Tula Technology|sim|CA-Berkeley
+renesas.com|Renesas|sim|CA-Berkeley
+onsemi.com|onsemi|sim|CA-Berkeley
+ceaton.com|Cepton|tier1|CA-Berkeley
+pointonenav.com|Point One Navigation|sim|CA-Berkeley
+swiftnav.com|Swift Navigation|sim|CA-Berkeley
+nauto.com|Nauto|av|CA-Berkeley
+netradyne.com|Netradyne|av|CA-Berkeley
+motive.com|Motive|av|CA-Berkeley
+samsara.com|Samsara|av|CA-Berkeley
+civilmaps.com|Civil Maps|sim|CA-Berkeley
+baraja.com|Baraja|tier1|CA-Berkeley
+aeva.com|Aeva|tier1|CA-Berkeley
+ouster.com|Ouster|tier1|CA-Berkeley
+innoviz-tech.com|Innoviz|tier1|CA-Berkeley
+luminartech.com|Luminar|tier1|CA-Berkeley
+hesaitech.com|Hesai|tier1|CA-Berkeley
+robosense.ai|RoboSense|tier1|CA-Berkeley
+nodar.com|Nodar|tier1|CA-Berkeley
+seyond.com|Seyond|tier1|CA-Berkeley
+ambarella.com|Ambarella|sim|CA-Berkeley
+qualcomm.com|Qualcomm|sim|CA-Berkeley
+trimble.com|Trimble|sim|CA-Berkeley
+tomtom.com|TomTom|sim|CA-Berkeley
+here.com|HERE|sim|CA-Berkeley
+phiar.net|Phiar|av|CA-Berkeley
+polysync.io|PolySync|sim|CA-Berkeley
+carmera.com|Carmera|sim|CA-Berkeley
+deepmap.ai|DeepMap|sim|CA-Berkeley
+atlatec.com|atlatec|sim|CA-Berkeley
+autonomic.ai|Autonomic|sim|CA-Berkeley
+covariant.ai|Covariant|av|CA-Berkeley
+tri.global|Toyota Research Institute|lab|CA-Los Altos
+berkeley.edu|UC Berkeley|lab|CA-Berkeley
+bdd.berkeley.edu|Berkeley DeepDrive|lab|CA-Berkeley
+bair.berkeley.edu|BAIR|lab|CA-Berkeley
+lbl.gov|Lawrence Berkeley Lab|lab|CA-Berkeley
+oaklandca.gov|City of Oakland|connector|CA-Oakland
+portofoakland.com|Port of Oakland|connector|CA-Oakland

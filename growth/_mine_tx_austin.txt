@@ -1,0 +1,73 @@
+nvidia.com|NVIDIA|sim|TX-Austin The Domain / Riata
+arm.com|Arm|sim|TX-Austin The Domain
+cirrus.com|Cirrus Logic|sim|TX-Austin
+silabs.com|Silicon Labs|sim|TX-Austin
+samsung.com|Samsung Austin Semiconductor|tier1|TX-Austin
+appliedintuition.com|Applied Intuition|sim|TX-Austin (Domain)
+waabi.ai|Waabi|av|TX-Austin
+kodiak.ai|Kodiak|av|TX-Austin
+gatik.ai|Gatik|av|TX-Austin / Dallas
+plus.ai|Plus|av|TX-Austin
+motional.com|Motional|av|TX-Austin
+cyngn.com|Cyngn|av|TX-Austin
+einride.tech|Einride|av|TX-Austin
+outrider.ai|Outrider|av|TX-Austin
+locomation.ai|Locomation|av|TX-Austin
+stackav.com|Stack AV|av|TX-Austin
+capitalfactory.com|Capital Factory|connector|TX-Austin Downtown
+austintech.org|Austin Technology Council|connector|TX-Austin
+utexas.edu|University of Texas at Austin (CTR)|lab|TX-Austin
+utexas.edu|UT Austin Center for Transportation Research|lab|TX-Austin
+tacc.utexas.edu|TACC|lab|TX-Austin
+dspace.com|dSPACE|sim|TX-Austin
+vector.com|Vector|sim|TX-Austin
+etas.com|ETAS|sim|TX-Austin
+mathworks.com|MathWorks|sim|TX-Austin
+siemens.com|Siemens (Capital/PLM)|sim|TX-Austin
+ipg-automotive.com|IPG Automotive|sim|TX-Austin
+rfpro.com|rFpro|sim|TX-Austin
+cognata.com|Cognata|sim|TX-Austin
+morai.io|MORAI|sim|TX-Austin
+avesreality.com|AVES Reality|sim|TX-Austin
+metamoto.com|Metamoto|sim|TX-Austin
+foretellix.com|Foretellix|sim|TX-Austin
+tuvsud.com|TUV SUD|vv|TX-Austin
+dekra.com|DEKRA|vv|TX-Austin
+exida.com|exida|vv|TX-Austin
+intertek.com|Intertek|vv|TX-Austin
+ul.com|UL Solutions|vv|TX-Austin
+tuv-rheinland.com|TUV Rheinland|vv|TX-Austin
+nvidia.com|NVIDIA AV|av|TX-Austin
+arm.com|Arm Automotive|sim|TX-Austin
+sonatus.com|Sonatus|sim|TX-Austin
+tulatech.com|Tula Technology|sim|TX-Austin
+renesas.com|Renesas|sim|TX-Austin
+onsemi.com|onsemi|sim|TX-Austin
+ceaton.com|Cepton|tier1|TX-Austin
+pointonenav.com|Point One Navigation|sim|TX-Austin
+swiftnav.com|Swift Navigation|sim|TX-Austin
+nauto.com|Nauto|av|TX-Austin
+netradyne.com|Netradyne|av|TX-Austin
+motive.com|Motive|av|TX-Austin
+samsara.com|Samsara|av|TX-Austin
+civilmaps.com|Civil Maps|sim|TX-Austin
+baraja.com|Baraja|tier1|TX-Austin
+aeva.com|Aeva|tier1|TX-Austin
+ouster.com|Ouster|tier1|TX-Austin
+innoviz-tech.com|Innoviz|tier1|TX-Austin
+luminartech.com|Luminar|tier1|TX-Austin
+hesaitech.com|Hesai|tier1|TX-Austin
+robosense.ai|RoboSense|tier1|TX-Austin
+nodar.com|Nodar|tier1|TX-Austin
+seyond.com|Seyond|tier1|TX-Austin
+ambarella.com|Ambarella|sim|TX-Austin
+qualcomm.com|Qualcomm|sim|TX-Austin
+trimble.com|Trimble|sim|TX-Austin
+tomtom.com|TomTom|sim|TX-Austin
+here.com|HERE|sim|TX-Austin
+phiar.net|Phiar|av|TX-Austin
+polysync.io|PolySync|sim|TX-Austin
+carmera.com|Carmera|sim|TX-Austin
+deepmap.ai|DeepMap|sim|TX-Austin
+atlatec.com|atlatec|sim|TX-Austin
+autonomic.ai|Autonomic|sim|TX-Austin

@@ -1,0 +1,66 @@
+shell.com|Shell|oem|TX-Houston Energy Corridor
+exxonmobil.com|ExxonMobil|oem|TX-Houston Energy Corridor
+chevron.com|Chevron|oem|TX-Houston Energy Corridor
+bp.com|BP|oem|TX-Houston Energy Corridor
+phillips66.com|Phillips 66|oem|TX-Houston Energy Corridor
+slb.com|SLB (Schlumberger)|oem|TX-Houston Energy Corridor
+halliburton.com|Halliburton|oem|TX-Houston Energy Corridor
+honeywell.com|Honeywell|tier1|TX-Houston Energy Corridor
+emerson.com|Emerson|tier1|TX-Houston Energy Corridor
+nov.com|NOV (National Oilwell Varco)|tier1|TX-Houston Energy Corridor
+jacobs.com|Jacobs|vv|TX-Houston Energy Corridor
+worley.com|Worley|vv|TX-Houston Energy Corridor
+rice.edu|Rice University|lab|TX-Houston
+uh.edu|University of Houston|lab|TX-Houston
+tamu.edu|Texas A&M University|lab|TX-College Station
+tamu.edu|Texas A&M Transportation Institute (TTI)|lab|TX-College Station
+ridemetro.org|Houston METRO|connector|TX-Houston
+porthouston.com|Port of Houston|connector|TX-Houston
+houstex.com|Houston Exponential|connector|TX-Houston
+dspace.com|dSPACE|sim|TX-Houston
+vector.com|Vector|sim|TX-Houston
+etas.com|ETAS|sim|TX-Houston
+mathworks.com|MathWorks|sim|TX-Houston
+siemens.com|Siemens|sim|TX-Houston
+ipg-automotive.com|IPG Automotive|sim|TX-Houston
+tuvsud.com|TUV SUD|vv|TX-Houston
+dekra.com|DEKRA|vv|TX-Houston
+exida.com|exida|vv|TX-Houston
+intertek.com|Intertek|vv|TX-Houston
+ul.com|UL Solutions|vv|TX-Houston
+tuv-rheinland.com|TUV Rheinland|vv|TX-Houston
+navistar.com|International Motors|oem|TX-Houston
+paccar.com|PACCAR|oem|TX-Houston
+cummins.com|Cummins|oem|TX-Houston
+sonatus.com|Sonatus|sim|TX-Houston
+tulatech.com|Tula Technology|sim|TX-Houston
+renesas.com|Renesas|sim|TX-Houston
+onsemi.com|onsemi|sim|TX-Houston
+ceaton.com|Cepton|tier1|TX-Houston
+pointonenav.com|Point One Navigation|sim|TX-Houston
+swiftnav.com|Swift Navigation|sim|TX-Houston
+nauto.com|Nauto|av|TX-Houston
+netradyne.com|Netradyne|av|TX-Houston
+motive.com|Motive|av|TX-Houston
+samsara.com|Samsara|av|TX-Houston
+civilmaps.com|Civil Maps|sim|TX-Houston
+baraja.com|Baraja|tier1|TX-Houston
+aeva.com|Aeva|tier1|TX-Houston
+ouster.com|Ouster|tier1|TX-Houston
+innoviz-tech.com|Innoviz|tier1|TX-Houston
+luminartech.com|Luminar|tier1|TX-Houston
+hesaitech.com|Hesai|tier1|TX-Houston
+robosense.ai|RoboSense|tier1|TX-Houston
+nodar.com|Nodar|tier1|TX-Houston
+seyond.com|Seyond|tier1|TX-Houston
+ambarella.com|Ambarella|sim|TX-Houston
+qualcomm.com|Qualcomm|sim|TX-Houston
+trimble.com|Trimble|sim|TX-Houston
+tomtom.com|TomTom|sim|TX-Houston
+here.com|HERE|sim|TX-Houston
+phiar.net|Phiar|av|TX-Houston
+polysync.io|PolySync|sim|TX-Houston
+carmera.com|Carmera|sim|TX-Houston
+deepmap.ai|DeepMap|sim|TX-Houston
+atlatec.com|atlatec|sim|TX-Houston
+autonomic.ai|Autonomic|sim|TX-Houston

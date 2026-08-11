@@ -1,0 +1,160 @@
+waymo.com|Waymo|av|CA-Mountain View
+zoox.com|Zoox|av|CA-Foster City
+tesla.com|Tesla (Autopilot/FSD)|oem|CA-Palo Alto / Fremont
+nvidia.com|NVIDIA (DRIVE)|sim|CA-Santa Clara
+intel.com|Intel (Mobileye adj)|sim|CA-Santa Clara
+apple.com|Apple (Special Projects)|oem|CA-Cupertino
+google.com|Google / Waymo|av|CA-Mountain View
+appliedintuition.com|Applied Intuition|sim|CA-Mountain View
+pony.ai|Pony.ai|av|CA-Palo Alto
+weride.ai|WeRide|av|CA-Silicon Valley
+nuro.ai|Nuro|av|CA-Mountain View
+plus.ai|Plus|av|CA-Cupertino
+deeproute.ai|DeepRoute.ai|av|CA-Silicon Valley
+nullmax.ai|Nullmax|av|CA-Silicon Valley
+robosense.ai|RoboSense|tier1|CA-San Jose
+hesaitech.com|Hesai Technology|tier1|CA-San Jose
+innovusion.com|Innovusion|tier1|CA-San Jose
+luminartech.com|Luminar|tier1|CA-Palo Alto
+aeva.com|Aeva|tier1|CA-Mountain View
+ouster.com|Ouster|tier1|CA-San Francisco
+seyond.com|Seyond (Innovusion)|tier1|CA-San Jose
+nodar.com|Nodar|tier1|CA-Silicon Valley
+mobileye.com|Mobileye|av|CA-Silicon Valley
+infineon.com|Infineon|tier1|CA-San Jose
+nxp.com|NXP|tier1|CA-San Jose
+marvell.com|Marvell|sim|CA-Santa Clara
+broadcom.com|Broadcom|sim|CA-San Jose
+cisco.com|Cisco|sim|CA-San Jose
+adobe.com|Adobe|sim|CA-San Jose
+microsoft.com|Microsoft (Mobility)|sim|CA-Mountain View
+meta.com|Meta (Reality Labs)|sim|CA-Menlo Park
+stanford.edu|Stanford University|lab|CA-Stanford / Palo Alto
+sjsu.edu|San Jose State University|lab|CA-San Jose
+scu.edu|Santa Clara University|lab|CA-Santa Clara
+cmu.edu|Carnegie Mellon (Silicon Valley)|lab|CA-Mountain View
+foretellix.com|Foretellix|sim|CA-Mountain View
+dspace.com|dSPACE|sim|CA-Silicon Valley
+vector.com|Vector|sim|CA-Silicon Valley
+etas.com|ETAS|sim|CA-Silicon Valley
+mathworks.com|MathWorks|sim|CA-Silicon Valley
+siemens.com|Siemens|sim|CA-Silicon Valley
+ipg-automotive.com|IPG Automotive|sim|CA-Silicon Valley
+rfpro.com|rFpro|sim|CA-Silicon Valley
+cognata.com|Cognata|sim|CA-Silicon Valley
+morai.io|MORAI|sim|CA-Silicon Valley
+avesreality.com|AVES Reality|sim|CA-Silicon Valley
+metamoto.com|Metamoto|sim|CA-Menlo Park
+righthook.com|RightHook|sim|CA-San Francisco
+tuvsud.com|TUV SUD|vv|CA-Silicon Valley
+dekra.com|DEKRA|vv|CA-Silicon Valley
+exida.com|exida|vv|CA-Silicon Valley
+intertek.com|Intertek|vv|CA-Silicon Valley
+ul.com|UL Solutions|vv|CA-Silicon Valley
+tuv-rheinland.com|TUV Rheinland|vv|CA-Silicon Valley
+exponent.com|Exponent|vv|CA-Menlo Park
+toyota.com|Toyota Research Institute (TRI)|lab|CA-Los Altos
+tri.global|Toyota Research Institute|lab|CA-Los Altos
+tu-simple.com|TuSimple|av|CA-San Diego
+comma.ai|comma.ai|av|CA-San Diego
+ambarella.com|Ambarella|sim|CA-Santa Clara
+qualcomm.com|Qualcomm|sim|CA-San Diego
+lyft.com|Lyft (AV)|av|CA-San Francisco
+sonatus.com|Sonatus|sim|CA-Menlo Park
+tulatech.com|Tula Technology|sim|CA-Santa Clara
+renesas.com|Renesas|sim|CA-San Jose
+onsemi.com|onsemi|sim|CA-Santa Clara
+ceaton.com|Cepton|tier1|CA-San Jose
+pointonenav.com|Point One Navigation|sim|CA-San Francisco
+swiftnav.com|Swift Navigation|sim|CA-San Francisco
+nauto.com|Nauto|av|CA-Palo Alto
+netradyne.com|Netradyne|av|CA-San Francisco
+motive.com|Motive|av|CA-San Francisco
+samsara.com|Samsara|av|CA-San Francisco
+civilmaps.com|Civil Maps|sim|CA-Alameda
+baraja.com|Baraja|tier1|CA-San Francisco
+innoviz-tech.com|Innoviz|tier1|CA-Silicon Valley
+trimble.com|Trimble|sim|CA-Sunnyvale
+tomtom.com|TomTom|sim|CA-Berkeley
+here.com|HERE Technologies|sim|CA-Berkeley
+phiar.net|Phiar|av|CA-Palo Alto
+polysync.io|PolySync|sim|CA-Silicon Valley
+carmera.com|Carmera|sim|CA-Silicon Valley
+deepmap.ai|DeepMap|sim|CA-Silicon Valley
+atlatec.com|atlatec|sim|CA-Silicon Valley
+autonomic.ai|Autonomic|sim|CA-Santa Clara
+scout.com|Scout|av|CA-Silicon Valley
+tymetro.com|Tymetro|av|CA-Silicon Valley
+wejo.com|Wejo|av|CA-Silicon Valley
+otonomo.com|Otonomo|av|CA-Silicon Valley
+pegasus.com|Pegasus|av|CA-Silicon Valley
+phantom.com|Phantom|av|CA-Silicon Valley
+lvl5.com|Level 5|av|CA-Silicon Valley
+isee.ai|iSee|av|CA-Silicon Valley
+caruma.com|Caruma|av|CA-Silicon Valley
+wavesense.com|WaveSense|av|CA-Silicon Valley
+leishen.com|LeiShen|tier1|CA-Silicon Valley
+benewake.com|Benewake|tier1|CA-Silicon Valley
+hippo.com|Hippo|av|CA-Silicon Valley
+qualcomm.com|Qualcomm|sim|CA-San Diego
+ambarella.com|Ambarella|sim|CA-Santa Clara
+veoneer.com|Veoneer|tier1|CA-Silicon Valley
+autoliv.com|Autoliv|tier1|CA-Silicon Valley
+zf.com|ZF|tier1|CA-Silicon Valley
+continental.com|Continental|tier1|CA-Silicon Valley
+bosch.us|Bosch|tier1|CA-Silicon Valley
+denso.com|DENSO|tier1|CA-Silicon Valley
+aptiv.com|Aptiv|tier1|CA-Silicon Valley
+magna.com|Magna|tier1|CA-Silicon Valley
+nexteer.com|Nexteer|tier1|CA-Silicon Valley
+gentherm.com|Gentherm|tier1|CA-Silicon Valley
+harman.com|HARMAN|tier1|CA-Silicon Valley
+lear.com|Lear|tier1|CA-Silicon Valley
+visteon.com|Visteon|tier1|CA-Silicon Valley
+aeva.com|Aeva|tier1|CA-Mountain View
+ouster.com|Ouster|tier1|CA-San Francisco
+seyond.com|Seyond|tier1|CA-San Jose
+nodar.com|Nodar|tier1|CA-Silicon Valley
+innovusion.com|Innovusion|tier1|CA-San Jose
+luminartech.com|Luminar|tier1|CA-Palo Alto
+hesaitech.com|Hesai|tier1|CA-San Jose
+robosense.ai|RoboSense|tier1|CA-San Jose
+nuro.ai|Nuro|av|CA-Mountain View
+pony.ai|Pony.ai|av|CA-Palo Alto
+weride.ai|WeRide|av|CA-Silicon Valley
+plus.ai|Plus|av|CA-Cupertino
+deeproute.ai|DeepRoute|av|CA-Silicon Valley
+nullmax.ai|Nullmax|av|CA-Silicon Valley
+waymo.com|Waymo|av|CA-Mountain View
+zoox.com|Zoox|av|CA-Foster City
+tesla.com|Tesla|oem|CA-Palo Alto
+nvidia.com|NVIDIA|sim|CA-Santa Clara
+intel.com|Intel|sim|CA-Santa Clara
+apple.com|Apple|oem|CA-Cupertino
+google.com|Google|av|CA-Mountain View
+appliedintuition.com|Applied Intuition|sim|CA-Mountain View
+foretellix.com|Foretellix|sim|CA-Mountain View
+dspace.com|dSPACE|sim|CA-Silicon Valley
+vector.com|Vector|sim|CA-Silicon Valley
+etas.com|ETAS|sim|CA-Silicon Valley
+mathworks.com|MathWorks|sim|CA-Silicon Valley
+siemens.com|Siemens|sim|CA-Silicon Valley
+ipg-automotive.com|IPG|sim|CA-Silicon Valley
+rfpro.com|rFpro|sim|CA-Silicon Valley
+cognata.com|Cognata|sim|CA-Silicon Valley
+morai.io|MORAI|sim|CA-Silicon Valley
+avesreality.com|AVES Reality|sim|CA-Silicon Valley
+metamoto.com|Metamoto|sim|CA-Menlo Park
+righthook.com|RightHook|sim|CA-San Francisco
+tuvsud.com|TUV SUD|vv|CA-Silicon Valley
+dekra.com|DEKRA|vv|CA-Silicon Valley
+exida.com|exida|vv|CA-Silicon Valley
+intertek.com|Intertek|vv|CA-Silicon Valley
+ul.com|UL|vv|CA-Silicon Valley
+tuv-rheinland.com|TUV Rheinland|vv|CA-Silicon Valley
+exponent.com|Exponent|vv|CA-Menlo Park
+tri.global|Toyota Research Institute|lab|CA-Los Altos
+stanford.edu|Stanford|lab|CA-Stanford
+sjsu.edu|San Jose State|lab|CA-San Jose
+scu.edu|Santa Clara University|lab|CA-Santa Clara
+cmu.edu|CMU Silicon Valley|lab|CA-Mountain View

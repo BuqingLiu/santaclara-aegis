@@ -1,0 +1,294 @@
+aptiv.com|Aptiv|tier1|Troy Automation Alley
+magna.com|Magna International|tier1|Troy Automation Alley
+continental.com|Continental|tier1|Auburn Hills
+valeo.com|Valeo|tier1|Troy Automation Alley
+zf.com|ZF Group|tier1|Northville / Farmington Hills
+borgwarner.com|BorgWarner|tier1|Auburn Hills
+autoliv.com|Autoliv|tier1|Auburn Hills
+denso.com|DENSO|tier1|Southfield
+hitachiastemo.com|Hitachi Astemo|tier1|Farmington Hills
+lear.com|Lear Corporation|tier1|Southfield
+nexteer.com|Nexteer Automotive|tier1|Auburn Hills
+gentherm.com|Gentherm|tier1|Northville
+harman.com|HARMAN|tier1|Novi
+bosch.us|Bosch Mobility|tier1|Farmington Hills
+stellantis.com|Stellantis|oem|Auburn Hills
+geotab.com|Geotab|av|Novi
+altair.com|Altair Engineering|sim|Troy Automation Alley
+ricardo.com|Ricardo|vv|Troy Automation Alley
+fev.com|FEV Group|vv|Auburn Hills
+horiba.com|HORIBA|sim|Troy Automation Alley
+mts.com|MTS Systems|sim|Troy Automation Alley
+humaneticsgroup.com|Humanetics|sim|Plymouth
+intrepidcs.com|Intrepid Control Systems|sim|Plymouth
+danlawinc.com|Danlaw|av|Novi
+methodicatech.com|Methodica Technologies|vv|Troy Automation Alley
+autonomousstuff.com|AutonomousStuff (Hexagon)|av|Troy Automation Alley
+dspace.com|dSPACE|sim|Troy Automation Alley
+vector.com|Vector Informatik|sim|Troy Automation Alley
+etas.com|ETAS|sim|Troy Automation Alley
+elektrobit.com|Elektrobit|sim|Troy Automation Alley
+tttech.com|TTTech Auto|av|Troy Automation Alley
+kistler.com|KISTLER|sim|Novi
+avl.com|AVL|vv|Auburn Hills
+iav.com|IAV Automotive Engineering|vv|Auburn Hills
+bertrandt.com|Bertrandt|vv|Auburn Hills
+dep.net|Detroit Engineered Products (DEP)|vv|Troy Automation Alley
+explico.com|Explico Engineering|vv|Farmington Hills
+exida.com|exida|vv|Troy Automation Alley
+tuvsud.com|TUV SUD|vv|Auburn Hills
+dekra.com|DEKRA|vv|Auburn Hills
+intertek.com|Intertek|vv|Troy Automation Alley
+maymobility.com|May Mobility|av|Ann Arbor (Automation Alley spillover)
+refraction.ai|Refraction AI|av|Ann Arbor
+cavnue.com|Cavnue|av|Ann Arbor
+dataspeed.com|Dataspeed|av|Troy Automation Alley
+neweagle.net|New Eagle|av|Ann Arbor
+prattmiller.com|Pratt Miller|vv|New Hudson
+traxen.com|Traxen|av|Plymouth
+cybernet.com|Cybernet Systems|av|Ann Arbor
+tatatechnologies.com|Tata Technologies|vv|Novi
+voxel51.com|Voxel51|sim|Ann Arbor
+deepen.ai|Deepen AI|av|Ann Arbor
+oxa.tech|Oxa|av|Ann Arbor
+lattice.dev|Lattice Flow|sim|Ann Arbor
+duraautomotive.com|Dura Automotive|tier1|Auburn Hills
+lacksenterprises.com|Lacks Enterprises|tier1|Novi
+macleanfogg.com|MacLean-Fogg|tier1|Farmington Hills
+rcoengineering.com|RCO Engineering|tier1|New Hudson
+pistonautomotive.com|Piston Automotive|tier1|Redford
+kiekert.com|Kiekert|tier1|Auburn Hills
+aeaes.com|A.E. Ames / Aptiv legacy|tier1|Troy
+rohde-schwarz.com|Rohde & Schwarz|sim|Troy Automation Alley
+microvast.com|Microvast|tier1|Novi
+methode.com|Methode Electronics|tier1|Farmington Hills
+tachis.com|Tachi-S|tier1|Novi
+srglobal.com|SRG Global|tier1|Grand Blanc
+coastalautomotive.com|Coastal Automotive|tier1|Livonia
+newcor.com|Newcor|tier1|Sterling Heights
+rheinmetall.com|Rheinmetall Automotive|tier1|Auburn Hills
+mahle.com|MAHLE|tier1|Farmington Hills
+tenant.com|Tenneco|tier1|Northville
+flex.com|Flex (automotive)|tier1|Troy Automation Alley
+aam.com|American Axle & Manufacturing|tier1|Detroit
+autonomic.ai|Autonomic (Ford)|sim|Troy Automation Alley
+sonatus.com|Sonatus|sim|Troy Automation Alley
+tulatech.com|Tula Technology|sim|Troy Automation Alley
+renesas.com|Renesas|sim|Novi
+onsemi.com|onsemi|sim|Novi
+ceaton.com|Cepton|tier1|Troy Automation Alley
+pointonenav.com|Point One Navigation|sim|Ann Arbor
+swiftnav.com|Swift Navigation|sim|Ann Arbor
+nauto.com|Nauto|av|Ann Arbor
+netradyne.com|Netradyne|av|Ann Arbor
+motive.com|Motive (KeepTruckin)|av|Ann Arbor
+samsara.com|Samsara|av|Ann Arbor
+civilmaps.com|Civil Maps|sim|Ann Arbor
+baraja.com|Baraja|tier1|Troy Automation Alley
+aeva.com|Aeva|tier1|Troy Automation Alley
+ouster.com|Ouster|tier1|Troy Automation Alley
+innoviz-tech.com|Innoviz|tier1|Troy Automation Alley
+luminartech.com|Luminar|tier1|Troy Automation Alley
+hesaitech.com|Hesai|tier1|Troy Automation Alley
+robosense.ai|RoboSense|tier1|Troy Automation Alley
+nodar.com|Nodar|tier1|Troy Automation Alley
+seyond.com|Seyond|tier1|Troy Automation Alley
+ambarella.com|Ambarella|sim|Troy Automation Alley
+qualcomm.com|Qualcomm|sim|Troy Automation Alley
+trimble.com|Trimble|sim|Ann Arbor
+tomtom.com|TomTom|sim|Ann Arbor
+here.com|HERE Technologies|sim|Ann Arbor
+phiar.net|Phiar|av|Ann Arbor
+polysync.io|PolySync|sim|Ann Arbor
+carmera.com|Carmera|sim|Ann Arbor
+deepmap.ai|DeepMap|sim|Ann Arbor
+atlatec.com|atlatec|sim|Ann Arbor
+scout.com|Scout|av|Ann Arbor
+tymetro.com|Tymetro|av|Ann Arbor
+wejo.com|Wejo|av|Ann Arbor
+otonomo.com|Otonomo|av|Ann Arbor
+pegasus.com|Pegasus|av|Ann Arbor
+phantom.com|Phantom|av|Ann Arbor
+lvl5.com|Level 5|av|Ann Arbor
+isee.ai|iSee|av|Ann Arbor
+caruma.com|Caruma|av|Ann Arbor
+wavesense.com|WaveSense|av|Ann Arbor
+leishen.com|LeiShen|tier1|Troy
+benewake.com|Benewake|tier1|Troy
+hippo.com|Hippo|av|Ann Arbor
+umich.edu|University of Michigan (UMTRI / Mcity)|lab|Ann Arbor U-M Mobility + Mcity
+mcity.umich.edu|Mcity Test Facility|connector|Ann Arbor U-M Mobility + Mcity
+umtri.umich.edu|UMTRI|lab|Ann Arbor U-M Mobility + Mcity
+kettering.edu|Kettering University|lab|Flint (MI auto corridor)
+wayne.edu|Wayne State University|lab|Detroit
+oakland.edu|Oakland University|lab|Rochester Hills
+ltu.edu|Lawrence Technological University|lab|Southfield
+msu.edu|Michigan State University|lab|East Lansing
+mtu.edu|Michigan Technological University|lab|Houghton
+wmich.edu|Western Michigan University|lab|Kalamazoo
+wccnet.edu|Washtenaw Community College|lab|Ann Arbor
+emich.edu|Eastern Michigan University|lab|Ypsilanti
+umdearborn.edu|University of Michigan - Dearborn|lab|Dearborn
+annarborusa.org|Ann Arbor SPARK|connector|Ann Arbor
+medc.state.mi.us|Michigan Economic Development Corp|connector|Lansing
+soartech.com|Soar Technology|sim|Ann Arbor
+dornerworks.com|DornerWorks|vv|Ann Arbor
+appliedintuition.com|Applied Intuition|sim|Ann Arbor
+foretellix.com|Foretellix|sim|Ann Arbor
+tata-technologies.com|Tata Technologies|vv|Novi
+michigancentral.com|Michigan Central (Corktown)|connector|Detroit Corktown / Michigan Central
+newlab.com|Newlab at Michigan Central|connector|Detroit Corktown
+techtowndetroit.org|TechTown Detroit|connector|Detroit Midtown
+detroitregionalpartnership.com|Detroit Regional Partnership|connector|Detroit
+fontinalis.com|Fontinalis Partners (mobility VC)|connector|Detroit Corktown
+michauto.org|MichAuto|connector|Detroit
+nextenergy.org|NextEnergy|connector|Detroit
+centrepolisaccelerator.com|Centrepolis Accelerator|connector|Detroit
+gomentum.org|Gomentum (testbed)|connector|Concord (CA mirror)
+derq.com|Derq|av|Detroit
+realtime-robotics.com|Realtime Robotics|sim|Detroit
+tenneco.com|Tenneco|tier1|Warren GM 周边
+navistar.com|International Motors (Navistar)|oem|Warren GM 周边
+truck-lite.com|Truck-Lite|tier1|Warren GM 周边
+nvidia.com|NVIDIA|sim|Austin The Domain / Riata
+arm.com|Arm|sim|Austin The Domain
+cirrus.com|Cirrus Logic|sim|Austin
+silabs.com|Silicon Labs|sim|Austin
+samsung.com|Samsung Austin Semiconductor|tier1|Austin
+waabi.ai|Waabi|av|Austin
+kodiak.ai|Kodiak|av|Austin
+gatik.ai|Gatik|av|Austin / Dallas
+plus.ai|Plus|av|Austin
+motional.com|Motional|av|Austin
+cyngn.com|Cyngn|av|Austin
+einride.tech|Einride|av|Austin
+outrider.ai|Outrider|av|Austin
+locomation.ai|Locomation|av|Austin
+stackav.com|Stack AV|av|Austin
+capitalfactory.com|Capital Factory|connector|Austin Downtown
+austintech.org|Austin Technology Council|connector|Austin
+utexas.edu|University of Texas at Austin (CTR)|lab|Austin
+tacc.utexas.edu|TACC|lab|Austin
+mathworks.com|MathWorks|sim|Austin
+siemens.com|Siemens (Capital/PLM)|sim|Austin
+ipg-automotive.com|IPG Automotive|sim|Austin
+rfpro.com|rFpro|sim|Austin
+cognata.com|Cognata|sim|Austin
+morai.io|MORAI|sim|Austin
+avesreality.com|AVES Reality|sim|Austin
+metamoto.com|Metamoto|sim|Austin
+ul.com|UL Solutions|vv|Austin
+tuv-rheinland.com|TUV Rheinland|vv|Austin
+toyota.com|Toyota Motor North America|oem|Plano / Legacy West
+toyotaconnected.com|Toyota Connected|av|Plano
+gm.com|GM Financial|oem|Dallas
+att.com|AT&T (connected vehicles)|oem|Dallas
+statefarm.com|State Farm (Frisco)|connector|Frisco
+nttdata.com|NTT DATA|vv|Plano
+dxc.com|DXC Technology|vv|Plano
+fisglobal.com|FIS|vv|Dallas
+jtekt.com|JTEKT|tier1|Plano
+utdallas.edu|University of Texas at Dallas|lab|Richardson
+twu.edu|Texas Woman's University|lab|Denton
+legacywest.com|Legacy West|connector|Plano
+paccar.com|PACCAR|oem|Dallas
+mitsubishi-fuso.com|Mitsubishi FUSO|oem|Dallas
+shell.com|Shell|oem|Houston Energy Corridor
+exxonmobil.com|ExxonMobil|oem|Houston Energy Corridor
+chevron.com|Chevron|oem|Houston Energy Corridor
+bp.com|BP|oem|Houston Energy Corridor
+phillips66.com|Phillips 66|oem|Houston Energy Corridor
+slb.com|SLB (Schlumberger)|oem|Houston Energy Corridor
+halliburton.com|Halliburton|oem|Houston Energy Corridor
+honeywell.com|Honeywell|tier1|Houston Energy Corridor
+emerson.com|Emerson|tier1|Houston Energy Corridor
+nov.com|NOV (National Oilwell Varco)|tier1|Houston Energy Corridor
+jacobs.com|Jacobs|vv|Houston Energy Corridor
+worley.com|Worley|vv|Houston Energy Corridor
+rice.edu|Rice University|lab|Houston
+uh.edu|University of Houston|lab|Houston
+tamu.edu|Texas A&M University|lab|College Station
+ridemetro.org|Houston METRO|connector|Houston
+porthouston.com|Port of Houston|connector|Houston
+houstex.com|Houston Exponential|connector|Houston
+cummins.com|Cummins|oem|Houston
+portsanantonio.us|Port San Antonio|connector|San Antonio Port SA
+swri.org|Southwest Research Institute (SwRI)|lab|San Antonio
+utsa.edu|UT San Antonio|lab|San Antonio
+heb.com|H-E-B|oem|San Antonio
+usaa.com|USAA|oem|San Antonio
+rackspace.com|Rackspace|connector|San Antonio
+frostbank.com|Frost Bank|connector|San Antonio
+valero.com|Valero|oem|San Antonio
+zachrygroup.com|Zachry Group|vv|San Antonio
+texasscientific.com|Texas Scientific|lab|San Antonio
+waymo.com|Waymo|av|Mountain View
+zoox.com|Zoox|av|Foster City
+tesla.com|Tesla (Autopilot/FSD)|oem|Palo Alto / Fremont
+intel.com|Intel (Mobileye adj)|sim|Santa Clara
+apple.com|Apple (Special Projects)|oem|Cupertino
+google.com|Google / Waymo|av|Mountain View
+pony.ai|Pony.ai|av|Palo Alto
+weride.ai|WeRide|av|Silicon Valley
+nuro.ai|Nuro|av|Mountain View
+deeproute.ai|DeepRoute.ai|av|Silicon Valley
+nullmax.ai|Nullmax|av|Silicon Valley
+innovusion.com|Innovusion|tier1|San Jose
+mobileye.com|Mobileye|av|Silicon Valley
+infineon.com|Infineon|tier1|San Jose
+nxp.com|NXP|tier1|San Jose
+marvell.com|Marvell|sim|Santa Clara
+broadcom.com|Broadcom|sim|San Jose
+cisco.com|Cisco|sim|San Jose
+adobe.com|Adobe|sim|San Jose
+microsoft.com|Microsoft (Mobility)|sim|Mountain View
+meta.com|Meta (Reality Labs)|sim|Menlo Park
+stanford.edu|Stanford University|lab|Stanford / Palo Alto
+sjsu.edu|San Jose State University|lab|San Jose
+scu.edu|Santa Clara University|lab|Santa Clara
+cmu.edu|Carnegie Mellon (Silicon Valley)|lab|Mountain View
+righthook.com|RightHook|sim|San Francisco
+exponent.com|Exponent|vv|Menlo Park
+tri.global|Toyota Research Institute|lab|Los Altos
+tu-simple.com|TuSimple|av|San Diego
+comma.ai|comma.ai|av|San Diego
+lyft.com|Lyft (AV)|av|San Francisco
+veoneer.com|Veoneer|tier1|Silicon Valley
+visteon.com|Visteon|tier1|Silicon Valley
+aurora.tech|Aurora|av|SF
+pronto.ai|Pronto.ai|av|San Francisco
+turo.com|Turo|av|San Francisco
+uber.com|Uber (ATG legacy)|av|San Francisco
+usfca.edu|University of San Francisco|lab|San Francisco
+sfsu.edu|SF State University|lab|San Francisco
+ucop.edu|University of California OP|lab|Oakland
+sf.gov|City of San Francisco (MTA)|connector|San Francisco SOMA
+berkeley.edu|UC Berkeley|lab|Berkeley
+bdd.berkeley.edu|Berkeley DeepDrive (BDD)|lab|Berkeley
+bair.berkeley.edu|BAIR (Berkeley AI Research)|lab|Berkeley
+lbl.gov|Lawrence Berkeley National Lab|lab|Berkeley
+covariant.ai|Covariant|av|Berkeley
+oaklandca.gov|City of Oakland|connector|Oakland
+portofoakland.com|Port of Oakland|connector|Oakland
+huawei.com|Huawei (华为车)|oem|深圳 南山/坂田
+dji.com|DJI 大疆车载|tier1|深圳 南山
+tencent.com|Tencent 腾讯车联|oem|深圳 南山
+byd.com|BYD 比亚迪|oem|深圳 坪山
+minieye.ai|MINIEYE 佑驾创新|av|深圳 南山
+horizon.ai|Horizon 地平线|tier1|深圳
+blacksesame.com|BlackSesame 黑芝麻|tier1|深圳 南山
+desaysv.com|Desay SV 德赛西威|tier1|深圳
+hirain.com|Hirain 经纬恒润|vv|深圳
+joyson.com|Joyson 均胜安全|tier1|深圳
+huayang.com|Huayang 华阳集团|tier1|深圳
+autox.ai|AutoX 安途|av|深圳 南山
+qcraft.ai|QCraft 轻舟智航|av|深圳
+idriverplus.com|Idriverplus 智行者|av|深圳
+uisee.com|UISEE 驭势|av|深圳
+changan.com.cn|Changan 长安|oem|深圳
+gac.com.cn|GAC 广汽|oem|深圳
+saicmotor.com|SAIC 上汽|oem|深圳
+nio.io|NIO 蔚来|oem|深圳
+xpeng.com|XPeng 小鹏|oem|深圳
+lixiang.com|Li Auto 理想|oem|深圳
+momenta.ai|Momenta momenta|av|深圳

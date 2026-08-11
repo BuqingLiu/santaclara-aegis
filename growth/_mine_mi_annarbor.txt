@@ -1,0 +1,46 @@
+umich.edu|University of Michigan (UMTRI / Mcity)|lab|MI-Ann Arbor U-M Mobility + Mcity
+mcity.umich.edu|Mcity Test Facility|connector|MI-Ann Arbor U-M Mobility + Mcity
+umtri.umich.edu|UMTRI|lab|MI-Ann Arbor U-M Mobility + Mcity
+kettering.edu|Kettering University|lab|MI-Flint (MI auto corridor)
+wayne.edu|Wayne State University|lab|MI-Detroit
+oakland.edu|Oakland University|lab|MI-Rochester Hills
+ltu.edu|Lawrence Technological University|lab|MI-Southfield
+msu.edu|Michigan State University|lab|MI-East Lansing
+mtu.edu|Michigan Technological University|lab|MI-Houghton
+wmich.edu|Western Michigan University|lab|MI-Kalamazoo
+wccnet.edu|Washtenaw Community College|lab|MI-Ann Arbor
+emich.edu|Eastern Michigan University|lab|MI-Ypsilanti
+umdearborn.edu|University of Michigan - Dearborn|lab|MI-Dearborn
+annarborusa.org|Ann Arbor SPARK|connector|MI-Ann Arbor
+medc.state.mi.us|Michigan Economic Development Corp|connector|MI-Lansing
+mcity.umich.edu|Mcity|connector|MI-Ann Arbor
+prattmiller.com|Pratt Miller|vv|MI-New Hudson
+deepen.ai|Deepen AI|av|MI-Ann Arbor
+voxel51.com|Voxel51|sim|MI-Ann Arbor
+cybernet.com|Cybernet Systems|av|MI-Ann Arbor
+oxa.tech|Oxa|av|MI-Ann Arbor
+refraction.ai|Refraction AI|av|MI-Ann Arbor
+cavnue.com|Cavnue|av|MI-Ann Arbor
+maymobility.com|May Mobility|av|MI-Ann Arbor
+dataspeed.com|Dataspeed|av|MI-Troy (AA spillover)
+neweagle.net|New Eagle|av|MI-Ann Arbor
+soartech.com|Soar Technology|sim|MI-Ann Arbor
+dornerworks.com|DornerWorks|vv|MI-Ann Arbor
+appliedintuition.com|Applied Intuition|sim|MI-Ann Arbor
+foretellix.com|Foretellix|sim|MI-Ann Arbor
+tata-technologies.com|Tata Technologies|vv|MI-Novi
+umtri.umich.edu|UMTRI|lab|MI-Ann Arbor
+mcity.umich.edu|Mcity|connector|MI-Ann Arbor
+deepmap.ai|DeepMap|sim|MI-Ann Arbor
+atlatec.com|atlatec|sim|MI-Ann Arbor
+pointonenav.com|Point One Navigation|sim|MI-Ann Arbor
+swiftnav.com|Swift Navigation|sim|MI-Ann Arbor
+nauto.com|Nauto|av|MI-Ann Arbor
+netradyne.com|Netradyne|av|MI-Ann Arbor
+motive.com|Motive|av|MI-Ann Arbor
+samsara.com|Samsara|av|MI-Ann Arbor
+civilmaps.com|Civil Maps|sim|MI-Ann Arbor
+baraja.com|Baraja|tier1|MI-Ann Arbor
+phiar.net|Phiar|av|MI-Ann Arbor
+polysync.io|PolySync|sim|MI-Ann Arbor
+carmera.com|Carmera|sim|MI-Ann Arbor

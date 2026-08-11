@@ -1,0 +1,54 @@
+portsanantonio.us|Port San Antonio|connector|TX-San Antonio Port SA
+swri.org|Southwest Research Institute (SwRI)|lab|TX-San Antonio
+utsa.edu|UT San Antonio|lab|TX-San Antonio
+heb.com|H-E-B|oem|TX-San Antonio
+usaa.com|USAA|oem|TX-San Antonio
+rackspace.com|Rackspace|connector|TX-San Antonio
+frostbank.com|Frost Bank|connector|TX-San Antonio
+valero.com|Valero|oem|TX-San Antonio
+zachrygroup.com|Zachry Group|vv|TX-San Antonio
+dspace.com|dSPACE|sim|TX-San Antonio
+vector.com|Vector|sim|TX-San Antonio
+etas.com|ETAS|sim|TX-San Antonio
+mathworks.com|MathWorks|sim|TX-San Antonio
+siemens.com|Siemens|sim|TX-San Antonio
+ipg-automotive.com|IPG Automotive|sim|TX-San Antonio
+tuvsud.com|TUV SUD|vv|TX-San Antonio
+dekra.com|DEKRA|vv|TX-San Antonio
+exida.com|exida|vv|TX-San Antonio
+intertek.com|Intertek|vv|TX-San Antonio
+tuv-rheinland.com|TUV Rheinland|vv|TX-San Antonio
+swri.org|SwRI Intelligent Systems|lab|TX-San Antonio
+texasscientific.com|Texas Scientific|lab|TX-San Antonio
+sonatus.com|Sonatus|sim|TX-San Antonio
+tulatech.com|Tula Technology|sim|TX-San Antonio
+renesas.com|Renesas|sim|TX-San Antonio
+onsemi.com|onsemi|sim|TX-San Antonio
+ceaton.com|Cepton|tier1|TX-San Antonio
+pointonenav.com|Point One Navigation|sim|TX-San Antonio
+swiftnav.com|Swift Navigation|sim|TX-San Antonio
+nauto.com|Nauto|av|TX-San Antonio
+netradyne.com|Netradyne|av|TX-San Antonio
+motive.com|Motive|av|TX-San Antonio
+samsara.com|Samsara|av|TX-San Antonio
+civilmaps.com|Civil Maps|sim|TX-San Antonio
+baraja.com|Baraja|tier1|TX-San Antonio
+aeva.com|Aeva|tier1|TX-San Antonio
+ouster.com|Ouster|tier1|TX-San Antonio
+innoviz-tech.com|Innoviz|tier1|TX-San Antonio
+luminartech.com|Luminar|tier1|TX-San Antonio
+hesaitech.com|Hesai|tier1|TX-San Antonio
+robosense.ai|RoboSense|tier1|TX-San Antonio
+nodar.com|Nodar|tier1|TX-San Antonio
+seyond.com|Seyond|tier1|TX-San Antonio
+ambarella.com|Ambarella|sim|TX-San Antonio
+qualcomm.com|Qualcomm|sim|TX-San Antonio
+trimble.com|Trimble|sim|TX-San Antonio
+tomtom.com|TomTom|sim|TX-San Antonio
+here.com|HERE|sim|TX-San Antonio
+phiar.net|Phiar|av|TX-San Antonio
+polysync.io|PolySync|sim|TX-San Antonio
+carmera.com|Carmera|sim|TX-San Antonio
+deepmap.ai|DeepMap|sim|TX-San Antonio
+atlatec.com|atlatec|sim|TX-San Antonio
+autonomic.ai|Autonomic|sim|TX-San Antonio

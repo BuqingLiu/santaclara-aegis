@@ -1,0 +1,120 @@
+aptiv.com|Aptiv|tier1|MI-Troy Automation Alley
+magna.com|Magna International|tier1|MI-Troy Automation Alley
+continental.com|Continental|tier1|MI-Auburn Hills
+valeo.com|Valeo|tier1|MI-Troy Automation Alley
+zf.com|ZF Group|tier1|MI-Northville / Farmington Hills
+borgwarner.com|BorgWarner|tier1|MI-Auburn Hills
+autoliv.com|Autoliv|tier1|MI-Auburn Hills
+denso.com|DENSO|tier1|MI-Southfield
+hitachiastemo.com|Hitachi Astemo|tier1|MI-Farmington Hills
+lear.com|Lear Corporation|tier1|MI-Southfield
+nexteer.com|Nexteer Automotive|tier1|MI-Auburn Hills
+gentherm.com|Gentherm|tier1|MI-Northville
+harman.com|HARMAN|tier1|MI-Novi
+bosch.us|Bosch Mobility|tier1|MI-Farmington Hills
+stellantis.com|Stellantis|oem|MI-Auburn Hills
+geotab.com|Geotab|av|MI-Novi
+altair.com|Altair Engineering|sim|MI-Troy Automation Alley
+ricardo.com|Ricardo|vv|MI-Troy Automation Alley
+fev.com|FEV Group|vv|MI-Auburn Hills
+horiba.com|HORIBA|sim|MI-Troy Automation Alley
+mts.com|MTS Systems|sim|MI-Troy Automation Alley
+humaneticsgroup.com|Humanetics|sim|MI-Plymouth
+intrepidcs.com|Intrepid Control Systems|sim|MI-Plymouth
+danlawinc.com|Danlaw|av|MI-Novi
+methodicatech.com|Methodica Technologies|vv|MI-Troy Automation Alley
+autonomousstuff.com|AutonomousStuff (Hexagon)|av|MI-Troy Automation Alley
+dspace.com|dSPACE|sim|MI-Troy Automation Alley
+vector.com|Vector Informatik|sim|MI-Troy Automation Alley
+etas.com|ETAS|sim|MI-Troy Automation Alley
+elektrobit.com|Elektrobit|sim|MI-Troy Automation Alley
+tttech.com|TTTech Auto|av|MI-Troy Automation Alley
+kistler.com|KISTLER|sim|MI-Novi
+avl.com|AVL|vv|MI-Auburn Hills
+iav.com|IAV Automotive Engineering|vv|MI-Auburn Hills
+bertrandt.com|Bertrandt|vv|MI-Auburn Hills
+dep.net|Detroit Engineered Products (DEP)|vv|MI-Troy Automation Alley
+explico.com|Explico Engineering|vv|MI-Farmington Hills
+exida.com|exida|vv|MI-Troy Automation Alley
+tuvsud.com|TUV SUD|vv|MI-Auburn Hills
+dekra.com|DEKRA|vv|MI-Auburn Hills
+intertek.com|Intertek|vv|MI-Troy Automation Alley
+maymobility.com|May Mobility|av|MI-Ann Arbor (Automation Alley spillover)
+refraction.ai|Refraction AI|av|MI-Ann Arbor
+cavnue.com|Cavnue|av|MI-Ann Arbor
+dataspeed.com|Dataspeed|av|MI-Troy Automation Alley
+neweagle.net|New Eagle|av|MI-Ann Arbor
+prattmiller.com|Pratt Miller|vv|MI-New Hudson
+traxen.com|Traxen|av|MI-Plymouth
+cybernet.com|Cybernet Systems|av|MI-Ann Arbor
+tatatechnologies.com|Tata Technologies|vv|MI-Novi
+voxel51.com|Voxel51|sim|MI-Ann Arbor
+deepen.ai|Deepen AI|av|MI-Ann Arbor
+oxa.tech|Oxa|av|MI-Ann Arbor
+lattice.dev|Lattice Flow|sim|MI-Ann Arbor
+duraautomotive.com|Dura Automotive|tier1|MI-Auburn Hills
+lacksenterprises.com|Lacks Enterprises|tier1|MI-Novi
+macleanfogg.com|MacLean-Fogg|tier1|MI-Farmington Hills
+rcoengineering.com|RCO Engineering|tier1|MI-New Hudson
+pistonautomotive.com|Piston Automotive|tier1|MI-Redford
+kiekert.com|Kiekert|tier1|MI-Auburn Hills
+aeaes.com|A.E. Ames / Aptiv legacy|tier1|MI-Troy
+rohde-schwarz.com|Rohde & Schwarz|sim|MI-Troy Automation Alley
+microvast.com|Microvast|tier1|MI-Novi
+methode.com|Methode Electronics|tier1|MI-Farmington Hills
+tachis.com|Tachi-S|tier1|MI-Novi
+srglobal.com|SRG Global|tier1|MI-Grand Blanc
+coastalautomotive.com|Coastal Automotive|tier1|MI-Livonia
+newcor.com|Newcor|tier1|MI-Sterling Heights
+rheinmetall.com|Rheinmetall Automotive|tier1|MI-Auburn Hills
+mahle.com|MAHLE|tier1|MI-Farmington Hills
+tenant.com|Tenneco|tier1|MI-Northville
+flex.com|Flex (automotive)|tier1|MI-Troy Automation Alley
+aam.com|American Axle & Manufacturing|tier1|MI-Detroit
+lear.com|Lear|tier1|MI-Southfield
+autonomic.ai|Autonomic (Ford)|sim|MI-Troy Automation Alley
+sonatus.com|Sonatus|sim|MI-Troy Automation Alley
+tulatech.com|Tula Technology|sim|MI-Troy Automation Alley
+renesas.com|Renesas|sim|MI-Novi
+onsemi.com|onsemi|sim|MI-Novi
+ceaton.com|Cepton|tier1|MI-Troy Automation Alley
+pointonenav.com|Point One Navigation|sim|MI-Ann Arbor
+swiftnav.com|Swift Navigation|sim|MI-Ann Arbor
+nauto.com|Nauto|av|MI-Ann Arbor
+netradyne.com|Netradyne|av|MI-Ann Arbor
+motive.com|Motive (KeepTruckin)|av|MI-Ann Arbor
+samsara.com|Samsara|av|MI-Ann Arbor
+civilmaps.com|Civil Maps|sim|MI-Ann Arbor
+baraja.com|Baraja|tier1|MI-Troy Automation Alley
+aeva.com|Aeva|tier1|MI-Troy Automation Alley
+ouster.com|Ouster|tier1|MI-Troy Automation Alley
+innoviz-tech.com|Innoviz|tier1|MI-Troy Automation Alley
+luminartech.com|Luminar|tier1|MI-Troy Automation Alley
+hesaitech.com|Hesai|tier1|MI-Troy Automation Alley
+robosense.ai|RoboSense|tier1|MI-Troy Automation Alley
+nodar.com|Nodar|tier1|MI-Troy Automation Alley
+seyond.com|Seyond|tier1|MI-Troy Automation Alley
+ambarella.com|Ambarella|sim|MI-Troy Automation Alley
+qualcomm.com|Qualcomm|sim|MI-Troy Automation Alley
+trimble.com|Trimble|sim|MI-Ann Arbor
+tomtom.com|TomTom|sim|MI-Ann Arbor
+here.com|HERE Technologies|sim|MI-Ann Arbor
+phiar.net|Phiar|av|MI-Ann Arbor
+polysync.io|PolySync|sim|MI-Ann Arbor
+carmera.com|Carmera|sim|MI-Ann Arbor
+deepmap.ai|DeepMap|sim|MI-Ann Arbor
+atlatec.com|atlatec|sim|MI-Ann Arbor
+aeva.com|Aeva|tier1|MI-Troy
+scout.com|Scout|av|MI-Ann Arbor
+tymetro.com|Tymetro|av|MI-Ann Arbor
+wejo.com|Wejo|av|MI-Ann Arbor
+otonomo.com|Otonomo|av|MI-Ann Arbor
+pegasus.com|Pegasus|av|MI-Ann Arbor
+phantom.com|Phantom|av|MI-Ann Arbor
+lvl5.com|Level 5|av|MI-Ann Arbor
+isee.ai|iSee|av|MI-Ann Arbor
+caruma.com|Caruma|av|MI-Ann Arbor
+wavesense.com|WaveSense|av|MI-Ann Arbor
+leishen.com|LeiShen|tier1|MI-Troy
+benewake.com|Benewake|tier1|MI-Troy
+hippo.com|Hippo|av|MI-Ann Arbor

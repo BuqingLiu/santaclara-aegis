@@ -1,0 +1,64 @@
+toyota.com|Toyota Motor North America|oem|TX-Plano / Legacy West
+toyotaconnected.com|Toyota Connected|av|TX-Plano
+gm.com|GM Financial|oem|TX-Dallas
+att.com|AT&T (connected vehicles)|oem|TX-Dallas
+statefarm.com|State Farm (Frisco)|connector|TX-Frisco
+nttdata.com|NTT DATA|vv|TX-Plano
+dxc.com|DXC Technology|vv|TX-Plano
+fisglobal.com|FIS|vv|TX-Dallas
+jtekt.com|JTEKT|tier1|TX-Plano
+bosch.us|Bosch|tier1|TX-Dallas
+denso.com|DENSO|tier1|TX-Dallas
+gatik.ai|Gatik|av|TX-Dallas / Austin
+plus.ai|Plus|av|TX-Dallas
+motional.com|Motional|av|TX-Dallas
+utexas.edu|UT Dallas (ATEM)|lab|TX-Richardson
+utdallas.edu|University of Texas at Dallas|lab|TX-Richardson
+twu.edu|Texas Woman's University|lab|TX-Denton
+capitalfactory.com|Capital Factory (Dallas)|connector|TX-Dallas
+legacywest.com|Legacy West|connector|TX-Plano
+dspace.com|dSPACE|sim|TX-Dallas
+vector.com|Vector|sim|TX-Dallas
+etas.com|ETAS|sim|TX-Dallas
+mathworks.com|MathWorks|sim|TX-Dallas
+siemens.com|Siemens|sim|TX-Dallas
+ipg-automotive.com|IPG Automotive|sim|TX-Dallas
+tuvsud.com|TUV SUD|vv|TX-Dallas
+dekra.com|DEKRA|vv|TX-Dallas
+exida.com|exida|vv|TX-Dallas
+intertek.com|Intertek|vv|TX-Dallas
+navistar.com|International Motors|oem|TX-Dallas
+paccar.com|PACCAR|oem|TX-Dallas
+mitsubishi-fuso.com|Mitsubishi FUSO|oem|TX-Dallas
+sonatus.com|Sonatus|sim|TX-Dallas
+tulatech.com|Tula Technology|sim|TX-Dallas
+renesas.com|Renesas|sim|TX-Dallas
+onsemi.com|onsemi|sim|TX-Dallas
+ceaton.com|Cepton|tier1|TX-Dallas
+pointonenav.com|Point One Navigation|sim|TX-Dallas
+swiftnav.com|Swift Navigation|sim|TX-Dallas
+nauto.com|Nauto|av|TX-Dallas
+netradyne.com|Netradyne|av|TX-Dallas
+motive.com|Motive|av|TX-Dallas
+samsara.com|Samsara|av|TX-Dallas
+civilmaps.com|Civil Maps|sim|TX-Dallas
+baraja.com|Baraja|tier1|TX-Dallas
+aeva.com|Aeva|tier1|TX-Dallas
+ouster.com|Ouster|tier1|TX-Dallas
+innoviz-tech.com|Innoviz|tier1|TX-Dallas
+luminartech.com|Luminar|tier1|TX-Dallas
+hesaitech.com|Hesai|tier1|TX-Dallas
+robosense.ai|RoboSense|tier1|TX-Dallas
+nodar.com|Nodar|tier1|TX-Dallas
+seyond.com|Seyond|tier1|TX-Dallas
+ambarella.com|Ambarella|sim|TX-Dallas
+qualcomm.com|Qualcomm|sim|TX-Dallas
+trimble.com|Trimble|sim|TX-Dallas
+tomtom.com|TomTom|sim|TX-Dallas
+here.com|HERE|sim|TX-Dallas
+phiar.net|Phiar|av|TX-Dallas
+polysync.io|PolySync|sim|TX-Dallas
+carmera.com|Carmera|sim|TX-Dallas
+deepmap.ai|DeepMap|sim|TX-Dallas
+atlatec.com|atlatec|sim|TX-Dallas
+autonomic.ai|Autonomic|sim|TX-Dallas
