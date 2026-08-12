@@ -1,30 +1,14 @@
-huawei.com|Huawei (华为车)|oem|深圳-深圳 南山/坂田
+huawei.com|Huawei 华为车|oem|深圳-深圳 坂田
 dji.com|DJI 大疆车载|tier1|深圳-深圳 南山
 tencent.com|Tencent 腾讯车联|oem|深圳-深圳 南山
 byd.com|BYD 比亚迪|oem|深圳-深圳 坪山
-pony.ai|Pony.ai 小马智行|av|深圳-深圳
-weride.ai|WeRide 文远知行|av|深圳-深圳
 deeproute.ai|DeepRoute 元戎启行|av|深圳-深圳 福田
-nullmax.ai|Nullmax 纽劢|av|深圳-深圳
 robosense.ai|RoboSense 速腾聚创|tier1|深圳-深圳 宝安
 minieye.ai|MINIEYE 佑驾创新|av|深圳-深圳 南山
-horizon.ai|Horizon 地平线|tier1|深圳-深圳
-blacksesame.com|BlackSesame 黑芝麻|tier1|深圳-深圳 南山
-desaysv.com|Desay SV 德赛西威|tier1|深圳-深圳
-hirain.com|Hirain 经纬恒润|vv|深圳-深圳
-joyson.com|Joyson 均胜安全|tier1|深圳-深圳
-huayang.com|Huayang 华阳集团|tier1|深圳-深圳
 autox.ai|AutoX 安途|av|深圳-深圳 南山
-qcraft.ai|QCraft 轻舟智航|av|深圳-深圳
-idriverplus.com|Idriverplus 智行者|av|深圳-深圳
-uisee.com|UISEE 驭势|av|深圳-深圳
-changan.com.cn|Changan 长安|oem|深圳-深圳
-gac.com.cn|GAC 广汽|oem|深圳-深圳
-saicmotor.com|SAIC 上汽|oem|深圳-深圳
-nio.io|NIO 蔚来|oem|深圳-深圳
-xpeng.com|XPeng 小鹏|oem|深圳-深圳
-lixiang.com|Li Auto 理想|oem|深圳-深圳
-momenta.ai|Momenta momenta|av|深圳-深圳
-plus.ai|Plus 智加|av|深圳-深圳
-nuro.ai|Nuro|av|深圳-深圳
-comma.ai|comma.ai|av|深圳-深圳
+pony.ai|Pony.ai 小马智行|av|深圳-深圳
+lslidar.com|LSLiDAR 镭神智能|tier1|深圳-深圳
+hsae.com|HSAE 航盛电子|tier1|深圳-深圳
+sunwoda.com|Sunwoda 欣旺达|tier1|深圳-深圳
+didiglobal.com|DiDi 滴滴自动驾驶|av|深圳-深圳
+baidu.com|Baidu Apollo 百度阿波罗|av|深圳-深圳

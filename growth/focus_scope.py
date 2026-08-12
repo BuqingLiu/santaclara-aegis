@@ -504,32 +504,24 @@ def junk(email):
 
 
 def fit_of(row):
-    """返回 (keep, reason, tag)。白名单制：不在名单里一律收起。"""
+    """返回 (keep, reason, tag)。2026-08-12 用户铁律：战场内真实客户一律保留
+    （深挖到每栋楼、越多越好、800 家都要发）；越界早在名单/geo 层拦截，这里只判邮箱有效性。"""
     name = (row.get("company") or "").strip().lower()
     j = junk(row.get("email"))
     if j:
         return False, "junk:" + j, ""
-    for k in KEEP_CONNECTOR:
-        if k in name:
-            return True, "", "connector"
-    for grp, tag in ((KEEP_AV, "av"), (KEEP_VV, "vv"), (KEEP_LAB, "lab")):
-        for k in grp:
-            if k in name:
-                return True, "", tag
-    # 域名白名单（深扒真实公司，已 DNS 核验）：命中即留
-    dom = (row.get("email") or "").split("@")[-1].strip().lower()
-    if dom in DOMAIN_ALLOW:
-        seg = (row.get("segment") or "").lower()
-        if "connector" in seg:
-            tag = "connector"
-        elif "lab" in seg:
-            tag = "lab"
-        elif "vv" in seg or seg == "vv":
-            tag = "vv"
-        else:
-            tag = "av"
-        return True, "", tag
-    return False, "not_focus_fit", ""
+    # 战场内真实客户一律保留（geo_of 已在 main 拦截 out_of_region）。
+    # 原 KEEP_*/DOMAIN_ALLOW 白名单仅作为历史参考，不再卡死可发送池。
+    seg = (row.get("segment") or "").lower()
+    if "connector" in seg:
+        tag = "connector"
+    elif "lab" in seg:
+        tag = "lab"
+    elif "vv" in seg or seg == "vv":
+        tag = "vv"
+    else:
+        tag = "av"
+    return True, "", tag
 
 
 def main():

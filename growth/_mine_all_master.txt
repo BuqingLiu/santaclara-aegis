@@ -1,0 +1,1017 @@
+aam.com|American Axle & Manufacturing|tier1|MI-Detroit
+aam.com|American Axle & Manufacturing|tier1|MI-Warren GM 周边
+aam.com|American Axle|tier1|Detroit
+accenture.com|Accenture|vv|Dallas
+adient.com|Adient|tier1|Novi
+adobe.com|Adobe|sim|CA-San Jose
+aeaes.com|A.E. Ames / Aptiv legacy|tier1|MI-Troy
+aeaes.com|AEA Automotive|tier1|Southfield
+aeva.com|Aeva Technologies|sim|Mountain View
+aeva.com|Aeva|tier1|CA-Berkeley
+aeva.com|Aeva|tier1|CA-Mountain View
+aeva.com|Aeva|tier1|CA-San Francisco
+aeva.com|Aeva|tier1|MI-Troy
+aeva.com|Aeva|tier1|MI-Troy Automation Alley
+aeva.com|Aeva|tier1|TX-Austin
+aeva.com|Aeva|tier1|TX-Dallas
+aeva.com|Aeva|tier1|TX-Houston
+aeva.com|Aeva|tier1|TX-San Antonio
+akebono-usa.com|Akebono|tier1|Madison Heights
+altair.com|Altair Engineering|sim|MI-Troy Automation Alley
+altair.com|Altair Engineering|sim|Troy
+altair.com|Altair|sim|MI-Troy
+altran.com|Altran|vv|Dallas
+ambarella.com|Ambarella|sim|CA-Berkeley
+ambarella.com|Ambarella|sim|CA-San Francisco
+ambarella.com|Ambarella|sim|CA-Santa Clara
+ambarella.com|Ambarella|sim|MI-Troy Automation Alley
+ambarella.com|Ambarella|sim|Santa Clara
+ambarella.com|Ambarella|sim|TX-Austin
+ambarella.com|Ambarella|sim|TX-Dallas
+ambarella.com|Ambarella|sim|TX-Houston
+ambarella.com|Ambarella|sim|TX-San Antonio
+annarborusa.org|Ann Arbor SPARK|connector|Ann Arbor
+annarborusa.org|Ann Arbor SPARK|connector|MI-Ann Arbor
+anthropic.com|Anthropic|sim|San Francisco
+apple.com|Apple (Special Projects)|oem|CA-Cupertino
+apple.com|Apple|oem|CA-Cupertino
+apple.com|Apple|sim|Cupertino
+appliedintuition.com|Applied Intuition|sim|CA-Mountain View
+appliedintuition.com|Applied Intuition|sim|MI-Ann Arbor
+appliedintuition.com|Applied Intuition|sim|TX-Austin (Domain)
+appliedintuition.com|Applied Intuition|sim|Troy
+aptiv.com|Aptiv|tier1|CA-Silicon Valley
+aptiv.com|Aptiv|tier1|MI-Troy Automation Alley
+aptiv.com|Aptiv|tier1|Troy Automation Alley
+argoai.com|Argo AI|av|Pittsburgh
+arm.com|Arm Automotive|sim|TX-Austin
+arm.com|Arm|sim|Austin
+arm.com|Arm|sim|TX-Austin The Domain
+atlatec.com|atlatec|sim|CA-Berkeley
+atlatec.com|atlatec|sim|CA-San Francisco
+atlatec.com|atlatec|sim|CA-Silicon Valley
+atlatec.com|atlatec|sim|Germany
+atlatec.com|atlatec|sim|MI-Ann Arbor
+atlatec.com|atlatec|sim|TX-Austin
+atlatec.com|atlatec|sim|TX-Dallas
+atlatec.com|atlatec|sim|TX-Houston
+atlatec.com|atlatec|sim|TX-San Antonio
+att.com|AT&T (connected vehicles)|oem|TX-Dallas
+att.com|AT&T|oem|Dallas
+aurora.tech|Aurora|av|Austin
+aurora.tech|Aurora|av|CA-SF
+aurora.tech|Aurora|av|CA-San Francisco
+austintech.org|Austin Technology Council|connector|Austin
+austintech.org|Austin Technology Council|connector|TX-Austin
+autoliv.com|Autoliv|tier1|Auburn Hills
+autoliv.com|Autoliv|tier1|CA-Silicon Valley
+autoliv.com|Autoliv|tier1|MI-Auburn Hills
+autonomic.ai|Autonomic (Ford)|sim|MI-Troy Automation Alley
+autonomic.ai|Autonomic|sim|CA-Berkeley
+autonomic.ai|Autonomic|sim|CA-San Francisco
+autonomic.ai|Autonomic|sim|CA-Santa Clara
+autonomic.ai|Autonomic|sim|TX-Austin
+autonomic.ai|Autonomic|sim|TX-Dallas
+autonomic.ai|Autonomic|sim|TX-Houston
+autonomic.ai|Autonomic|sim|TX-San Antonio
+autonomousstuff.com|AutonomousStuff (Hexagon)|av|MI-Troy Automation Alley
+autonomousstuff.com|AutonomousStuff (Hexagon)|av|Troy
+autox.ai|AutoX 安途|av|深圳-深圳 南山
+avanzar.com|Avanzar Interior Technologies|tier1|San Antonio
+avesreality.com|AVES Reality|sim|CA-Silicon Valley
+avesreality.com|AVES Reality|sim|TX-Austin
+avl.com|AVL|vv|Auburn Hills
+avl.com|AVL|vv|MI-Auburn Hills
+baidu.com|Baidu Apollo 百度阿波罗|av|深圳-深圳
+bair.berkeley.edu|BAIR (Berkeley AI Research)|lab|CA-Berkeley
+bair.berkeley.edu|BAIR|lab|Berkeley
+bair.berkeley.edu|BAIR|lab|CA-Berkeley
+baraja.com|Baraja|sim|Sydney
+baraja.com|Baraja|tier1|CA-Berkeley
+baraja.com|Baraja|tier1|CA-San Francisco
+baraja.com|Baraja|tier1|MI-Ann Arbor
+baraja.com|Baraja|tier1|MI-Troy Automation Alley
+baraja.com|Baraja|tier1|TX-Austin
+baraja.com|Baraja|tier1|TX-Dallas
+baraja.com|Baraja|tier1|TX-Houston
+baraja.com|Baraja|tier1|TX-San Antonio
+bdd.berkeley.edu|Berkeley DeepDrive (BDD)|lab|CA-Berkeley
+bdd.berkeley.edu|Berkeley DeepDrive|lab|Berkeley
+bdd.berkeley.edu|Berkeley DeepDrive|lab|CA-Berkeley
+benewake.com|Benewake|sim|Beijing
+benewake.com|Benewake|tier1|CA-San Francisco
+benewake.com|Benewake|tier1|CA-Silicon Valley
+benewake.com|Benewake|tier1|MI-Troy
+benteler.com|Benteler Automotive|tier1|Auburn Hills
+berkeley.edu|UC Berkeley|lab|Berkeley
+berkeley.edu|UC Berkeley|lab|CA-Berkeley
+bertrandt.com|Bertrandt|vv|Auburn Hills
+bertrandt.com|Bertrandt|vv|MI-Auburn Hills
+borgwarner.com|BorgWarner|tier1|Auburn Hills
+borgwarner.com|BorgWarner|tier1|MI-Auburn Hills
+bosch.us|Bosch Mobility|tier1|Farmington Hills
+bosch.us|Bosch Mobility|tier1|MI-Farmington Hills
+bosch.us|Bosch|tier1|CA-Silicon Valley
+bosch.us|Bosch|tier1|MI-Farmington Hills
+bosch.us|Bosch|tier1|TX-Dallas
+bp.com|BP|oem|Houston
+bp.com|BP|oem|TX-Houston Energy Corridor
+broadcom.com|Broadcom|sim|CA-San Jose
+brose.com|Brose|tier1|Wixom
+byd.com|BYD 比亚迪|oem|深圳-深圳 坪山
+camaco.com|Camaco|tier1|Novi
+capgemini.com|Capgemini Engineering|vv|Dallas
+capitalfactory.com|Capital Factory (Dallas)|connector|TX-Dallas
+capitalfactory.com|Capital Factory|connector|Austin
+capitalfactory.com|Capital Factory|connector|TX-Austin Downtown
+carmera.com|Carmera|sim|CA-Berkeley
+carmera.com|Carmera|sim|CA-San Francisco
+carmera.com|Carmera|sim|CA-Silicon Valley
+carmera.com|Carmera|sim|MI-Ann Arbor
+carmera.com|Carmera|sim|New York
+carmera.com|Carmera|sim|TX-Austin
+carmera.com|Carmera|sim|TX-Dallas
+carmera.com|Carmera|sim|TX-Houston
+carmera.com|Carmera|sim|TX-San Antonio
+caruma.com|Caruma|av|CA-San Francisco
+caruma.com|Caruma|av|CA-Silicon Valley
+caruma.com|Caruma|av|MI-Ann Arbor
+caruma.com|Caruma|sim|Boston
+cavnue.com|Cavnue|av|Ann Arbor
+cavnue.com|Cavnue|av|MI-Ann Arbor
+ceaton.com|CEATON|tier1|Rochester Hills
+ceaton.com|Cepton|tier1|CA-Berkeley
+ceaton.com|Cepton|tier1|CA-San Francisco
+ceaton.com|Cepton|tier1|CA-San Jose
+ceaton.com|Cepton|tier1|MI-Troy Automation Alley
+ceaton.com|Cepton|tier1|TX-Austin
+ceaton.com|Cepton|tier1|TX-Dallas
+ceaton.com|Cepton|tier1|TX-Houston
+ceaton.com|Cepton|tier1|TX-San Antonio
+centrepolisaccelerator.com|Centrepolis Accelerator|connector|MI-Detroit
+centrepolisaccelerator.com|Centrepolis Accelerator|connector|Southfield
+chevron.com|Chevron|oem|Houston
+chevron.com|Chevron|oem|TX-Houston Energy Corridor
+cirrus.com|Cirrus Logic|sim|Austin
+cirrus.com|Cirrus Logic|sim|TX-Austin
+cisco.com|Cisco|sim|CA-San Jose
+civilmaps.com|Civil Maps|sim|CA-Alameda
+civilmaps.com|Civil Maps|sim|CA-Berkeley
+civilmaps.com|Civil Maps|sim|CA-San Francisco
+civilmaps.com|Civil Maps|sim|MI-Ann Arbor
+civilmaps.com|Civil Maps|sim|TX-Austin
+civilmaps.com|Civil Maps|sim|TX-Dallas
+civilmaps.com|Civil Maps|sim|TX-Houston
+civilmaps.com|Civil Maps|sim|TX-San Antonio
+cmu.edu|CMU Silicon Valley|lab|CA-Mountain View
+cmu.edu|CMU|lab|Pittsburgh
+cmu.edu|Carnegie Mellon (Silicon Valley)|lab|CA-Mountain View
+coastalautomotive.com|Coastal Automotive|tier1|Lambertville
+coastalautomotive.com|Coastal Automotive|tier1|MI-Livonia
+cognata.com|Cognata|sim|CA-Silicon Valley
+cognata.com|Cognata|sim|TX-Austin
+cognata.com|Cognata|sim|Troy
+comma.ai|comma.ai|av|CA-SF
+comma.ai|comma.ai|av|CA-San Diego
+comma.ai|comma.ai|av|CA-San Francisco
+comma.ai|comma.ai|av|San Francisco
+compumak.com|CompuMak|vv|Livonia
+continental.com|Continental|tier1|Auburn Hills
+continental.com|Continental|tier1|CA-Silicon Valley
+continental.com|Continental|tier1|MI-Auburn Hills
+cooperstandard.com|Cooper Standard|tier1|Novi
+covariant.ai|Covariant|av|Berkeley
+covariant.ai|Covariant|av|CA-Berkeley
+cruise.com|Cruise|av|San Francisco
+cummins.com|Cummins|oem|Columbus
+cummins.com|Cummins|oem|TX-Houston
+cybernet.com|Cybernet Systems|av|Ann Arbor
+cybernet.com|Cybernet Systems|av|MI-Ann Arbor
+cyient.com|Cyient|vv|Dallas
+cyngn.com|Cyngn|av|Menlo Park
+cyngn.com|Cyngn|av|TX-Austin
+danlawinc.com|Danlaw|av|MI-Novi
+danlawinc.com|Danlaw|av|Novi
+dataspeed.com|DataSpeed|av|Ann Arbor
+dataspeed.com|Dataspeed|av|MI-Troy (AA spillover)
+dataspeed.com|Dataspeed|av|MI-Troy Automation Alley
+deepen.ai|Deepen AI|av|MI-Ann Arbor
+deepmap.ai|DeepMap|sim|CA-Berkeley
+deepmap.ai|DeepMap|sim|CA-San Francisco
+deepmap.ai|DeepMap|sim|CA-Silicon Valley
+deepmap.ai|DeepMap|sim|MI-Ann Arbor
+deepmap.ai|DeepMap|sim|San Francisco
+deepmap.ai|DeepMap|sim|TX-Austin
+deepmap.ai|DeepMap|sim|TX-Dallas
+deepmap.ai|DeepMap|sim|TX-Houston
+deepmap.ai|DeepMap|sim|TX-San Antonio
+deeproute.ai|DeepRoute 元戎启行|av|深圳-深圳 福田
+deeproute.ai|DeepRoute.ai|av|CA-Silicon Valley
+deeproute.ai|DeepRoute|av|CA-Silicon Valley
+dekra.com|DEKRA|vv|Auburn Hills
+dekra.com|DEKRA|vv|CA-Oakland
+dekra.com|DEKRA|vv|CA-San Francisco
+dekra.com|DEKRA|vv|CA-Silicon Valley
+dekra.com|DEKRA|vv|MI-Auburn Hills
+dekra.com|DEKRA|vv|TX-Austin
+dekra.com|DEKRA|vv|TX-Dallas
+dekra.com|DEKRA|vv|TX-Houston
+dekra.com|DEKRA|vv|TX-San Antonio
+denso.com|DENSO|tier1|CA-Silicon Valley
+denso.com|DENSO|tier1|MI-Southfield
+denso.com|DENSO|tier1|Southfield
+denso.com|DENSO|tier1|TX-Dallas
+dep.net|Detroit Engineered Products (DEP)|vv|MI-Troy Automation Alley
+dep.net|Detroit Engineered Products|vv|Troy
+derq.com|Derq|av|Detroit
+derq.com|Derq|av|MI-Detroit
+detroitmanufacturingsystems.com|Detroit Manufacturing Systems|tier1|Detroit
+detroitregionalpartnership.com|Detroit Regional Partnership|connector|Detroit
+detroitregionalpartnership.com|Detroit Regional Partnership|connector|MI-Detroit
+detroitthermal.com|Detroit Thermal Systems|tier1|Redford
+didiglobal.com|DiDi 滴滴自动驾驶|av|深圳-深圳
+dji.com|DJI 大疆车载|tier1|深圳-深圳 南山
+dji.com|DJI|tier1|San Mateo
+dornerworks.com|DornerWorks|vv|MI-Ann Arbor
+dornerworks.com|Dornerworks|vv|Grand Rapids
+draexlmaier.com|DRÄXLMAIER|tier1|Wixom
+dspace.com|dSPACE|sim|CA-Oakland
+dspace.com|dSPACE|sim|CA-San Francisco
+dspace.com|dSPACE|sim|CA-Silicon Valley
+dspace.com|dSPACE|sim|MI-Troy
+dspace.com|dSPACE|sim|MI-Troy Automation Alley
+dspace.com|dSPACE|sim|TX-Austin
+dspace.com|dSPACE|sim|TX-Dallas
+dspace.com|dSPACE|sim|TX-Houston
+dspace.com|dSPACE|sim|TX-San Antonio
+dspace.com|dSPACE|sim|Troy
+duraautomotive.com|Dura Automotive|tier1|MI-Auburn Hills
+duraautomotive.com|Dura Automotive|tier1|Novi
+dxc.com|DXC Technology|vv|Dallas
+dxc.com|DXC Technology|vv|TX-Plano
+easymile.com|EasyMile|av|Toulouse
+eberspaecher.com|Eberspächer|tier1|Novi
+einride.tech|Einride|av|Austin
+einride.tech|Einride|av|TX-Austin
+elektrobit.com|Elektrobit|sim|MI-Troy
+elektrobit.com|Elektrobit|sim|MI-Troy Automation Alley
+elektrobit.com|Elektrobit|sim|Troy
+emerson.com|Emerson|sim|Houston
+emerson.com|Emerson|tier1|TX-Houston Energy Corridor
+emich.edu|Eastern Michigan University|lab|MI-Ypsilanti
+emich.edu|Eastern Michigan University|lab|Ypsilanti
+etas.com|ETAS|sim|CA-Oakland
+etas.com|ETAS|sim|CA-San Francisco
+etas.com|ETAS|sim|CA-Silicon Valley
+etas.com|ETAS|sim|MI-Troy
+etas.com|ETAS|sim|MI-Troy Automation Alley
+etas.com|ETAS|sim|TX-Austin
+etas.com|ETAS|sim|TX-Dallas
+etas.com|ETAS|sim|TX-Houston
+etas.com|ETAS|sim|TX-San Antonio
+etas.com|ETAS|sim|Troy
+exida.com|exida|vv|CA-Oakland
+exida.com|exida|vv|CA-San Francisco
+exida.com|exida|vv|CA-Silicon Valley
+exida.com|exida|vv|MI-Troy
+exida.com|exida|vv|MI-Troy Automation Alley
+exida.com|exida|vv|TX-Austin
+exida.com|exida|vv|TX-Dallas
+exida.com|exida|vv|TX-Houston
+exida.com|exida|vv|TX-San Antonio
+exida.com|exida|vv|Troy
+explico.com|Explico Engineering|vv|Farmington Hills
+explico.com|Explico Engineering|vv|MI-Farmington Hills
+exponent.com|Exponent|vv|CA-Menlo Park
+exponent.com|Exponent|vv|CA-San Francisco
+exponent.com|Exponent|vv|Menlo Park
+exxonmobil.com|ExxonMobil|oem|Houston
+exxonmobil.com|ExxonMobil|oem|TX-Houston Energy Corridor
+faac.com|FAAC|vv|Livonia
+fev.com|FEV Group|vv|Auburn Hills
+fev.com|FEV Group|vv|MI-Auburn Hills
+fisglobal.com|FIS|vv|Jacksonville
+fisglobal.com|FIS|vv|TX-Dallas
+flex.com|Flex (automotive)|tier1|MI-Troy Automation Alley
+flex.com|Flex|tier1|MI-Warren GM 周边
+flex.com|Flex|tier1|Milford
+flexngate.com|Flex-N-Gate|tier1|Novi
+fontinalis.com|Fontinalis Partners (mobility VC)|connector|MI-Detroit Corktown
+fontinalis.com|Fontinalis Partners|connector|Detroit
+ford.com|Ford Motor Company|oem|Dearborn
+foretellix.com|Foretellix|sim|CA-Menlo Park
+foretellix.com|Foretellix|sim|CA-Mountain View
+foretellix.com|Foretellix|sim|CA-San Francisco
+foretellix.com|Foretellix|sim|MI-Ann Arbor
+foretellix.com|Foretellix|sim|TX-Austin
+foretellix.com|Foretellix|sim|Troy
+frostbank.com|Frost Bank|connector|TX-San Antonio
+frostbank.com|Frost Bank|oem|San Antonio
+gatik.ai|Gatik|av|CA-SF Bay
+gatik.ai|Gatik|av|CA-San Francisco
+gatik.ai|Gatik|av|Mountain View
+gatik.ai|Gatik|av|TX-Austin / Dallas
+gatik.ai|Gatik|av|TX-Dallas / Austin
+gentex.com|Gentex|tier1|Zeeland
+gentherm.com|Gentherm|tier1|CA-Silicon Valley
+gentherm.com|Gentherm|tier1|MI-Northville
+gentherm.com|Gentherm|tier1|Northville
+geotab.com|Geotab|av|MI-Novi
+geotab.com|Geotab|av|Novi
+gm.com|GM Financial|oem|TX-Dallas
+gm.com|General Motors|oem|Detroit
+gomentum.org|GoMentum Station|connector|Concord CA
+gomentum.org|Gomentum (testbed)|connector|CA-Concord
+gomentum.org|Gomentum (testbed)|connector|MI-Concord (CA mirror)
+gomentum.org|Gomentum|connector|CA-Concord
+google.com|Google / Waymo|av|CA-Mountain View
+google.com|Google|av|CA-Mountain View
+google.com|Waymo|av|Mountin View
+halliburton.com|Halliburton|oem|Houston
+halliburton.com|Halliburton|oem|TX-Houston Energy Corridor
+harman.com|HARMAN|tier1|CA-Silicon Valley
+harman.com|HARMAN|tier1|MI-Novi
+harman.com|HARMAN|tier1|Novi
+heb.com|H-E-B|oem|San Antonio
+heb.com|H-E-B|oem|TX-San Antonio
+henkel.com|Henkel|tier1|Madison Heights
+here.com|HERE Technologies|sim|CA-Berkeley
+here.com|HERE Technologies|sim|Chicago
+here.com|HERE Technologies|sim|MI-Ann Arbor
+here.com|HERE|sim|CA-Berkeley
+here.com|HERE|sim|CA-San Francisco
+here.com|HERE|sim|TX-Austin
+here.com|HERE|sim|TX-Dallas
+here.com|HERE|sim|TX-Houston
+here.com|HERE|sim|TX-San Antonio
+hesaitech.com|Hesai Technology|tier1|CA-San Jose
+hesaitech.com|Hesai|sim|San Jose
+hesaitech.com|Hesai|tier1|CA-Berkeley
+hesaitech.com|Hesai|tier1|CA-San Francisco
+hesaitech.com|Hesai|tier1|CA-San Jose
+hesaitech.com|Hesai|tier1|MI-Troy Automation Alley
+hesaitech.com|Hesai|tier1|TX-Austin
+hesaitech.com|Hesai|tier1|TX-Dallas
+hesaitech.com|Hesai|tier1|TX-Houston
+hesaitech.com|Hesai|tier1|TX-San Antonio
+hippo.com|Hippo|av|CA-San Francisco
+hippo.com|Hippo|av|CA-Silicon Valley
+hippo.com|Hippo|av|MI-Ann Arbor
+hitachiastemo.com|Hitachi Astemo|tier1|Farmington Hills
+hitachiastemo.com|Hitachi Astemo|tier1|MI-Farmington Hills
+honeywell.com|Honeywell|sim|Houston
+honeywell.com|Honeywell|tier1|TX-Houston Energy Corridor
+horiba.com|HORIBA|sim|MI-Troy
+horiba.com|HORIBA|sim|MI-Troy Automation Alley
+horiba.com|HORIBA|sim|Troy
+houstex.com|HOUSTEX|connector|Houston
+houstex.com|Houston Exponential|connector|TX-Houston
+hsae.com|HSAE 航盛电子|tier1|深圳-深圳
+huawei.com|Huawei 华为车|oem|深圳-深圳 坂田
+huawei.com|Huawei|oem|Santa Clara
+huf-group.com|HUF Group|tier1|Livonia
+humaneticsgroup.com|Humanetics|sim|MI-Plymouth
+humaneticsgroup.com|Humanetics|sim|Plymouth
+iacgroup.com|IAC Group|tier1|Northville
+iav.com|IAV Automotive Engineering|vv|MI-Auburn Hills
+iav.com|IAV|vv|Auburn Hills
+infineon.com|Infineon|tier1|CA-San Jose
+innoviz-tech.com|Innoviz|sim|Israel
+innoviz-tech.com|Innoviz|tier1|CA-Berkeley
+innoviz-tech.com|Innoviz|tier1|CA-San Francisco
+innoviz-tech.com|Innoviz|tier1|CA-Silicon Valley
+innoviz-tech.com|Innoviz|tier1|MI-Troy Automation Alley
+innoviz-tech.com|Innoviz|tier1|TX-Austin
+innoviz-tech.com|Innoviz|tier1|TX-Dallas
+innoviz-tech.com|Innoviz|tier1|TX-Houston
+innoviz-tech.com|Innoviz|tier1|TX-San Antonio
+innovusion.com|Innovusion|tier1|CA-San Jose
+intel.com|Intel (Mobileye adj)|sim|CA-Santa Clara
+intel.com|Intel|sim|CA-Santa Clara
+intel.com|Intel|sim|Santa Clara
+intertek.com|Intertek|vv|CA-Oakland
+intertek.com|Intertek|vv|CA-San Francisco
+intertek.com|Intertek|vv|CA-Silicon Valley
+intertek.com|Intertek|vv|MI-Troy
+intertek.com|Intertek|vv|MI-Troy Automation Alley
+intertek.com|Intertek|vv|TX-Austin
+intertek.com|Intertek|vv|TX-Dallas
+intertek.com|Intertek|vv|TX-Houston
+intertek.com|Intertek|vv|TX-San Antonio
+intertek.com|Intertek|vv|Troy
+intrepidcs.com|Intrepid Control Systems|sim|MI-Plymouth
+intrepidcs.com|Intrepid Control Systems|sim|Plymouth
+ipg-automotive.com|IPG Automotive|sim|CA-Oakland
+ipg-automotive.com|IPG Automotive|sim|CA-San Francisco
+ipg-automotive.com|IPG Automotive|sim|CA-Silicon Valley
+ipg-automotive.com|IPG Automotive|sim|Novi
+ipg-automotive.com|IPG Automotive|sim|TX-Austin
+ipg-automotive.com|IPG Automotive|sim|TX-Dallas
+ipg-automotive.com|IPG Automotive|sim|TX-Houston
+ipg-automotive.com|IPG Automotive|sim|TX-San Antonio
+ipg-automotive.com|IPG|sim|CA-San Francisco
+ipg-automotive.com|IPG|sim|CA-Silicon Valley
+irvinautomotive.com|Irvin Automotive|tier1|Pontiac
+isee.ai|iSee|av|CA-San Francisco
+isee.ai|iSee|av|CA-Silicon Valley
+isee.ai|iSee|av|Cambridge
+isee.ai|iSee|av|MI-Ann Arbor
+jacobs.com|Jacobs|vv|Houston
+jacobs.com|Jacobs|vv|TX-Houston Energy Corridor
+jtekt.com|JTEKT|tier1|Detroit
+jtekt.com|JTEKT|tier1|TX-Plano
+kautex.com|Kautex Textron|tier1|Novi
+kettering.edu|Kettering University|lab|Flint
+kettering.edu|Kettering University|lab|MI-Flint (MI auto corridor)
+kiekert.com|Kiekert|tier1|MI-Auburn Hills
+kiekert.com|Kiekert|tier1|Wixom
+kistler.com|KISTLER|sim|MI-Novi
+kistler.com|KISTLER|sim|Novi
+kodiak.ai|Kodiak|av|Austin
+kodiak.ai|Kodiak|av|TX-Austin
+kostal.com|KOSTAL|tier1|Novi
+kpit.com|KPIT|vv|Detroit
+lacksenterprises.com|Lacks Enterprises|tier1|Grand Rapids
+lacksenterprises.com|Lacks Enterprises|tier1|MI-Novi
+lattice.dev|Lattice Flow|sim|MI-Ann Arbor
+lbl.gov|Lawrence Berkeley Lab|lab|Berkeley
+lbl.gov|Lawrence Berkeley Lab|lab|CA-Berkeley
+lbl.gov|Lawrence Berkeley National Lab|lab|CA-Berkeley
+lear.com|Lear Corporation|tier1|MI-Southfield
+lear.com|Lear Corporation|tier1|MI-Southfield (Warren 周边)
+lear.com|Lear Corporation|tier1|Southfield
+lear.com|Lear|tier1|CA-Silicon Valley
+lear.com|Lear|tier1|MI-Southfield
+legacywest.com|Legacy West|connector|Plano
+legacywest.com|Legacy West|connector|TX-Plano
+leishen.com|LeiShen|tier1|CA-San Francisco
+leishen.com|LeiShen|tier1|CA-Silicon Valley
+leishen.com|LeiShen|tier1|MI-Troy
+leishen.com|Leishen|sim|Shenzhen
+lhp.com|LHP Engineering|vv|Livonia
+locomation.ai|Locomation|av|Ann Arbor
+locomation.ai|Locomation|av|TX-Austin
+lslidar.com|LSLiDAR 镭神智能|tier1|深圳-深圳
+ltts.com|L&T Technology Services|vv|Dallas
+ltu.edu|Lawrence Technological University|lab|MI-Southfield
+ltu.edu|Lawrence Technological University|lab|Southfield
+luminartech.com|Luminar|sim|Orlando
+luminartech.com|Luminar|tier1|CA-Berkeley
+luminartech.com|Luminar|tier1|CA-Palo Alto
+luminartech.com|Luminar|tier1|CA-San Francisco
+luminartech.com|Luminar|tier1|MI-Troy Automation Alley
+luminartech.com|Luminar|tier1|TX-Austin
+luminartech.com|Luminar|tier1|TX-Dallas
+luminartech.com|Luminar|tier1|TX-Houston
+luminartech.com|Luminar|tier1|TX-San Antonio
+luminousgroup.com|Luminous Group|vv|Livonia
+lvl5.com|Level 5|av|CA-San Francisco
+lvl5.com|Level 5|av|CA-Silicon Valley
+lvl5.com|Level 5|av|MI-Ann Arbor
+lvl5.com|Level 5|sim|San Francisco
+lyft.com|Lyft (AV)|av|CA-San Francisco
+lyft.com|Lyft Level 5|av|San Francisco
+lyft.com|Lyft|av|CA-San Francisco
+lyft.com|Lyft|av|CA-San Francisco SOMA
+macleanfogg.com|MacLean-Fogg|tier1|MI-Farmington Hills
+macleanfogg.com|MacLean-Fogg|tier1|Munster
+magna.com|Magna International|tier1|MI-Troy (Warren 周边)
+magna.com|Magna International|tier1|MI-Troy Automation Alley
+magna.com|Magna International|tier1|Troy Automation Alley
+magna.com|Magna|tier1|CA-Silicon Valley
+mahle.com|MAHLE|tier1|MI-Farmington Hills
+mahle.com|MAHLE|tier1|Novi
+marelli.com|Marelli|tier1|Northville
+marvell.com|Marvell|sim|CA-Santa Clara
+mathworks.com|MathWorks|sim|CA-Oakland
+mathworks.com|MathWorks|sim|CA-San Francisco
+mathworks.com|MathWorks|sim|CA-Silicon Valley
+mathworks.com|MathWorks|sim|Novi
+mathworks.com|MathWorks|sim|TX-Austin
+mathworks.com|MathWorks|sim|TX-Dallas
+mathworks.com|MathWorks|sim|TX-Houston
+mathworks.com|MathWorks|sim|TX-San Antonio
+maymobility.com|May Mobility|av|Ann Arbor
+maymobility.com|May Mobility|av|MI-Ann Arbor
+maymobility.com|May Mobility|av|MI-Ann Arbor (Automation Alley spillover)
+mcity.umich.edu|Mcity Test Facility|connector|MI-Ann Arbor U-M Mobility + Mcity
+mcity.umich.edu|Mcity|connector|MI-Ann Arbor
+mcity.umich.edu|Mcity|lab|Ann Arbor
+medc.state.mi.us|MEDC|connector|Lansing
+medc.state.mi.us|Michigan Economic Development Corp|connector|MI-Lansing
+meta.com|Meta (Reality Labs)|sim|CA-Menlo Park
+metamoto.com|Metamoto|sim|CA-Menlo Park
+metamoto.com|Metamoto|sim|TX-Austin
+methode.com|Methode Electronics|tier1|Chicago
+methode.com|Methode Electronics|tier1|MI-Farmington Hills
+methodicatech.com|Methodica Technologies|vv|MI-Troy Automation Alley
+methodicatech.com|Methodica Technologies|vv|Troy
+methodicatech.com|Methodica|vv|MI-Troy
+michauto.org|MichAuto|connector|Lansing
+michauto.org|MichAuto|connector|MI-Detroit
+michigancentral.com|Michigan Central (Corktown)|connector|MI-Detroit Corktown / Michigan Central
+michigancentral.com|Michigan Central|connector|Detroit
+microsoft.com|Microsoft (Mobility)|sim|CA-Mountain View
+microvast.com|Microvast|tier1|MI-Novi
+microvast.com|Microvast|tier1|Round Rock
+midwayproducts.com|Midway Products|tier1|Portland
+minieye.ai|MINIEYE 佑驾创新|av|深圳-深圳 南山
+mitsubishi-fuso.com|Mitsubishi FUSO|oem|TX-Dallas
+mitsubishi-fuso.com|Mitsubishi Fuso|oem|Cypress
+mobileye.com|Mobileye|av|CA-Silicon Valley
+mobileye.com|Mobileye|sim|Jerusalem
+morai.io|MORAI|sim|CA-Silicon Valley
+morai.io|MORAI|sim|TX-Austin
+morai.io|MORAI|sim|Troy
+motional.com|Motional|av|Ann Arbor
+motional.com|Motional|av|TX-Austin
+motional.com|Motional|av|TX-Dallas
+motive.com|Motive (KeepTruckin)|av|MI-Ann Arbor
+motive.com|Motive|av|CA-Berkeley
+motive.com|Motive|av|CA-San Francisco
+motive.com|Motive|av|MI-Ann Arbor
+motive.com|Motive|av|TX-Austin
+motive.com|Motive|av|TX-Dallas
+motive.com|Motive|av|TX-Houston
+motive.com|Motive|av|TX-San Antonio
+motive.com|Motive|sim|Austin
+msu.edu|Michigan State University|lab|East Lansing
+msu.edu|Michigan State University|lab|MI-East Lansing
+mts.com|MTS Systems|sim|MI-Troy
+mts.com|MTS Systems|sim|MI-Troy Automation Alley
+mts.com|MTS Systems|sim|Troy
+mtu.edu|Michigan Technological University|lab|Houghton
+mtu.edu|Michigan Technological University|lab|MI-Houghton
+nauto.com|Nauto|av|CA-Berkeley
+nauto.com|Nauto|av|CA-Palo Alto
+nauto.com|Nauto|av|CA-San Francisco
+nauto.com|Nauto|av|MI-Ann Arbor
+nauto.com|Nauto|av|TX-Austin
+nauto.com|Nauto|av|TX-Dallas
+nauto.com|Nauto|av|TX-Houston
+nauto.com|Nauto|av|TX-San Antonio
+nauto.com|Nauto|sim|Mountain View
+navistar.com|International Motors (Navistar)|oem|MI-Warren GM 周边
+navistar.com|International Motors|oem|TX-Dallas
+navistar.com|International Motors|oem|TX-Houston
+netradyne.com|Netradyne|av|CA-Berkeley
+netradyne.com|Netradyne|av|CA-San Francisco
+netradyne.com|Netradyne|av|MI-Ann Arbor
+netradyne.com|Netradyne|av|TX-Austin
+netradyne.com|Netradyne|av|TX-Dallas
+netradyne.com|Netradyne|av|TX-Houston
+netradyne.com|Netradyne|av|TX-San Antonio
+netradyne.com|Netradyne|sim|San Diego
+newcor.com|Newcor|tier1|MI-Sterling Heights
+newcor.com|Newcor|tier1|Warren
+neweagle.net|New Eagle|av|MI-Ann Arbor
+neweagle.net|New Eagle|vv|Ann Arbor
+newlab.com|Newlab Detroit|connector|Detroit
+newlab.com|Newlab at Michigan Central|connector|MI-Detroit Corktown
+nexteer.com|Nexteer Automotive|tier1|Auburn Hills
+nexteer.com|Nexteer Automotive|tier1|MI-Auburn Hills
+nexteer.com|Nexteer Automotive|tier1|MI-Auburn Hills (Warren 周边)
+nexteer.com|Nexteer|tier1|CA-Silicon Valley
+nexteer.com|Nexteer|tier1|MI-Auburn Hills
+nextenergy.org|NextEnergy|connector|Detroit
+nextenergy.org|NextEnergy|connector|MI-Detroit
+nhtsa.gov|NHTSA VRTC|lab|East Liberty OH
+ni.com|National Instruments|sim|Austin
+nodar.com|NODAR|sim|Boston
+nodar.com|Nodar|tier1|CA-Berkeley
+nodar.com|Nodar|tier1|CA-San Francisco
+nodar.com|Nodar|tier1|CA-Silicon Valley
+nodar.com|Nodar|tier1|MI-Troy Automation Alley
+nodar.com|Nodar|tier1|TX-Austin
+nodar.com|Nodar|tier1|TX-Dallas
+nodar.com|Nodar|tier1|TX-Houston
+nodar.com|Nodar|tier1|TX-San Antonio
+nov.com|NOV (National Oilwell Varco)|tier1|TX-Houston Energy Corridor
+nov.com|NOV|oem|Houston
+nts.com|National Technical Systems|vv|Detroit
+nttdata.com|NTT DATA|vv|Dallas
+nttdata.com|NTT DATA|vv|TX-Plano
+nullmax.ai|Nullmax|av|CA-Silicon Valley
+nuro.ai|Nuro|av|CA-Mountain View
+nuro.ai|Nuro|av|CA-SF Bay
+nuro.ai|Nuro|av|CA-San Francisco
+nuro.ai|Nuro|av|San Francisco
+nvidia.com|NVIDIA (DRIVE)|sim|CA-Santa Clara
+nvidia.com|NVIDIA AV|av|TX-Austin
+nvidia.com|NVIDIA|sim|Austin
+nvidia.com|NVIDIA|sim|CA-Santa Clara
+nvidia.com|NVIDIA|sim|TX-Austin The Domain / Riata
+nxp.com|NXP|tier1|CA-San Jose
+oakland.edu|Oakland University|lab|MI-Rochester Hills
+oakland.edu|Oakland University|lab|Rochester Hills
+oaklandca.gov|City of Oakland|connector|CA-Oakland
+oaklandca.gov|City of Oakland|connector|Oakland
+omnex.com|Omnex|vv|Troy
+onsemi.com|onsemi|sim|CA-Berkeley
+onsemi.com|onsemi|sim|CA-San Francisco
+onsemi.com|onsemi|sim|CA-Santa Clara
+onsemi.com|onsemi|sim|MI-Novi
+onsemi.com|onsemi|sim|TX-Austin
+onsemi.com|onsemi|sim|TX-Dallas
+onsemi.com|onsemi|sim|TX-Houston
+onsemi.com|onsemi|sim|TX-San Antonio
+openai.com|OpenAI|sim|San Francisco
+otonomo.com|Otonomo|av|CA-San Francisco
+otonomo.com|Otonomo|av|CA-Silicon Valley
+otonomo.com|Otonomo|av|MI-Ann Arbor
+otonomo.com|Otonomo|sim|Israel
+ouster.com|Ouster|sim|San Francisco
+ouster.com|Ouster|tier1|CA-Berkeley
+ouster.com|Ouster|tier1|CA-San Francisco
+ouster.com|Ouster|tier1|MI-Troy Automation Alley
+ouster.com|Ouster|tier1|TX-Austin
+ouster.com|Ouster|tier1|TX-Dallas
+ouster.com|Ouster|tier1|TX-Houston
+ouster.com|Ouster|tier1|TX-San Antonio
+outrider.ai|Outrider|av|Aurora CO
+outrider.ai|Outrider|av|TX-Austin
+oxa.tech|OXA|av|Oxford UK
+oxa.tech|Oxa|av|MI-Ann Arbor
+paccar.com|PACCAR|oem|Bellevue
+paccar.com|PACCAR|oem|TX-Dallas
+paccar.com|PACCAR|oem|TX-Houston
+parallel.ai|Parallel Domain|sim|San Francisco
+pegasus.com|Pegasus|av|CA-San Francisco
+pegasus.com|Pegasus|av|CA-Silicon Valley
+pegasus.com|Pegasus|av|MI-Ann Arbor
+phantom.com|Phantom|av|CA-San Francisco
+phantom.com|Phantom|av|CA-Silicon Valley
+phantom.com|Phantom|av|MI-Ann Arbor
+phiar.net|Phiar|av|CA-Berkeley
+phiar.net|Phiar|av|CA-Palo Alto
+phiar.net|Phiar|av|CA-San Francisco
+phiar.net|Phiar|av|MI-Ann Arbor
+phiar.net|Phiar|av|TX-Austin
+phiar.net|Phiar|av|TX-Dallas
+phiar.net|Phiar|av|TX-Houston
+phiar.net|Phiar|av|TX-San Antonio
+phiar.net|Phiar|sim|Menlo Park
+phillips66.com|Phillips 66|oem|Houston
+phillips66.com|Phillips 66|oem|TX-Houston Energy Corridor
+pistonautomotive.com|Piston Automotive|tier1|MI-Redford
+pistonautomotive.com|Piston Automotive|tier1|Redford
+plasticomnium.com|Plastic Omnium|tier1|Frankenmuth
+plus.ai|Plus|av|CA-Cupertino
+plus.ai|Plus|av|San Francisco
+plus.ai|Plus|av|TX-Austin
+plus.ai|Plus|av|TX-Dallas
+pointonenav.com|Point One Navigation|sim|CA-Berkeley
+pointonenav.com|Point One Navigation|sim|CA-San Francisco
+pointonenav.com|Point One Navigation|sim|MI-Ann Arbor
+pointonenav.com|Point One Navigation|sim|San Francisco
+pointonenav.com|Point One Navigation|sim|TX-Austin
+pointonenav.com|Point One Navigation|sim|TX-Dallas
+pointonenav.com|Point One Navigation|sim|TX-Houston
+pointonenav.com|Point One Navigation|sim|TX-San Antonio
+polysync.io|PolySync|sim|CA-Berkeley
+polysync.io|PolySync|sim|CA-San Francisco
+polysync.io|PolySync|sim|CA-Silicon Valley
+polysync.io|PolySync|sim|MI-Ann Arbor
+polysync.io|PolySync|sim|Portland
+polysync.io|PolySync|sim|TX-Austin
+polysync.io|PolySync|sim|TX-Dallas
+polysync.io|PolySync|sim|TX-Houston
+polysync.io|PolySync|sim|TX-San Antonio
+pony.ai|Pony.ai 小马智行|av|深圳-深圳
+pony.ai|Pony.ai|av|Austin
+pony.ai|Pony.ai|av|CA-Palo Alto
+pony.ai|Pony.ai|av|CA-SF
+pony.ai|Pony.ai|av|CA-San Francisco
+porthouston.com|Port of Houston|connector|Houston
+porthouston.com|Port of Houston|connector|TX-Houston
+portofoakland.com|Port of Oakland|connector|CA-Oakland
+portofoakland.com|Port of Oakland|connector|Oakland
+portsanantonio.us|Port San Antonio|connector|San Antonio
+portsanantonio.us|Port San Antonio|connector|TX-San Antonio Port SA
+prattmiller.com|Pratt Miller|vv|MI-New Hudson
+prattmiller.com|Pratt Miller|vv|New Hudson
+preh.com|Preh|tier1|Novi
+pronto.ai|Pronto.ai|av|CA-San Francisco
+pronto.ai|Pronto.ai|av|San Francisco
+pronto.ai|Pronto|av|CA-San Francisco
+qualcomm.com|Qualcomm|sim|CA-Berkeley
+qualcomm.com|Qualcomm|sim|CA-San Diego
+qualcomm.com|Qualcomm|sim|CA-San Francisco
+qualcomm.com|Qualcomm|sim|MI-Troy Automation Alley
+qualcomm.com|Qualcomm|sim|San Diego
+qualcomm.com|Qualcomm|sim|TX-Austin
+qualcomm.com|Qualcomm|sim|TX-Dallas
+qualcomm.com|Qualcomm|sim|TX-Houston
+qualcomm.com|Qualcomm|sim|TX-San Antonio
+quality-one.com|Quality-One|vv|Troy
+quantum.com|Quantum Signal AI|vv|Saline
+rackspace.com|Rackspace|connector|TX-San Antonio
+rackspace.com|Rackspace|oem|San Antonio
+rcoengineering.com|RCO Engineering|tier1|MI-New Hudson
+rcoengineering.com|RCO Engineering|tier1|Rochester Hills
+realtime-robotics.com|Realtime Robotics|sim|MI-Detroit
+realtime-robotics.com|Realtime Robotics|sim|Troy
+refraction.ai|Refraction AI|av|Ann Arbor
+refraction.ai|Refraction AI|av|MI-Ann Arbor
+renesas.com|Renesas|sim|CA-Berkeley
+renesas.com|Renesas|sim|CA-San Francisco
+renesas.com|Renesas|sim|CA-San Jose
+renesas.com|Renesas|sim|MI-Novi
+renesas.com|Renesas|sim|TX-Austin
+renesas.com|Renesas|sim|TX-Dallas
+renesas.com|Renesas|sim|TX-Houston
+renesas.com|Renesas|sim|TX-San Antonio
+reyesautomotive.com|Reyes Automotive|tier1|Detroit
+rfpro.com|rFpro|sim|CA-Silicon Valley
+rfpro.com|rFpro|sim|TX-Austin
+rfpro.com|rFpro|sim|Troy
+rgbsi.com|RGBSI|vv|Troy
+rheinmetall.com|Rheinmetall Automotive|tier1|MI-Auburn Hills
+rheinmetall.com|Rheinmetall|tier1|Livonia
+ricardo.com|Ricardo|vv|MI-Troy
+ricardo.com|Ricardo|vv|MI-Troy Automation Alley
+ricardo.com|Ricardo|vv|Troy
+rice.edu|Rice University|lab|Houston
+rice.edu|Rice University|lab|TX-Houston
+ridemetro.org|Houston METRO|connector|TX-Houston
+ridemetro.org|Houston METRO|lab|Houston
+righthook.com|RightHook|sim|Berkeley
+righthook.com|RightHook|sim|CA-San Francisco
+robinhood.com|Robinhood|oem|Menlo Park
+robosense.ai|RoboSense 速腾聚创|tier1|深圳-深圳 宝安
+robosense.ai|RoboSense|sim|Shenzhen
+robosense.ai|RoboSense|tier1|CA-Berkeley
+robosense.ai|RoboSense|tier1|CA-San Francisco
+robosense.ai|RoboSense|tier1|CA-San Jose
+robosense.ai|RoboSense|tier1|MI-Troy Automation Alley
+robosense.ai|RoboSense|tier1|TX-Austin
+robosense.ai|RoboSense|tier1|TX-Dallas
+robosense.ai|RoboSense|tier1|TX-Houston
+robosense.ai|RoboSense|tier1|TX-San Antonio
+roechling.com|ROECHLING Automotive|tier1|Wixom
+rohde-schwarz.com|Rohde & Schwarz|sim|Columbia
+rohde-schwarz.com|Rohde & Schwarz|sim|MI-Troy Automation Alley
+rohde-schwarz.com|Rohde & Schwarz|sim|MI-Warren GM 周边
+salesforce.com|Salesforce|oem|San Francisco
+samsara.com|Samsara|av|CA-Berkeley
+samsara.com|Samsara|av|CA-San Francisco
+samsara.com|Samsara|av|MI-Ann Arbor
+samsara.com|Samsara|av|TX-Austin
+samsara.com|Samsara|av|TX-Dallas
+samsara.com|Samsara|av|TX-Houston
+samsara.com|Samsara|av|TX-San Antonio
+samsara.com|Samsara|sim|San Francisco
+samsung.com|Samsung Austin Semiconductor|tier1|TX-Austin
+samsung.com|Samsung Austin|tier1|Austin
+scale.com|Scale AI|sim|San Francisco
+schaeffler.com|Schaeffler|tier1|Novi
+scout.com|Scout|av|CA-San Francisco
+scout.com|Scout|av|CA-Silicon Valley
+scout.com|Scout|av|MI-Ann Arbor
+scu.edu|Santa Clara University|lab|CA-Santa Clara
+scu.edu|Santa Clara University|lab|Santa Clara
+seyond.com|Seyond (Innovusion)|tier1|CA-San Jose
+seyond.com|Seyond|sim|Sunnyvale
+seyond.com|Seyond|tier1|CA-Berkeley
+seyond.com|Seyond|tier1|CA-San Francisco
+seyond.com|Seyond|tier1|CA-San Jose
+seyond.com|Seyond|tier1|MI-Troy Automation Alley
+seyond.com|Seyond|tier1|TX-Austin
+seyond.com|Seyond|tier1|TX-Dallas
+seyond.com|Seyond|tier1|TX-Houston
+seyond.com|Seyond|tier1|TX-San Antonio
+sf.gov|City of San Francisco (MTA)|connector|CA-San Francisco SOMA
+sf.gov|City of San Francisco|connector|CA-San Francisco
+sfsu.edu|SF State University|lab|CA-San Francisco
+sfsu.edu|SF State|lab|CA-San Francisco
+shell.com|Shell|oem|Houston
+shell.com|Shell|oem|TX-Houston Energy Corridor
+siemens.com|Siemens (Capital/PLM)|sim|TX-Austin
+siemens.com|Siemens Digital Industries|sim|Troy
+siemens.com|Siemens|sim|CA-Oakland
+siemens.com|Siemens|sim|CA-San Francisco
+siemens.com|Siemens|sim|CA-Silicon Valley
+siemens.com|Siemens|sim|TX-Dallas
+siemens.com|Siemens|sim|TX-Houston
+siemens.com|Siemens|sim|TX-San Antonio
+silabs.com|Silicon Labs|sim|Austin
+silabs.com|Silicon Labs|sim|TX-Austin
+sjsu.edu|San Jose State University|lab|CA-San Jose
+sjsu.edu|San Jose State|lab|CA-San Jose
+sjsu.edu|San Jose State|lab|San Jose
+slb.com|SLB (Schlumberger)|oem|TX-Houston Energy Corridor
+slb.com|SLB|oem|Houston
+soartech.com|Soar Technology|sim|MI-Ann Arbor
+soartech.com|Soar Technology|vv|Ann Arbor
+soltisadvisors.com|Soltis Advisors|vv|Detroit
+sonatus.com|Sonatus|sim|CA-Berkeley
+sonatus.com|Sonatus|sim|CA-Menlo Park
+sonatus.com|Sonatus|sim|CA-San Francisco
+sonatus.com|Sonatus|sim|MI-Troy Automation Alley
+sonatus.com|Sonatus|sim|TX-Austin
+sonatus.com|Sonatus|sim|TX-Dallas
+sonatus.com|Sonatus|sim|TX-Houston
+sonatus.com|Sonatus|sim|TX-San Antonio
+sres.com|SRES|vv|Detroit
+srglobal.com|SRG Global|tier1|Hardy
+srglobal.com|SRG Global|tier1|MI-Grand Blanc
+stackav.com|Stack AV|av|Ann Arbor
+stackav.com|Stack AV|av|TX-Austin
+stanford.edu|Stanford AV|lab|Stanford
+stanford.edu|Stanford University|lab|CA-Stanford / Palo Alto
+stanford.edu|Stanford|lab|CA-Stanford
+statefarm.com|State Farm (Frisco)|connector|TX-Frisco
+statefarm.com|State Farm|oem|Bloomington
+stellantis.com|Stellantis|oem|Auburn Hills
+stellantis.com|Stellantis|oem|MI-Auburn Hills
+stockedrobotics.com|Stocked Robotics|av|San Francisco
+stripe.com|Stripe|oem|San Francisco
+sunwoda.com|Sunwoda 欣旺达|tier1|深圳-深圳
+swiftnav.com|Swift Navigation|sim|CA-Berkeley
+swiftnav.com|Swift Navigation|sim|CA-San Francisco
+swiftnav.com|Swift Navigation|sim|MI-Ann Arbor
+swiftnav.com|Swift Navigation|sim|San Francisco
+swiftnav.com|Swift Navigation|sim|TX-Austin
+swiftnav.com|Swift Navigation|sim|TX-Dallas
+swiftnav.com|Swift Navigation|sim|TX-Houston
+swiftnav.com|Swift Navigation|sim|TX-San Antonio
+swri.org|Southwest Research Institute (SwRI)|lab|TX-San Antonio
+swri.org|Southwest Research Institute|lab|San Antonio
+swri.org|SwRI Intelligent Systems|lab|TX-San Antonio
+tacc.utexas.edu|TACC|lab|Austin
+tacc.utexas.edu|TACC|lab|TX-Austin
+tachis.com|Tachi-S|tier1|MI-Novi
+tachis.com|Tachi-S|tier1|Novi
+tamu.edu|Texas A&M Transportation Institute (TTI)|lab|TX-College Station
+tamu.edu|Texas A&M University|lab|TX-College Station
+tamu.edu|Texas A&M|lab|College Station
+tata-technologies.com|Tata Technologies|vv|MI-Novi
+tatatechnologies.com|Tata Technologies|vv|Detroit
+tatatechnologies.com|Tata Technologies|vv|MI-Novi
+techtowndetroit.org|TechTown Detroit|connector|Detroit
+techtowndetroit.org|TechTown Detroit|connector|MI-Detroit Midtown
+tenant.com|Tenneco|tier1|MI-Northville
+tenant.com|Tenneco|tier1|Novi
+tencent.com|Tencent 腾讯车联|oem|深圳-深圳 南山
+tenneco.com|Tenneco|tier1|MI-Warren GM 周边
+tenneco.com|Tenneco|tier1|Novi
+tesla.com|Tesla (Autopilot/FSD)|oem|CA-Palo Alto / Fremont
+tesla.com|Tesla Gigafactory|oem|Austin
+tesla.com|Tesla|oem|CA-Palo Alto
+texasscientific.com|Texas Scientific|lab|TX-San Antonio
+texasscientific.com|Texas Scientific|vv|Dallas
+thyssenkrupp.com|thyssenkrupp|tier1|Troy
+ti.com|Texas Instruments|tier1|Dallas
+tomco.com|Tomco Service|vv|Detroit
+tomtom.com|TomTom|sim|Amsterdam
+tomtom.com|TomTom|sim|CA-Berkeley
+tomtom.com|TomTom|sim|CA-San Francisco
+tomtom.com|TomTom|sim|MI-Ann Arbor
+tomtom.com|TomTom|sim|TX-Austin
+tomtom.com|TomTom|sim|TX-Dallas
+tomtom.com|TomTom|sim|TX-Houston
+tomtom.com|TomTom|sim|TX-San Antonio
+torc.ai|Torc Robotics|av|Austin
+touchstone.com|Touchstone Evaluation|vv|Detroit
+toyota.com|Toyota Motor North America|oem|Plano
+toyota.com|Toyota Motor North America|oem|TX-Plano / Legacy West
+toyota.com|Toyota Research Institute (TRI)|lab|CA-Los Altos
+toyotaconnected.com|Toyota Connected|av|TX-Plano
+toyotetsu.com|Toyotetsu|tier1|Franklin
+traxen.com|Traxen|av|Livonia
+traxen.com|Traxen|av|MI-Plymouth
+trcpg.com|Transportation Research Center|lab|East Liberty OH
+tri.global|Toyota Research Institute|lab|Ann Arbor
+tri.global|Toyota Research Institute|lab|CA-Los Altos
+trimble.com|Trimble|sim|CA-Berkeley
+trimble.com|Trimble|sim|CA-San Francisco
+trimble.com|Trimble|sim|CA-Sunnyvale
+trimble.com|Trimble|sim|MI-Ann Arbor
+trimble.com|Trimble|sim|Sunnyvale
+trimble.com|Trimble|sim|TX-Austin
+trimble.com|Trimble|sim|TX-Dallas
+trimble.com|Trimble|sim|TX-Houston
+trimble.com|Trimble|sim|TX-San Antonio
+truck-lite.com|Truck-Lite|tier1|MI-Warren GM 周边
+tttech.com|TTTech Auto|av|MI-Troy
+tttech.com|TTTech Auto|av|MI-Troy Automation Alley
+tttech.com|TTTech Auto|av|Troy
+tu-simple.com|TuSimple|av|CA-San Diego
+tulatech.com|Tula Technology|sim|CA-Berkeley
+tulatech.com|Tula Technology|sim|CA-San Francisco
+tulatech.com|Tula Technology|sim|CA-Santa Clara
+tulatech.com|Tula Technology|sim|MI-Troy Automation Alley
+tulatech.com|Tula Technology|sim|TX-Austin
+tulatech.com|Tula Technology|sim|TX-Dallas
+tulatech.com|Tula Technology|sim|TX-Houston
+tulatech.com|Tula Technology|sim|TX-San Antonio
+turo.com|Turo|av|CA-San Francisco
+turo.com|Turo|av|San Francisco
+tuv-rheinland.com|TUV Rheinland|vv|CA-Oakland
+tuv-rheinland.com|TUV Rheinland|vv|CA-San Francisco
+tuv-rheinland.com|TUV Rheinland|vv|CA-Silicon Valley
+tuv-rheinland.com|TUV Rheinland|vv|TX-Austin
+tuv-rheinland.com|TUV Rheinland|vv|TX-Houston
+tuv-rheinland.com|TUV Rheinland|vv|TX-San Antonio
+tuvsud.com|TUV SUD|vv|Auburn Hills
+tuvsud.com|TUV SUD|vv|CA-Oakland
+tuvsud.com|TUV SUD|vv|CA-San Francisco
+tuvsud.com|TUV SUD|vv|CA-Silicon Valley
+tuvsud.com|TUV SUD|vv|MI-Auburn Hills
+tuvsud.com|TUV SUD|vv|TX-Austin
+tuvsud.com|TUV SUD|vv|TX-Dallas
+tuvsud.com|TUV SUD|vv|TX-Houston
+tuvsud.com|TUV SUD|vv|TX-San Antonio
+twu.edu|Texas Woman's University|lab|Denton
+twu.edu|Texas Woman's University|lab|TX-Denton
+tymetro.com|Tymetro|av|CA-San Francisco
+tymetro.com|Tymetro|av|CA-Silicon Valley
+tymetro.com|Tymetro|av|MI-Ann Arbor
+uber.com|Uber (ATG legacy)|av|CA-San Francisco
+uber.com|Uber ATG|av|San Francisco
+uber.com|Uber|av|CA-San Francisco
+ucop.edu|UC Office of the President|lab|CA-Oakland
+ucop.edu|University of California OP|lab|CA-Oakland
+uh.edu|University of Houston|lab|Houston
+uh.edu|University of Houston|lab|TX-Houston
+ul.com|UL Solutions|vv|CA-Oakland
+ul.com|UL Solutions|vv|CA-San Francisco
+ul.com|UL Solutions|vv|CA-Silicon Valley
+ul.com|UL Solutions|vv|TX-Austin
+ul.com|UL Solutions|vv|TX-Houston
+ul.com|UL|vv|CA-San Francisco
+ul.com|UL|vv|CA-Silicon Valley
+umdearborn.edu|UM-Dearborn|lab|Dearborn
+umdearborn.edu|University of Michigan - Dearborn|lab|MI-Dearborn
+umich.edu|University of Michigan (UMTRI / Mcity)|lab|MI-Ann Arbor U-M Mobility + Mcity
+umich.edu|University of Michigan|lab|Ann Arbor
+umtri.umich.edu|UMTRI|lab|Ann Arbor
+umtri.umich.edu|UMTRI|lab|MI-Ann Arbor
+umtri.umich.edu|UMTRI|lab|MI-Ann Arbor U-M Mobility + Mcity
+unatech.com|Unatech|vv|Detroit
+usaa.com|USAA|oem|San Antonio
+usaa.com|USAA|oem|TX-San Antonio
+usfca.edu|University of San Francisco|lab|CA-San Francisco
+utdallas.edu|UT Dallas|lab|Richardson
+utdallas.edu|University of Texas at Dallas|lab|TX-Richardson
+utexas.edu|UT Austin Center for Transportation Research|lab|TX-Austin
+utexas.edu|UT Austin|lab|Austin
+utexas.edu|UT Dallas (ATEM)|lab|TX-Richardson
+utexas.edu|University of Texas at Austin (CTR)|lab|TX-Austin
+utsa.edu|UT San Antonio|lab|San Antonio
+utsa.edu|UT San Antonio|lab|TX-San Antonio
+valeo.com|Valeo|tier1|MI-Troy Automation Alley
+valeo.com|Valeo|tier1|Troy Automation Alley
+valero.com|Valero|oem|San Antonio
+valero.com|Valero|oem|TX-San Antonio
+vector.com|Vector Informatik|sim|MI-Troy Automation Alley
+vector.com|Vector Informatik|sim|Troy
+vector.com|Vector|sim|CA-Oakland
+vector.com|Vector|sim|CA-San Francisco
+vector.com|Vector|sim|CA-Silicon Valley
+vector.com|Vector|sim|MI-Troy
+vector.com|Vector|sim|TX-Austin
+vector.com|Vector|sim|TX-Dallas
+vector.com|Vector|sim|TX-Houston
+vector.com|Vector|sim|TX-San Antonio
+ventureindustries.com|Venture Industries|tier1|Fraser
+veoneer.com|Veoneer|tier1|CA-Silicon Valley
+veoneer.com|Veoneer|tier1|Stockholm
+visteon.com|Visteon|tier1|CA-Silicon Valley
+visteon.com|Visteon|tier1|Van Buren
+voxel51.com|Voxel51|sim|Ann Arbor
+voxel51.com|Voxel51|sim|MI-Ann Arbor
+waabi.ai|Waabi|av|TX-Austin
+waabi.ai|Waabi|av|Toronto
+wavesense.com|WaveSense|av|CA-San Francisco
+wavesense.com|WaveSense|av|CA-Silicon Valley
+wavesense.com|WaveSense|av|MI-Ann Arbor
+waymo.com|Waymo|av|Austin
+waymo.com|Waymo|av|CA-Mountain View
+waymo.com|Waymo|av|CA-SF
+waymo.com|Waymo|av|CA-San Francisco
+wayne.edu|Wayne State University|lab|Detroit
+wayne.edu|Wayne State University|lab|MI-Detroit
+wccnet.edu|Washtenaw Community College|lab|MI-Ann Arbor
+webasto.com|Webasto|tier1|Wixom
+wejo.com|Wejo|av|CA-San Francisco
+wejo.com|Wejo|av|CA-Silicon Valley
+wejo.com|Wejo|av|MI-Ann Arbor
+wejo.com|Wejo|sim|UK
+weride.ai|WeRide|av|CA-SF
+weride.ai|WeRide|av|CA-San Francisco
+weride.ai|WeRide|av|CA-Silicon Valley
+weride.ai|WeRide|av|Dallas
+wmich.edu|Western Michigan University|lab|Kalamazoo
+wmich.edu|Western Michigan University|lab|MI-Kalamazoo
+worley.com|Worley|vv|Houston
+worley.com|Worley|vv|TX-Houston Energy Corridor
+yanfeng.com|Yanfeng|tier1|Novi
+zachrygroup.com|Zachry Group|vv|San Antonio
+zachrygroup.com|Zachry Group|vv|TX-San Antonio
+zf.com|ZF Group|tier1|Farmington Hills
+zf.com|ZF Group|tier1|MI-Northville
+zf.com|ZF Group|tier1|MI-Northville / Farmington Hills
+zf.com|ZF|tier1|CA-Silicon Valley
+zoox.com|Zoox|av|CA-Foster City
+zoox.com|Zoox|av|San Francisco

@@ -1,0 +1,56 @@
+avanzar.com|Avanzar Interior Technologies|tier1|San Antonio
+cirrus.com|Cirrus Logic|sim|Austin
+silabs.com|Silicon Labs|sim|Austin
+tesla.com|Tesla Gigafactory|oem|Austin
+nvidia.com|NVIDIA|sim|Austin
+arm.com|Arm|sim|Austin
+samsung.com|Samsung Austin|tier1|Austin
+aurora.tech|Aurora|av|Austin
+waymo.com|Waymo|av|Austin
+ni.com|National Instruments|sim|Austin
+torc.ai|Torc Robotics|av|Austin
+kodiak.ai|Kodiak|av|Austin
+pony.ai|Pony.ai|av|Austin
+weride.ai|WeRide|av|Dallas
+einride.tech|Einride|av|Austin
+capitalfactory.com|Capital Factory|connector|Austin
+austintech.org|Austin Technology Council|connector|Austin
+utexas.edu|UT Austin|lab|Austin
+tacc.utexas.edu|TACC|lab|Austin
+motive.com|Motive|sim|Austin
+ti.com|Texas Instruments|tier1|Dallas
+capgemini.com|Capgemini Engineering|vv|Dallas
+ltts.com|L&T Technology Services|vv|Dallas
+cyient.com|Cyient|vv|Dallas
+altran.com|Altran|vv|Dallas
+accenture.com|Accenture|vv|Dallas
+nttdata.com|NTT DATA|vv|Dallas
+dxc.com|DXC Technology|vv|Dallas
+att.com|AT&T|oem|Dallas
+zachrygroup.com|Zachry Group|vv|San Antonio
+texasscientific.com|Texas Scientific|vv|Dallas
+shell.com|Shell|oem|Houston
+exxonmobil.com|ExxonMobil|oem|Houston
+chevron.com|Chevron|oem|Houston
+bp.com|BP|oem|Houston
+phillips66.com|Phillips 66|oem|Houston
+slb.com|SLB|oem|Houston
+halliburton.com|Halliburton|oem|Houston
+honeywell.com|Honeywell|sim|Houston
+emerson.com|Emerson|sim|Houston
+nov.com|NOV|oem|Houston
+jacobs.com|Jacobs|vv|Houston
+worley.com|Worley|vv|Houston
+rice.edu|Rice University|lab|Houston
+uh.edu|University of Houston|lab|Houston
+ridemetro.org|Houston METRO|lab|Houston
+porthouston.com|Port of Houston|connector|Houston
+houstex.com|HOUSTEX|connector|Houston
+valero.com|Valero|oem|San Antonio
+portsanantonio.us|Port San Antonio|connector|San Antonio
+swri.org|Southwest Research Institute|lab|San Antonio
+utsa.edu|UT San Antonio|lab|San Antonio
+heb.com|H-E-B|oem|San Antonio
+usaa.com|USAA|oem|San Antonio
+rackspace.com|Rackspace|oem|San Antonio
+frostbank.com|Frost Bank|oem|San Antonio

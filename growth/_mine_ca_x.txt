@@ -1,0 +1,40 @@
+gomentum.org|GoMentum Station|connector|Concord CA
+pronto.ai|Pronto.ai|av|San Francisco
+zoox.com|Zoox|av|San Francisco
+gatik.ai|Gatik|av|Mountain View
+plus.ai|Plus|av|San Francisco
+samsara.com|Samsara|sim|San Francisco
+nauto.com|Nauto|sim|Mountain View
+swiftnav.com|Swift Navigation|sim|San Francisco
+pointonenav.com|Point One Navigation|sim|San Francisco
+aeva.com|Aeva Technologies|sim|Mountain View
+ouster.com|Ouster|sim|San Francisco
+seyond.com|Seyond|sim|Sunnyvale
+ambarella.com|Ambarella|sim|Santa Clara
+trimble.com|Trimble|sim|Sunnyvale
+deepmap.ai|DeepMap|sim|San Francisco
+lvl5.com|Level 5|sim|San Francisco
+comma.ai|comma.ai|av|San Francisco
+turo.com|Turo|av|San Francisco
+uber.com|Uber ATG|av|San Francisco
+lyft.com|Lyft Level 5|av|San Francisco
+intel.com|Intel|sim|Santa Clara
+scu.edu|Santa Clara University|lab|Santa Clara
+righthook.com|RightHook|sim|Berkeley
+nuro.ai|Nuro|av|San Francisco
+parallel.ai|Parallel Domain|sim|San Francisco
+stockedrobotics.com|Stocked Robotics|av|San Francisco
+berkeley.edu|UC Berkeley|lab|Berkeley
+bdd.berkeley.edu|Berkeley DeepDrive|lab|Berkeley
+bair.berkeley.edu|BAIR|lab|Berkeley
+lbl.gov|Lawrence Berkeley Lab|lab|Berkeley
+covariant.ai|Covariant|av|Berkeley
+oaklandca.gov|City of Oakland|connector|Oakland
+portofoakland.com|Port of Oakland|connector|Oakland
+huawei.com|Huawei|oem|Santa Clara
+cruise.com|Cruise|av|San Francisco
+scale.com|Scale AI|sim|San Francisco
+anthropic.com|Anthropic|sim|San Francisco
+openai.com|OpenAI|sim|San Francisco
+salesforce.com|Salesforce|oem|San Francisco
+stripe.com|Stripe|oem|San Francisco
