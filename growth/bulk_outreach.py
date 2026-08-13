@@ -56,6 +56,10 @@ DAILY_CAP = 35
 #   sz = 深圳（上限 19 家公司，首触 + R2/R3 多轮跟进；公司数不扩充、只深耕） 09:00 中国
 # 额度按"一个真人一个上午能认真发多少封"定，不按"名单里躺着多少家"定。
 REGION_CAP = {"mi": 14, "ca": 8, "sz": 3, "tx": 10}   # 合计 35/天（2026-08-10 用户指令：提量到~35/天真人节奏，MI+TX+CA 三海外战场 + 深圳≤19；绝非机器人刷量）
+# 全局日发信硬上限（四区域叠加后也不得超过）。远低于 163 风控线，双重保险：
+# ① 防补发日各区域 2x 叠加一天爆量（MI28+TX20+CA16+SZ6=70 会触发 163 日限额）；
+# ② 即便有并发竞态，也封顶在 45 以内，绝不顶到 163 上限。补发的缺口顺延到次日接着补。
+SAFE_DAILY_MAX = 45
 
 # 跟进（R2/R3）每日最多只能占用本区域额度的这一比例，其余留给首触。
 # 池子收窄后跟进比首触更值钱：同一批对口客户多轮触达，远胜再换一批不对口的。
@@ -723,6 +727,11 @@ FATAL_AUTH = ("authentication failed", "auth login", "535", "550 invalid user",
 RATE_LIMIT = ("dt:spm", "554 dt", "550 mi:", "exceeded the limit", "daily limit",
               "too many", "sending limit", "554 ds", "退信", "spam", "频率过快",
               "550 user has no permission")
+# 邮箱级硬退信（收件人不存在 / 邮箱永久不可用）——继续重试只会反复退信、拖垮 163 发信信誉，必须当场隔离
+HARD_BOUNCE = ("no such user", "user unknown", "does not exist", "mailbox unavailable",
+               "550 5.1.1", "550 5.1.0", "no mailbox", "invalid mailbox",
+               "recipient address rejected", "address rejected", "user is not found",
+               "account does not exist", "mailbox not found", "no such mailbox")
 
 def _is(det, keys):
     d = (det or "").lower()
@@ -782,6 +791,22 @@ def run(dry=False, limit=None, region=None):
 
     already = sum(1 for r in rows if (r.get("last_sent", "") or "")[:10] == today)
     quota = cap if dry else max(0, cap - already)
+    # 全局日发信硬上限（四区域叠加后也不得超过，防补发日爆量触发 163 风控）
+    gl = st.get("global", {})
+    if gl.get("date") != today:
+        gl = {"date": today, "n": 0}
+    global_already = gl.get("n", 0)
+    headroom = max(0, SAFE_DAILY_MAX - global_already)
+    if not dry and headroom < quota:
+        quota = headroom
+        if quota == 0:
+            print("[bulk] 全局今日已发 %d 封（硬上限 %d），区域 %s 本轮跳过，额度顺延至次日（不推进 last_run 缺口）。"
+                  % (global_already, SAFE_DAILY_MAX, region or "all"))
+            rs["last_run"] = today; st[rkey] = rs; st["global"] = gl; save_state(st)
+            return 0
+        else:
+            print("[bulk] 全局今日已发 %d 封，区域 %s 本轮额度被全局上限压到 %d（保 163 信誉）。"
+                  % (global_already, region or "all", quota))
     if quota == 0 and not dry:
         print("[bulk] 区域 %s 今日额度已用满（%d/%d 封），本轮不再发送。" % (region or "all", already, cap))
         rs["last_run"] = today; st[rkey] = rs; save_state(st)
@@ -869,6 +894,9 @@ def run(dry=False, limit=None, region=None):
                 row["status"] = "sent_all" if rd + 1 >= 3 else "contacted"
                 row["last_error"] = ""
                 sent += 1
+                gl["n"] = gl.get("n", 0) + 1
+                st["global"] = gl
+                save_state(st)
                 done_today.add(_ckey(row))
                 print("[ok] %s | %s" % (email, subj))
                 save(all_rows)
@@ -878,6 +906,12 @@ def run(dry=False, limit=None, region=None):
                 row["last_error"] = det
                 fails += 1
                 print("[fail] %s | %s" % (email, det))
+                if _is(det, HARD_BOUNCE):
+                    row["status"] = "blocked"
+                    row["last_error"] = "hardbounce:" + det[:120]
+                    print("[bounce] 邮箱不存在/永久不可用，已隔离 %s（防反复退信拖垮 163 信誉）" % email)
+                    save(all_rows)
+                    continue
                 if _is(det, FATAL_AUTH):
                     aborted = det
                     print("[bulk] 检测到 SMTP 授权失败，立即停止本轮，保留剩余额度。")
