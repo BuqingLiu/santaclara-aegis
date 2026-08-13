@@ -13,7 +13,7 @@ TODAY = datetime.date.today()
 FT_TARGET = 500          # 首触目标（家）
 FU_TARGET = 300          # 跟进目标（封 R2/R3）
 FT_DAYS = 18             # 首触窗口（工作日）
-REGION_CAP = {"mi": 14, "ca": 8, "sz": 3, "tx": 10}
+REGION_CAP = {"mi": 16, "ca": 10, "sz": 4, "tx": 12}
 DAILY_CAP = sum(REGION_CAP.values())  # 35
 
 def reg_of(x):
@@ -116,7 +116,7 @@ h1{font-size:22px;margin:0 0 2px}h2{font-size:15px;color:#667;font-weight:500;ma
 <div class="card"><div class="row"><b>首触进度</b><span>已 %d / 计划应 %d / 缺口 %d</span></div>%s
 <div class="row" style="margin-top:6px"><span style="font-size:12px;color:#889">需 %d 家/工作日补足（剩余 %d 工作日）</span></div></div>
 <div class="card"><div class="row"><b>真实客户池分区</b><span>MI %d · TX %d · CA %d · SZ %d</span></div>
-<div class="row"><b>每日配额</b><span>MI14+TX10+CA8+SZ3 = 35/天（全局硬上限 45 防 163 风控）</span></div>
+<div class="row"><b>每日配额</b><span>MI%d+TX%d+CA%d+SZ%d = %d/天（全局硬上限 45 防 163 风控）</span></div>
 <div class="row"><b>风控状态</b><span class="%s">%s</span></div></div>
 <div class="warn">防御链：DNS 预检隔离不存在域名 · 邮箱级硬退信自动隔离 · 163 日限额即停 · 每封 45~150s 真人节奏 · 缺失天数自动 2x 补发（顺延不爆量）。所有客户均为官网真实抓取 + DNS 核验，绝不编造。</div>
 <p style="color:#889;font-size:12px">源：prospects_email_ready.csv · 由 growth/war_room.py 生成</p></body></html>""" % (
@@ -124,6 +124,7 @@ h1{font-size:22px;margin:0 0 2px}h2{font-size:15px;color:#667;font-weight:500;ma
     distinct_sent, plan_ft, gap_ft, bar(distinct_sent, FT_TARGET, "#0a6cff"),
     needed_per_day, remaining_days,
     pool_by_reg.get("mi",0), pool_by_reg.get("tx",0), pool_by_reg.get("ca",0), pool_by_reg.get("sz",0),
+    REGION_CAP["mi"], REGION_CAP["tx"], REGION_CAP["ca"], REGION_CAP["sz"], DAILY_CAP,
     "ok" if not recent_err else "bad", "无近期发送错误" if not recent_err else "有发送错误，见日志"
 )
 open("_war_room.html", "w", encoding="utf-8").write(html_doc)
